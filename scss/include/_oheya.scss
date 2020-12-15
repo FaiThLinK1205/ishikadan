@@ -1,7 +1,10 @@
 // サイトコンテンツスタイル用
 // oheya.html用
 
-
+.room_header {
+  height: 80px;
+  background: #000;
+}
 
 /****************************************:
 
@@ -9,6 +12,11 @@ fv
 
 *****************************************:*/
 
+.room_mv {
+  height: 500px;
+  background: url(../../img/section-oheya/oheya-header.jpg)center / cover;
+  position: relative;
+}
 
 
 
