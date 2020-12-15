@@ -3,7 +3,7 @@
 
 .room_header {
   height: 80px;
-  background: #000;
+  background:$cWhite;
 }
 
 /****************************************:
@@ -11,14 +11,6 @@
 fv
 
 *****************************************:*/
-
-.room_mv {
-  height: 500px;
-  background: url(../../img/section-oheya/oheya-header.jpg)center / cover;
-  position: relative;
-}
-
-
 
 
 
@@ -30,9 +22,82 @@ section
 *****************************************:*/
 
 
+.section_txt {
+  margin-bottom: 135px;
+  line-height: 2;
+  text-align: center;
+}
 
 
+.room {
+
+  &_mv {
+    height: 500px;
+    margin-bottom: 36px;
+    background: url(../../img/section-oheya/oheya-header.jpg)center / cover;
+    position: relative;
+  }
+
+  &_txt {
+    color: $cWhite;
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: bold;
+
+    
+  }
+
+  &_list {
+    display: flex;
+    margin-bottom: 173px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    display: flex;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &_img {
+    height: 300px;
+    width: 525px;
+    margin-top: -57px;
+    overflow: hidden;
+  }
+
+  &_view {
+    height: 381px;
+    margin-bottom: 84px;
+    padding-left: 80px;
+    background: url(../../img/common/bg.jpg);
 
 
+    &_ttl {
+      margin-top: 60px;
+      margin-bottom: 52px;
+      @include rem(24);
+    }
 
+    &_txt {
+      margin-bottom: 52px;
+      line-height: 2;
+    }
+  }
+}
 
+.list {
+  margin-bottom: 98px;
+}

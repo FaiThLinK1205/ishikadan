@@ -141,7 +141,7 @@ section
 *****************************************:*/
 .room_header {
   height: 80px;
-  background: #000;
+  background: #ffffff;
 }
 
 /****************************************:
@@ -149,17 +149,101 @@ section
 fv
 
 *****************************************:*/
-.room_mv {
-  height: 500px;
-  background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
-  position: relative;
-}
-
 /****************************************:
 
 section
 
 *****************************************:*/
+.section_txt {
+  margin-bottom: 135px;
+  line-height: 2;
+  text-align: center;
+}
+
+.room_mv {
+  height: 500px;
+  margin-bottom: 36px;
+  background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
+  position: relative;
+}
+
+.room_txt {
+  color: #ffffff;
+  font-size: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.room_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.room_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 173px;
+  display: flex;
+}
+
+.room_list:last-child {
+  margin-bottom: 0;
+}
+
+.room_list:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.room_img {
+  height: 300px;
+  width: 525px;
+  margin-top: -57px;
+  overflow: hidden;
+}
+
+.room_view {
+  height: 381px;
+  margin-bottom: 84px;
+  padding-left: 80px;
+  background: url(../../img/common/bg.jpg);
+}
+
+.room_view_ttl {
+  margin-top: 60px;
+  margin-bottom: 52px;
+  font-size: 24px;
+  /*IE9以前に対応する*/
+  font-size: 1.5rem;
+}
+
+.room_view_txt {
+  margin-bottom: 52px;
+  line-height: 2;
+}
+
+.list {
+  margin-bottom: 98px;
+}
+
 /****************************************:
 
 fv
