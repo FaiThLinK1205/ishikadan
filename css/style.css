@@ -149,13 +149,102 @@ fv
 section
 
 *****************************************:*/
+.alter_header {
+  width: 100%;
+  height: 80px;
+  background-color: #ccc;
+}
+
 /****************************************:
 
 fv
 
 *****************************************:*/
-.onsen {
-  margin: 0 auto;
+.ons_fv {
+  width: 1920px;
+  height: 500px;
+  margin-bottom: 37px;
+  background: url(../../img/section-onsen/onsen-header.jpg) center/cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ons_ttl {
+  color: #ffffff;
+  font-size: 34px;
+}
+
+.ons_pan {
+  margin-bottom: 97px;
+}
+
+.ons_top_txt {
+  margin-bottom: 78px;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+}
+
+.ons_imgTxt {
+  margin-bottom: 84px;
+}
+
+.ons_imgBox {
+  width: 525px;
+  height: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.ons_txtBox {
+  width: 813px;
+  height: 381px;
+  padding: 60px 127px 165px 238px;
+  margin: -243px 0 0 367px;
+  background: transparent url(../../img/common/bg.jpg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ons_boxTtl {
+  margin-bottom: 52px;
+  font-size: 24px;
+  line-height: 2;
+}
+
+.ons_txt {
+  font-size: 16px;
+  line-height: 2;
+}
+
+._imgBoxUnder {
+  margin: 0 0 0 auto;
+}
+
+._txtBoxUnder {
+  padding: 60px 209px 165px 60px;
+  margin: -242px auto 0 0;
 }
 
 /****************************************:
@@ -163,3 +252,6 @@ fv
 section
 
 *****************************************:*/
+.ons_pan {
+  font-size: 16px;
+}

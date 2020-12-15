@@ -2,6 +2,17 @@
 // oheya.html用
 
 
+.alter_header{
+  width: 100%;
+  height: 80px;
+  background-color: #ccc;
+}
+
+@mixin flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /****************************************:
 
@@ -10,12 +21,72 @@ fv
 *****************************************:*/
 
 
-.onsen{
-  margin: 0 auto;
+.ons{
+
+  &_fv{
+    width: 1920px;
+    height: 500px;
+    margin-bottom: 37px;
+    background: url(../../img/section-onsen/onsen-header.jpg) center / cover;
+    @include flexCenter;
+  }
+
+  &_ttl{
+    color: $cWhite;
+    font-size: 34px;
+  }
+  
+  &_pan{
+    margin-bottom: 97px;
+  }
+
+  &_top_txt{
+    margin-bottom: 78px;
+    font-size: 16px;
+    line-height: 2 ;
+    text-align: center;
+  }
+
+  &_imgTxt{
+    margin-bottom: 84px;
+  }
+
+  &_imgBox{
+    width: 525px;
+    height: 300px;
+    @include flexCenter;
+    overflow: hidden;
+  }
+
+  &_txtBox{
+    width: 813px;
+    height: 381px;
+    padding: 60px 127px 165px 238px;
+    margin: -243px 0 0 367px;
+    background: transparent url(../../img/common/bg.jpg);
+    box-sizing: border-box;
+  }
+
+  &_boxTtl{
+    margin-bottom: 52px;
+    font-size: 24px;
+    line-height: 2;
+  }
+
+  &_txt{
+    font-size: 16px;
+    line-height: 2;
+  }
 }
 
+._imgBoxUnder{
+  margin: 0 0 0 auto;
+}
 
-
+._txtBoxUnder{
+  padding: 60px 209px 165px 60px;
+  margin: -242px auto 0 0;
+}
 
 /****************************************:
 
@@ -23,7 +94,13 @@ section
 
 *****************************************:*/
 
+.ons{
 
+  
+  &_pan{
+    font-size: 16px;
+  }
+}
 
 
 
