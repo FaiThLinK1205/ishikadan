@@ -8,10 +8,70 @@ header
 
 *****************************************:*/
 
+.header{
+  width: 100%;
+  margin:20px;
+  position: absolute;
+  top:0;
+  display: flex;
+  align-items: center;
+  color: $cWhite;
 
+  &_right{
+    width: 700px;
+    display: flex;
+    align-items: center;
+  }
 
+  &_ttl{
+    width: 200px;
+    height: 40px;
+    margin-right: 120px;
+  }
 
+  &_logo{
+    width: 200px;
+    height: 40px;
+  }
 
+}
+
+.header_nav{
+
+  &_list{
+    display: flex;
+  }
+  
+  &_link{
+    margin-right: 30px;
+    padding: 20px;
+  }
+}
+
+.reserve{
+  margin: 0 20px 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  
+  &_link{
+    width: 170px;
+    padding: 19px;
+    margin-right: 20px;
+    @include rem(16);
+    line-height: 0;
+    letter-spacing: 0;
+    background: $cOcher;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
 
 /****************************************:
 
@@ -19,8 +79,55 @@ fv
 
 *****************************************:*/
 
+.fv{
+  width: 100%;
+  height: 1079px;
+  background: url("../img/top/mainbg01.jpg")center / cover no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  color: $cWhite;
+  @include rem(34);
+  z-index: -99;
 
+  &_ttl{
+    writing-mode: vertical-lr;
+    margin: 282px 51px 0 0;
+    line-height: 1em;
+    letter-spacing: 0;
+  }
+  
+  &_ttl2{
+    margin: 282px 508px 0 0;
+    writing-mode: vertical-lr;
+    line-height: 1em;
+    letter-spacing: 0;
+  }
 
+}
+
+.fv_under{
+  margin: 0 auto;
+  background: url("../img/common/bg.jpg")center / cover no-repeat;
+  
+  & .section_inner{
+    writing-mode: vertical-rl;
+    height: 681px;
+  }
+
+  &_ttl{
+    margin: 64px 101px 0 33px;
+    line-height: 1em;
+    letter-spacing: 0;
+    @include rem(28);
+  }
+  
+  &_ttl2{
+    margin: 149px 0 0 0;
+    line-height: 1em;
+    letter-spacing: 0;
+    @include rem(28);
+  }
+}
 
 
 
