@@ -202,7 +202,7 @@ section
 }
 
 .room_list:last-child {
-  margin-bottom: 0;
+  margin-bottom: 150px;
 }
 
 .room_list:nth-child(even) {
@@ -242,6 +242,106 @@ section
 
 .list {
   margin-bottom: 98px;
+}
+
+.footer_info {
+  height: 522px;
+  background: url(../../img/common/bg3.jpg) center/cover;
+}
+
+.footer_nav {
+  margin: 0 auto;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.footer_nav_list {
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.footer_nav_item {
+  margin-left: 34px;
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+}
+
+.footer_nav_item:last-child {
+  margin-left: 0;
+}
+
+.footer_logo {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+}
+
+.footer_ttl {
+  margin-bottom: 72px;
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5.76px;
+  line-height: 1.5;
+}
+
+.footer_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 23px;
+  text-align: center;
+}
+
+.footer_box_post {
+  margin-right: 21px;
+}
+
+.footer_box_address {
+  letter-spacing: 2.88px;
+}
+
+.footer_box2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 61px;
+  text-align: center;
+}
+
+.footer_box2_tel {
+  margin-right: 20px;
+}
+
+.footer_copyright {
+  height: 60px;
+  background: #000000;
+  text-align: center;
+}
+
+.footer_copyright_txt {
+  padding-top: 23px;
+  padding-bottom: 25px;
+  color: #ffffff;
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  display: block;
 }
 
 /****************************************:
