@@ -106,7 +106,7 @@ fv
 }
 
 .fv_under{
-  margin: 0 auto;
+  margin: 0 0 106px auto;
   background: url("../img/common/bg.jpg")center / cover no-repeat;
   
   & .section_inner{
@@ -127,6 +127,30 @@ fv
     letter-spacing: 0;
     @include rem(28);
   }
+
+  &_wrap{
+    margin: 150px 100px 0 308px;
+  }
+  
+  &_txt.fv_txt,
+  &_txt2.fv_txt,
+  &_txt3.fv_txt{
+    margin-left: 118px;
+    line-height: 1.73em;
+    letter-spacing: 0;
+    @include rem(16);
+  }
+
+  &_txt4{
+    margin-bottom: 120px;
+    text-align: right;
+  }
+
+  &_list{
+    list-style: none;
+  }
+  
+  
 }
 
 
