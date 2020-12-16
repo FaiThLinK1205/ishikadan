@@ -88,6 +88,7 @@ body {
 
 nav
 
+<<<<<<< HEAD
 *****************************************:*/
 /****************************************:
 
@@ -229,6 +230,264 @@ fv
 section
 
 *****************************************:*/
+=======
+*****************************************:*/
+/****************************************:
+
+button
+
+*****************************************:*/
+/****************************************:
+
+モーダル
+
+*****************************************:*/
+/****************************************:
+
+パンくずリスト
+
+*****************************************:*/
+/****************************************:
+
+各ページのスタイル読み込み
+
+*****************************************:*/
+/****************************************:
+
+header
+
+*****************************************:*/
+/****************************************:
+
+fv
+
+*****************************************:*/
+/****************************************:
+
+section
+
+*****************************************:*/
+/****************************************:
+
+footer
+
+*****************************************:*/
+/****************************************:
+
+fv
+
+*****************************************:*/
+/****************************************:
+
+section
+
+*****************************************:*/
+.room_header {
+  height: 80px;
+  background: #ffffff;
+}
+
+/****************************************:
+
+fv
+
+*****************************************:*/
+/****************************************:
+
+section
+
+*****************************************:*/
+.section_txt {
+  margin-bottom: 135px;
+  line-height: 2;
+  text-align: center;
+}
+
+.room_mv {
+  height: 500px;
+  margin-bottom: 36px;
+  background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
+  position: relative;
+}
+
+.room_txt {
+  color: #ffffff;
+  font-size: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.room_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.room_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 173px;
+  display: flex;
+}
+
+.room_list:last-child {
+  margin-bottom: 150px;
+}
+
+.room_list:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.room_img {
+  height: 300px;
+  width: 525px;
+  margin-top: -57px;
+  overflow: hidden;
+}
+
+.room_view {
+  height: 381px;
+  margin-bottom: 84px;
+  padding-left: 80px;
+  background: url(../../img/common/bg.jpg);
+}
+
+.room_view_ttl {
+  margin-top: 60px;
+  margin-bottom: 52px;
+  font-size: 24px;
+  /*IE9以前に対応する*/
+  font-size: 1.5rem;
+}
+
+.room_view_txt {
+  margin-bottom: 52px;
+  line-height: 2;
+}
+
+.list {
+  margin-bottom: 98px;
+}
+
+.footer_info {
+  height: 522px;
+  background: url(../../img/common/bg3.jpg) center/cover;
+}
+
+.footer_nav {
+  margin: 0 auto;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.footer_nav_list {
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.footer_nav_item {
+  margin-left: 34px;
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+}
+
+.footer_nav_item:last-child {
+  margin-left: 0;
+}
+
+.footer_logo {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+}
+
+.footer_ttl {
+  margin-bottom: 72px;
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5.76px;
+  line-height: 1.5;
+}
+
+.footer_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 23px;
+  text-align: center;
+}
+
+.footer_box_post {
+  margin-right: 21px;
+}
+
+.footer_box_address {
+  letter-spacing: 2.88px;
+}
+
+.footer_box2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 61px;
+  text-align: center;
+}
+
+.footer_box2_tel {
+  margin-right: 20px;
+}
+
+.footer_copyright {
+  height: 60px;
+  background: #000000;
+  text-align: center;
+}
+
+.footer_copyright_txt {
+  padding-top: 23px;
+  padding-bottom: 25px;
+  color: #ffffff;
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  display: block;
+}
+
+>>>>>>> 624b92f845e2304c3632ab137dbc1c7487469e6f
 /****************************************:
 
 fv
