@@ -26,8 +26,8 @@ header
   display: flex;
   align-items: center;
 
-  &_right{
-    width: 700px;
+  &_left{
+    width: 50%;
     display: flex;
     align-items: center;
   }
@@ -48,11 +48,16 @@ header
   
   &_link{
     margin-right: 30px;
-    padding: 20px;
+    padding: 10px;
+  }
+
+  &_link:last-of-type{
+    margin-right: 0;
   }
 }
 
 .reserve{
+  width: 50%;
   margin: 0 20px 0 auto;
   display: flex;
   justify-content: flex-end;
