@@ -143,11 +143,6 @@ header
   margin-right: 120px;
 }
 
-.header_logo {
-  width: 200px;
-  height: 40px;
-}
-
 .header_nav_list {
   display: flex;
 }
