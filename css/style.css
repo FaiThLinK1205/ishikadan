@@ -257,11 +257,193 @@ button
 header
 
 *****************************************:*/
+.header {
+  width: 100%;
+  margin: 20px;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.header_right {
+  width: 700px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_ttl {
+  width: 200px;
+  height: 40px;
+  margin-right: 120px;
+}
+
+.header_logo {
+  width: 200px;
+  height: 40px;
+}
+
+.header_nav_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_nav_link {
+  margin-right: 30px;
+  padding: 20px;
+}
+
+.reserve {
+  margin: 0 20px 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.reserve_link {
+  width: 170px;
+  padding: 19px;
+  margin-right: 20px;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  line-height: 0;
+  letter-spacing: 0;
+  background: #978F10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reserve_img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 /****************************************:
 
 fv
 
 *****************************************:*/
+.fv {
+  width: 100%;
+  height: 1079px;
+  background: url("../img/top/mainbg01.jpg") center/cover no-repeat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #ffffff;
+  font-size: 34px;
+  /*IE9以前に対応する*/
+  font-size: 2.125rem;
+  z-index: -99;
+}
+
+.fv_ttl {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 282px 51px 0 0;
+  line-height: 1em;
+  letter-spacing: 0;
+}
+
+.fv_ttl2 {
+  margin: 282px 508px 0 0;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  line-height: 1em;
+  letter-spacing: 0;
+}
+
+.fv_under {
+  margin: 0 0 106px auto;
+  background: url("../img/common/bg.jpg") center/cover no-repeat;
+}
+
+.fv_under .section_inner {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  height: 681px;
+}
+
+.fv_under_ttl {
+  margin: 64px 101px 0 33px;
+  line-height: 1em;
+  letter-spacing: 0;
+  font-size: 28px;
+  /*IE9以前に対応する*/
+  font-size: 1.75rem;
+}
+
+.fv_under_ttl2 {
+  margin: 149px 0 0 0;
+  line-height: 1em;
+  letter-spacing: 0;
+  font-size: 28px;
+  /*IE9以前に対応する*/
+  font-size: 1.75rem;
+}
+
+.fv_under_wrap {
+  margin: 150px 100px 0 308px;
+}
+
+.fv_under_txt.fv_txt, .fv_under_txt2.fv_txt, .fv_under_txt3.fv_txt {
+  margin-left: 118px;
+  line-height: 1.73em;
+  letter-spacing: 0;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+.fv_under_txt4 {
+  margin-bottom: 120px;
+  text-align: right;
+}
+
+.fv_under_list {
+  list-style: none;
+}
+
 /****************************************:
 
 section
