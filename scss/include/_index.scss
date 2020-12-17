@@ -212,6 +212,158 @@ section
 }
 
 
+/****************************************:
+
+section
+
+*****************************************:*/
+
+.plan {
+  height: 775px;
+  background: url(../../img/common/bg02.jpg) center / cover;
+
+  &_logo {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto 60px;
+    padding-top: 60px;
+  }
+
+  &_box {
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_boxImg {
+    height: 209px;
+    width: 331px;
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+
+  &_ttl {
+    @include rem(20);
+    line-height: 1.6;
+    margin-bottom: 36px;
+  }
+
+  &_txt {
+    line-height: 2;
+  }
+
+}
+
+/****************************************:
+
+section
+
+*****************************************:*/
+.notice {
+  margin-top: 60px;
+  margin-bottom: 75px;
+
+  &_logo {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto 20px;
+
+  }
+
+  &_sales {
+    display: flex;
+    justify-content: center;
+
+    &_txt {
+      margin-top: 46px;
+      margin-right: 53px;
+      margin-bottom: 64px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_box {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &_item {
+    height: 130px;
+    width: 570px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+    display: flex;
+
+    &_img {
+      height: 100px;
+      width: 103px;
+    }
+  }
+
+  &_textbox {
+    margin-left: 30px;
+
+    &_date {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+
+/****************************************:
+
+section
+
+*****************************************:*/
+
+.access {
+  height: 1381px;
+  background: url(../../img/common/bg.jpg) center /cover;
+
+  &_logo {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto 20px;
+  }
+
+  &_box {
+    margin-top: 66px;
+    display: flex;
+  }
+
+  &_imgbox {
+    height: 370px;
+    width: 656px;
+
+  }
+
+  &_textbox {
+    margin-top: 20px;
+    margin-left: 83px;
+    text-align: left;
+  }
+
+  &_txt {
+    margin-bottom: 24px;
+    font-weight: bold;
+  }
+
+  &_map {
+    display: block;
+    margin: 69px auto 110px;
+  }
+
+}
+
 
 
 
