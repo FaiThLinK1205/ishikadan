@@ -20,6 +20,28 @@
   <img src="" alt="" class="mock"/>
 
   <div class="container">
+
+    <!-- モーダル -->
+    <div class="modal">
+      <h3 class="modal_ttl">宿泊予約</h3>
+      <p class="modal_txt">お名前</p>
+      <input type="text" placeholder="例：石井正悟" class="modal_input">
+      <p class="modal_txt">メールアドレス</p>
+      <input type="email" placeholder="例：Example@example.com" class="modal_input">
+      <p class="modal_txt">ご希望プラン（空いているプランのみ表示されます）</p>
+      <select name="plan" id="" class="modal_input">
+        <option value="" hidden>プランを選択してください</option>
+        <option value="①">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+        <option value="②">②平日に優雅に楽しむ、特別宿泊プラン</option>
+        <option value="③">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+      </select>
+      <p class="modal_txt">日時選択</p>
+      <input type="email" placeholder="日時を選択してください" class="modal_input">
+
+      <input type="submit" value="送信する" class="modal_btn">
+    </div>
+
+
   <!-- ヘッダー -->
     <header class="header">
       <h1 class="header_ttl">
@@ -141,8 +163,31 @@
     </main>
 
     <!-- フッター -->
-    <footer class="footer">
-      <small class="footer_txt"></small>
+    <footer class="footer" data-aos="fade-up">
+      <div class="footer_info">
+        <nav class="footer_nav">
+          <ul class="footer_nav_list">
+            <li class="footer_nav_item"><a href="oheya.html" class="footer_nav_link">お　部　屋</a></li>
+            <li class="footer_nav_item"><a href="menu.html" class="footer_nav_link">お　料　理</a></li>
+            <li class="footer_nav_item"><a href="onsen.html" class="footer_nav_link">温　泉</a></li>
+          </ul>
+        </nav>
+        <div class="footer_logo">
+          <img src="img/common/logo02.png" alt="ロゴ画像">
+        </div>
+        <h2 class="footer_ttl">石井花壇</h2>
+        <div class="footer_box">
+          <p class="footer_box_post">〒000-0000</p>
+          <p class="footer_box_address">山形県鶴岡市xxxxxxxxxxx</p>
+        </div>
+        <div class="footer_box2">
+          <p class="footer_box2_tel">TEL.000-0000-0000</p>
+          <p class="footer_box2_fax">FAX.00-0000-0000</p>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <small class="footer_copyright_txt">Copyright © 石井花壇 All Rights Reserved.</small>
+      </div>
     </footer>
 
   </div><!-- /.container -->

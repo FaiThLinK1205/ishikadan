@@ -1,16 +1,16 @@
 // サイトコンテンツスタイル用
 // oheya.html用
 
-
+.room_header {
+  height: 80px;
+  background: $cWhite;
+}
 
 /****************************************:
 
 fv
 
 *****************************************:*/
-
-
-
 
 
 
@@ -22,9 +22,169 @@ section
 *****************************************:*/
 
 
+.section_txt {
+  margin-bottom: 135px;
+  line-height: 2;
+  text-align: center;
+}
 
 
+.room {
+
+  &_mv {
+    height: 500px;
+    margin-bottom: 36px;
+    background: url(../../img/section-oheya/oheya-header.jpg)center / cover;
+    position: relative;
+  }
+
+  &_txt {
+    color: $cWhite;
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: bold;
 
 
+  }
+
+  &_list {
+    display: flex;
+    margin-bottom: 173px;
+
+    &:last-child {
+      margin-bottom: 150px;
+    }
+
+    display: flex;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &_img {
+    height: 300px;
+    width: 525px;
+    margin-top: -57px;
+    overflow: hidden;
+  }
+
+  &_view {
+    height: 381px;
+    margin-bottom: 84px;
+    padding-left: 80px;
+    background: url(../../img/common/bg.jpg);
 
 
+    &_ttl {
+      margin-top: 60px;
+      margin-bottom: 52px;
+      @include rem(24);
+    }
+
+    &_txt {
+      margin-bottom: 52px;
+      line-height: 2;
+    }
+  }
+}
+
+.list {
+  margin-bottom: 98px;
+}
+
+
+.footer {
+  &_info {
+    height: 522px;
+    background: url(../../img/common/bg3.jpg) center / cover;
+  }
+
+  &_nav {
+    margin: 0 auto;
+    writing-mode: vertical-rl;
+
+    &_list {
+      margin-top: 64px;
+      margin-bottom: 96px;
+    }
+
+    &_item {
+      margin-left: 34px;
+
+      &:last-child {
+        margin-left: 0;
+      }
+
+      @include rem(18);
+    }
+  }
+
+  &_logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 20px;
+  }
+
+  &_ttl {
+    margin-bottom: 72px;
+    @include rem(32);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5.76px;
+    line-height: 1.5;
+
+  }
+
+  &_box {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 23px;
+    text-align: center;
+
+    &_post {
+      margin-right: 21px;
+    }
+
+    &_address {
+      letter-spacing: 2.88px;
+    }
+  }
+
+  &_box2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 61px;
+    text-align: center;
+
+    &_tel {
+      margin-right: 20px;
+    }
+
+  }
+
+  &_copyright {
+    height: 60px;
+    background: $cBlack;
+    text-align: center;
+
+    &_txt {
+      padding-top: 23px;
+      padding-bottom: 25px;
+      color: $cWhite;
+      @include rem(12);
+      display: block;
+    }
+  }
+
+}

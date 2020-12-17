@@ -158,5 +158,63 @@ section
 
 
 
+/****************************************:
+
+modal
+
+*****************************************:*/
 
 
+.container{
+  position: relative;
+}
+
+
+.modal{
+  width: 550px;
+  height: 600px;
+  padding: 29px 60px 90px;
+  font-weight: bold;
+  box-sizing: border-box;
+  background-color: $cWhite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  &_ttl{
+    margin: 0 auto 30px;
+    font-size: 20px;
+    display: table;
+  }
+  
+  &_txt{
+    margin-bottom: 5px;
+    font-size: 16px;
+    
+    &:nth-child(2){
+      padding-top: 30px;
+      border-top: 1px solid #ccc;
+    }
+  }
+
+  &_input{
+    width: 429px;
+    padding: 8px 0;
+    margin-bottom: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::-ms-expand{
+      display: none;
+    }
+  }
+
+  &_btn{
+    width: 198px;
+    height: 42px;
+    margin: 64px auto 0;
+    display: block;
+  }
+}
