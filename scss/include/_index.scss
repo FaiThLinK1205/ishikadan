@@ -1,6 +1,17 @@
 // サイトコンテンツスタイル用
 // index.html用
 
+/****************************************:
+
+共通
+
+*****************************************:*/
+
+.__btn{
+  padding: 20px 40px;
+  border: 1px solid $cBlack;
+  line-height: 0;
+}
 
 /****************************************:
 
@@ -149,12 +160,7 @@ fv
   &_list{
     list-style: none;
   }
-  
-  
 }
-
-
-
 
 /****************************************:
 
@@ -162,7 +168,43 @@ section
 
 *****************************************:*/
 
+.top_about{
+  margin-bottom: -44px;
 
+  &_box{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom:122px;
+  }
+
+  &_box:nth-child(even){
+    flex-direction: row-reverse;
+  }
+
+  &_left{
+    width: 55%;
+    height: 545px;
+  }
+
+  &_right{
+    width: 30%;
+    margin: 32px 0 0 137px;
+    letter-spacing: 0;
+  }
+  
+  &_ttl{
+    @include rem(36);
+    line-height: 1.5em;
+    margin-bottom: 50px;
+  }
+
+  &_txt{
+    @include rem(16);
+    line-height: 2em;
+    margin-bottom: 75px;
+  }
+
+}
 
 
 
