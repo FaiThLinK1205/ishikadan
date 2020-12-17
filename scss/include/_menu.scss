@@ -9,9 +9,84 @@ fv
 
 *****************************************:*/
 
+.menu {
+
+    &_fv {
+        width: 1920px;
+        height: 500px;
+        margin-bottom: 37px;
+        background: url(../img/section-menu/menu-header.jpg) center / cover;
+        position: relative;
+    }
 
 
 
+
+    &_ttl {
+        color: $cWhite;
+        @include rem(34);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &_pan {
+        margin-bottom: 97px;
+    }
+
+    &_top_txt {
+        margin-bottom: 78px;
+        @include rem(16);
+        text-align: center;
+    }
+
+    &_box {
+        margin-bottom: 84px;
+    }
+
+
+
+    &_img {
+        width: 525px;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    &_txtBox {
+        width: 813px;
+        height: 381px;
+        margin: -243px 0 0 367px;
+        background: url(../img/common/bg.jpg);
+    }
+
+    &_txtBox_ttl {
+        margin-left: 238px;
+        margin-bottom: 52px;
+        padding-top: 60px;
+        @include rem(24);
+        line-height: 2;
+    }
+
+    &_txtBox_txt {
+        margin-left: 238px;
+        @include rem(16);
+        line-height: 2;
+    }
+}
+
+._img_wrapper {
+    margin: 0 0 0 auto;
+}
+
+._txt_wrapper {
+    margin: -242px auto 0 0;
+    padding: 0 274px 165px 0;
+}
+
+._txtBox_wrap {
+    margin-left: 60px;
+}
 
 
 
