@@ -176,6 +176,7 @@ header
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .reserve_img {
@@ -742,17 +743,9 @@ section
 }
 
 .ons_flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .pan_li {
@@ -777,18 +770,9 @@ fv
   height: 500px;
   margin-bottom: 37px;
   background: url(../../img/section-onsen/onsen-header.jpg) center/cover;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .ons_ttl {
@@ -817,18 +801,9 @@ fv
 .ons_imgBox {
   width: 525px;
   height: 300px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -839,8 +814,7 @@ fv
   margin: -243px 0 0 367px;
   font-weight: bold;
   background: transparent url(../../img/common/bg.jpg);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .ons_boxTtl {
@@ -920,14 +894,12 @@ modal
   height: 600px;
   padding: 29px 60px 90px;
   font-weight: bold;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #ffffff;
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .modal_ttl {
@@ -950,8 +922,6 @@ modal
   width: 429px;
   padding: 8px 0;
   margin-bottom: 5px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
