@@ -551,7 +551,7 @@ footer
 fv
 
 *****************************************:*/
-.menu_fv {
+.common_fv {
   width: 1920px;
   height: 500px;
   margin-bottom: 37px;
@@ -559,7 +559,7 @@ fv
   position: relative;
 }
 
-.menu_ttl {
+.common_ttl {
   color: #ffffff;
   font-size: 34px;
   /*IE9以前に対応する*/
@@ -571,11 +571,11 @@ fv
           transform: translate(-50%, -50%);
 }
 
-.menu_pan {
+.common_pan {
   margin-bottom: 97px;
 }
 
-.menu_top_txt {
+.common_top_txt {
   margin-bottom: 78px;
   font-size: 16px;
   /*IE9以前に対応する*/
@@ -583,24 +583,24 @@ fv
   text-align: center;
 }
 
-.menu_box {
+.common_box {
   margin-bottom: 84px;
 }
 
-.menu_img {
+.common_img {
   width: 525px;
   height: 300px;
   overflow: hidden;
 }
 
-.menu_txtBox {
+.common_txtBox {
   width: 813px;
   height: 381px;
   margin: -243px 0 0 367px;
   background: url(../img/common/bg.jpg);
 }
 
-.menu_txtBox_ttl {
+.common_txtBox_ttl {
   margin-left: 238px;
   margin-bottom: 52px;
   padding-top: 60px;
@@ -610,7 +610,7 @@ fv
   line-height: 2;
 }
 
-.menu_txtBox_txt {
+.common_txtBox_txt {
   margin-left: 238px;
   font-size: 16px;
   /*IE9以前に対応する*/
