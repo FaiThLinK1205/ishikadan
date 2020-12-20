@@ -50,5 +50,93 @@ button
 
 
 
+/****************************************:
 
+footer
 
+*****************************************:*/
+
+.footer {
+  &_info {
+    background: url(../../img/common/bg3.jpg) center / cover;
+  }
+
+  &_nav {
+    margin: 0 auto;
+    writing-mode: vertical-rl;
+
+    &_list {
+      margin-top: 64px;
+      margin-bottom: 96px;
+    }
+
+    &_item {
+      margin-left: 34px;
+
+      &:last-child {
+        margin-left: 0;
+      }
+
+      @include rem(18);
+    }
+  }
+
+  &_logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 20px;
+  }
+
+  &_ttl {
+    margin-bottom: 72px;
+    @include rem(32);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5.76px;
+    line-height: 1.5;
+
+  }
+
+  &_box {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 23px;
+    text-align: center;
+
+    &_post {
+      margin-right: 21px;
+    }
+
+    &_address {
+      letter-spacing: 2.88px;
+    }
+  }
+
+  &_box2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 61px;
+
+    &_tel {
+      margin-right: 20px;
+    }
+
+  }
+
+  &_copyright {
+    height: 60px;
+    background: $cBlack;
+    text-align: center;
+
+    &_txt {
+      padding-top: 23px;
+      padding-bottom: 25px;
+      color: $cWhite;
+      @include rem(12);
+      display: block;
+    }
+  }
+
+}

@@ -106,6 +106,110 @@ button
 *****************************************:*/
 /****************************************:
 
+footer
+
+*****************************************:*/
+.footer_info {
+  background: url(../../img/common/bg3.jpg) center/cover;
+}
+
+.footer_nav {
+  margin: 0 auto;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.footer_nav_list {
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.footer_nav_item {
+  margin-left: 34px;
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+}
+
+.footer_nav_item:last-child {
+  margin-left: 0;
+}
+
+.footer_logo {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+}
+
+.footer_ttl {
+  margin-bottom: 72px;
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5.76px;
+  line-height: 1.5;
+}
+
+.footer_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 23px;
+  text-align: center;
+}
+
+.footer_box_post {
+  margin-right: 21px;
+}
+
+.footer_box_address {
+  letter-spacing: 2.88px;
+}
+
+.footer_box2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 61px;
+}
+
+.footer_box2_tel {
+  margin-right: 20px;
+}
+
+.footer_copyright {
+  height: 60px;
+  background: #000000;
+  text-align: center;
+}
+
+.footer_copyright_txt {
+  padding-top: 23px;
+  padding-bottom: 25px;
+  color: #ffffff;
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  display: block;
+}
+
+/****************************************:
+
 各ページのスタイル読み込み
 
 *****************************************:*/
@@ -551,7 +655,7 @@ footer
 fv
 
 *****************************************:*/
-.menu_fv {
+.common_fv {
   width: 1920px;
   height: 500px;
   margin-bottom: 37px;
@@ -559,7 +663,7 @@ fv
   position: relative;
 }
 
-.menu_ttl {
+.common_ttl {
   color: #ffffff;
   font-size: 34px;
   /*IE9以前に対応する*/
@@ -571,11 +675,11 @@ fv
           transform: translate(-50%, -50%);
 }
 
-.menu_pan {
+.common_pan {
   margin-bottom: 97px;
 }
 
-.menu_top_txt {
+.common_top_txt {
   margin-bottom: 78px;
   font-size: 16px;
   /*IE9以前に対応する*/
@@ -583,24 +687,24 @@ fv
   text-align: center;
 }
 
-.menu_box {
+.common_box {
   margin-bottom: 84px;
 }
 
-.menu_img {
+.common_img {
   width: 525px;
   height: 300px;
   overflow: hidden;
 }
 
-.menu_txtBox {
+.common_txtBox {
   width: 813px;
   height: 381px;
   margin: -243px 0 0 367px;
   background: url(../img/common/bg.jpg);
 }
 
-.menu_txtBox_ttl {
+.common_txtBox_ttl {
   margin-left: 238px;
   margin-bottom: 52px;
   padding-top: 60px;
@@ -610,7 +714,7 @@ fv
   line-height: 2;
 }
 
-.menu_txtBox_txt {
+.common_txtBox_txt {
   margin-left: 238px;
   font-size: 16px;
   /*IE9以前に対応する*/
@@ -636,210 +740,39 @@ fv
 section
 
 *****************************************:*/
-.room_header {
-  height: 80px;
-  background: #ffffff;
-}
-
 /****************************************:
 
 fv
 
 *****************************************:*/
+.mb52 {
+  margin-bottom: 52px;
+}
+
+.note {
+  font-size: 14px;
+  /*IE9以前に対応する*/
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.oheya_fv {
+  width: 1920px;
+  height: 500px;
+  margin-bottom: 37px;
+  background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
+  position: relative;
+}
+
+.oheya_common_txtBox_txt_note {
+  margin-left: 238px;
+}
+
 /****************************************:
 
 section
 
 *****************************************:*/
-.section_txt {
-  margin-bottom: 135px;
-  line-height: 2;
-  text-align: center;
-}
-
-.room_mv {
-  height: 500px;
-  margin-bottom: 36px;
-  background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
-  position: relative;
-}
-
-.room_txt {
-  color: #ffffff;
-  font-size: 34px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.room_box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  font-weight: bold;
-}
-
-.room_list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 173px;
-  display: flex;
-}
-
-.room_list:last-child {
-  margin-bottom: 150px;
-}
-
-.room_list:nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.room_img {
-  height: 300px;
-  width: 525px;
-  margin-top: -57px;
-  overflow: hidden;
-}
-
-.room_view {
-  height: 381px;
-  margin-bottom: 84px;
-  padding-left: 80px;
-  background: url(../../img/common/bg.jpg) center/cover;
-}
-
-.room_view_ttl {
-  margin-top: 60px;
-  margin-bottom: 52px;
-  font-size: 24px;
-  /*IE9以前に対応する*/
-  font-size: 1.5rem;
-}
-
-.room_view_txt {
-  margin-bottom: 52px;
-  line-height: 2;
-}
-
-.list {
-  margin-bottom: 98px;
-}
-
-.footer_info {
-  background: url(../../img/common/bg3.jpg) center/cover;
-}
-
-.footer_nav {
-  margin: 0 auto;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-.footer_nav_list {
-  margin-top: 64px;
-  margin-bottom: 96px;
-}
-
-.footer_nav_item {
-  margin-left: 34px;
-  font-size: 18px;
-  /*IE9以前に対応する*/
-  font-size: 1.125rem;
-}
-
-.footer_nav_item:last-child {
-  margin-left: 0;
-}
-
-.footer_logo {
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 20px;
-}
-
-.footer_ttl {
-  margin-bottom: 72px;
-  font-size: 32px;
-  /*IE9以前に対応する*/
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 5.76px;
-  line-height: 1.5;
-}
-
-.footer_box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto 23px;
-  text-align: center;
-}
-
-.footer_box_post {
-  margin-right: 21px;
-}
-
-.footer_box_address {
-  letter-spacing: 2.88px;
-}
-
-.footer_box2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 61px;
-}
-
-.footer_box2_tel {
-  margin-right: 20px;
-}
-
-.footer_copyright {
-  height: 60px;
-  background: #000000;
-  text-align: center;
-}
-
-.footer_copyright_txt {
-  padding-top: 23px;
-  padding-bottom: 25px;
-  color: #ffffff;
-  font-size: 12px;
-  /*IE9以前に対応する*/
-  font-size: 0.75rem;
-  display: block;
-}
-
 .alter_header {
   width: 100%;
   height: 80px;
