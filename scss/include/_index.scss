@@ -19,7 +19,7 @@ header
 
 .header{
   width: 100%;
-  margin:20px;
+  padding: 20px;
   color: $cWhite;
   position: absolute;
   top:0;
@@ -58,14 +58,12 @@ header
 
 .reserve{
   width: 50%;
-  margin: 0 20px 0 auto;
   display: flex;
   justify-content: flex-end;
   
   &_link{
     width: 170px;
     padding: 19px;
-    margin-right: 20px;
     @include rem(16);
     line-height: 0;
     letter-spacing: 0;
