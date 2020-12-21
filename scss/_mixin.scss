@@ -22,7 +22,7 @@
 
 //タブレット（モバイルファースト）
 @mixin tab {
-    @media screen and (min-width: $widthTab) and (max-width: $widthPc) {
+    @media screen and (max-width: $widthTab) and (min-width: $widthSP) {
         @content;
     }
 }
