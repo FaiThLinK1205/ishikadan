@@ -14,7 +14,7 @@ $(() => {
   // ---モーダル---
   // モーダル発火
   let body = $("body");
-  let modalTrigger = $(".modal_trigger");
+  let modalTrigger = $(".reserve_link");
   modalTrigger.click(function(){
     modal.addClass("in");
     modalBgc.addClass("in");
