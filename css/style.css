@@ -219,6 +219,7 @@ header
   top: 0;
   display: flex;
   align-items: center;
+  z-index: 99;
 }
 
 .header_left {
@@ -262,24 +263,8 @@ header
   letter-spacing: 0;
   background: #978F10;
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 43966a241c823146afb8e310e4ab5366fd35e77b
->>>>>>> 23ae131664222318990ace8c65f6f8628cc731d0
   cursor: pointer;
 }
 
@@ -333,7 +318,7 @@ fv
   }
   51% {
     opacity: 0;
-    z-index: 7;
+    z-index: 3;
     transform: scale(1.05);
   }
   100% {
@@ -356,7 +341,7 @@ fv
   position: absolute;
   top: 282px;
   right: 508px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .fv_ttl2 {
@@ -364,7 +349,7 @@ fv
   position: absolute;
   top: 282px;
   right: 608px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .fv_under {
@@ -926,8 +911,7 @@ body.modalin {
   top: 50%;
   left: 50%;
   z-index: 1001;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: none;
 }
 
@@ -942,12 +926,6 @@ body.modalin {
   font-weight: bold;
   box-sizing: border-box;
   background-color: #ffffff;
-<<<<<<< HEAD
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-=======
   position: relative;
 }
 
@@ -965,18 +943,13 @@ body.modalin {
   width: 30px;
   height: 2px;
   background-color: #707070;
-  -webkit-transform-origin: 100% 0%;
-          transform-origin: 100% 0%;
-  -webkit-transform: translateX(-30%) rotate(-45deg);
-          transform: translateX(-30%) rotate(-45deg);
+  transform-origin: 100% 0%;
+  transform: translateX(-30%) rotate(-45deg);
 }
 
 .modal_erase:nth-child(2) {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transform: translateX(3%) rotate(45deg);
-          transform: translateX(3%) rotate(45deg);
->>>>>>> 43966a241c823146afb8e310e4ab5366fd35e77b
+  transform-origin: 0% 0%;
+  transform: translateX(3%) rotate(45deg);
 }
 
 .modal_ttl {
@@ -1021,7 +994,6 @@ body.modalin {
   top: 0;
   left: 0;
   z-index: -1000;
-  -webkit-transition: .3s;
   transition: .3s;
 }
 
