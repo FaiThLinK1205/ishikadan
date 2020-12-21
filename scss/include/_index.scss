@@ -89,31 +89,76 @@ fv
 
 *****************************************:*/
 
+
+//========== ズームアップスライドショー ============
+.main_imgBox {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main_img {
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999;
+  animation: anime 15s 0s infinite;
+  -webkit-animation: anime 15s 0s infinite;
+}
+
+.main_img:nth-of-type(2) {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.main_img:nth-of-type(3) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+@keyframes anime {
+  0% {   opacity: 1; }
+  17% {  opacity: 1; }
+  34% {  opacity: 1; }
+  51% { 
+    opacity: 0;
+    z-index: 7;
+    transform: scale(1.05);
+  }
+  100% {  opacity: 0 }
+}
+
+// =========================
+
 .fv{
   width: 100%;
-  height: 1079px;
+  height: 100vh;
   @include rem(34);
   color: $cWhite;
-  background: url("../img/top/mainbg01.jpg")center / cover no-repeat;
-  display: flex;
-  justify-content: flex-end;
-  z-index: -99;
+  position: relative;
 
-  &_ttl{
-    margin: 282px 51px 0 0;
-    line-height: 1em;
-    letter-spacing: 0;
-    writing-mode: vertical-lr;
-  }
-  
-  &_ttl2{
-    margin: 282px 508px 0 0;
-    line-height: 1em;
-    letter-spacing: 0;
-    writing-mode: vertical-lr;
-  }
+&_ttl{
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 282px;
+  right: 508px;
+  z-index: 100;
+}
+
+&_ttl2{
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 282px;
+  right: 608px;
+  z-index: 100;
+}
 
 }
+
 
 .fv_under{
   margin: 0 0 106px auto;
@@ -123,7 +168,7 @@ fv
     height: 681px;
     writing-mode: vertical-rl;
   }
-
+  
   &_ttl{
     margin: 64px 101px 0 33px;
     line-height: 1em;
@@ -244,9 +289,9 @@ section
   }
 
   &_ttl {
+    margin-bottom: 36px;
     @include rem(20);
     line-height: 1.6;
-    margin-bottom: 36px;
   }
 
   &_txt {
@@ -364,10 +409,6 @@ section
   }
 
 }
-
-
-
-
 
 /****************************************:
 
