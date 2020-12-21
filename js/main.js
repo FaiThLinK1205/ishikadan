@@ -2,7 +2,34 @@
 
 $(() => {
 
+  // ---flatpickr---
+  const config = {
+    mode: "multiple",
+    minDate: "today",
+  }
+  flatpickr('.flatpickr', config);
 
+
+
+  // ---モーダル---
+  // モーダル発火
+  let body = $("body");
+  let modalTrigger = $(".modal_trigger");
+  modalTrigger.click(function(){
+    modal.addClass("in");
+    modalBgc.addClass("in");
+    body.addClass("modalin");
+  })
+
+  // モーダル消す
+  let modal = $(".modal");
+  let modalBgc = $(".modal_bgc");
+  let modalEraseBox = $(".modal_eraseBox");
+  modalEraseBox.click(function(){
+    modal.removeClass("in");
+    modalBgc.removeClass("in");
+    body.removeClass("modalin");
+  })
 
 
 
