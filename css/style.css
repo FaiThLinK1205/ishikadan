@@ -248,6 +248,7 @@ header
 
 .reserve {
   width: 50%;
+  margin: 0 0 0 auto;
   display: flex;
   justify-content: flex-end;
 }
@@ -262,23 +263,9 @@ header
   letter-spacing: 0;
   background: #978F10;
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-=======
->>>>>>> 43966a241c823146afb8e310e4ab5366fd35e77b
   cursor: pointer;
->>>>>>> 5c43fddff80b7f4aeb4e0449e3b044e3ad6c9c60
 }
 
 .reserve_img {
@@ -346,36 +333,6 @@ fv
   /*IE9以前に対応する*/
   font-size: 2.125rem;
   color: #ffffff;
-<<<<<<< HEAD
-  background: url("../img/top/mainbg01.jpg") center/cover no-repeat;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  z-index: -99;
-}
-
-.fv_ttl {
-  margin: 282px 51px 0 0;
-  line-height: 1em;
-  letter-spacing: 0;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-}
-
-.fv_ttl2 {
-  margin: 282px 508px 0 0;
-  line-height: 1em;
-  letter-spacing: 0;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-=======
   position: relative;
 }
 
@@ -393,7 +350,6 @@ fv
   top: 282px;
   right: 608px;
   z-index: 100;
->>>>>>> 5c43fddff80b7f4aeb4e0449e3b044e3ad6c9c60
 }
 
 .fv_under {
@@ -742,85 +698,18 @@ section
 header下層ページデザイン修正
 
 *****************************************:*/
-<<<<<<< HEAD
-.section_txt {
-  margin-bottom: 135px;
-  line-height: 2;
-  text-align: center;
-}
-
-.room_mv {
-  height: 500px;
-  margin-bottom: 36px;
-  background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
-  position: relative;
-}
-
-.room_txt {
-  color: #ffffff;
-  font-size: 34px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.room_box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-=======
 .row {
   height: 80px;
   margin: 0;
   color: #000000;
->>>>>>> 5c43fddff80b7f4aeb4e0449e3b044e3ad6c9c60
   font-weight: bold;
   background: #ffffff;
   z-index: 999;
   position: fixed;
 }
 
-<<<<<<< HEAD
-.room_list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 173px;
-  display: flex;
-}
-
-.room_list:last-child {
-  margin-bottom: 150px;
-}
-
-.room_list:nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.room_img {
-  height: 300px;
-  width: 525px;
-  margin-top: -57px;
-  overflow: hidden;
-=======
 .sub {
   margin-left: 20px;
->>>>>>> 5c43fddff80b7f4aeb4e0449e3b044e3ad6c9c60
 }
 
 /****************************************:
@@ -832,73 +721,19 @@ fv
   margin-bottom: 52px;
 }
 
-<<<<<<< HEAD
-.footer_nav {
-  margin: 0 auto;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-.footer_nav_list {
-  margin-top: 64px;
-  margin-bottom: 96px;
-}
-
-.footer_nav_item {
-  margin-left: 34px;
-  font-size: 18px;
-=======
 .note {
   font-size: 14px;
->>>>>>> 5c43fddff80b7f4aeb4e0449e3b044e3ad6c9c60
   /*IE9以前に対応する*/
   font-size: 0.875rem;
   line-height: 1.5;
 }
 
-<<<<<<< HEAD
-.footer_box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto 23px;
-  text-align: center;
-}
-
-.footer_box_post {
-  margin-right: 21px;
-}
-
-.footer_box_address {
-  letter-spacing: 2.88px;
-}
-
-.footer_box2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 61px;
-=======
 .oheya_fv {
   width: 1920px;
   height: 580px;
   margin-bottom: 37px;
   background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
   position: relative;
->>>>>>> 5c43fddff80b7f4aeb4e0449e3b044e3ad6c9c60
 }
 
 .oheya_common_txtBox_txt_note {
@@ -1076,8 +911,7 @@ body.modalin {
   top: 50%;
   left: 50%;
   z-index: 10;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: none;
 }
 
@@ -1092,12 +926,6 @@ body.modalin {
   font-weight: bold;
   box-sizing: border-box;
   background-color: #ffffff;
-<<<<<<< HEAD
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-=======
   position: relative;
 }
 
@@ -1115,18 +943,13 @@ body.modalin {
   width: 30px;
   height: 2px;
   background-color: #707070;
-  -webkit-transform-origin: 100% 0%;
-          transform-origin: 100% 0%;
-  -webkit-transform: translateX(-30%) rotate(-45deg);
-          transform: translateX(-30%) rotate(-45deg);
+  transform-origin: 100% 0%;
+  transform: translateX(-30%) rotate(-45deg);
 }
 
 .modal_erase:nth-child(2) {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-  -webkit-transform: translateX(3%) rotate(45deg);
-          transform: translateX(3%) rotate(45deg);
->>>>>>> 43966a241c823146afb8e310e4ab5366fd35e77b
+  transform-origin: 0% 0%;
+  transform: translateX(3%) rotate(45deg);
 }
 
 .modal_ttl {
