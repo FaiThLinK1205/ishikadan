@@ -94,20 +94,20 @@ fv
 .main_imgBox {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .main_img {
-  z-index: -999;
-  opacity: 0;
   width: 100%;
   height: 100vh;
+  opacity: 0;
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-animation: anime 15s 0s infinite;
+  z-index: -999;
   animation: anime 15s 0s infinite;
+  -webkit-animation: anime 15s 0s infinite;
 }
 
 .main_img:nth-of-type(2) {
@@ -121,27 +121,15 @@ fv
 }
 
 @keyframes anime {
-  0% {
-    opacity: 1;
-  }
-
-  17% {
-    opacity: 1;
-  }
-
-  34% {
-    opacity: 1;
-  }
-
-  51% {
+  0% {   opacity: 1; }
+  17% {  opacity: 1; }
+  34% {  opacity: 1; }
+  51% { 
     opacity: 0;
-    transform: scale(1.05);
     z-index: 7;
+    transform: scale(1.05);
   }
-
-  100% {
-    opacity: 0
-  }
+  100% {  opacity: 0 }
 }
 
 // =========================
@@ -301,9 +289,9 @@ section
   }
 
   &_ttl {
+    margin-bottom: 36px;
     @include rem(20);
     line-height: 1.6;
-    margin-bottom: 36px;
   }
 
   &_txt {
@@ -421,10 +409,6 @@ section
   }
 
 }
-
-
-
-
 
 /****************************************:
 
