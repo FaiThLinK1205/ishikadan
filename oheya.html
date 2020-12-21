@@ -23,45 +23,53 @@
 
   <div class="container">
     <!-- ヘッダー -->
-    <header class="header">
-      <h1 class="header_ttl">
-        <a href="index.html">
-          <img src="" alt="">
-        </a>
-      </h1><!-- /.header_ttl -->
+    <header class="header row">
 
-      <!-- ハンバーガーメニュー部分 -->
-      <div class="nav_ham">
+      <div class="header_left">
+        <h1 class="header_ttl">
+          <a href="index.html" class="header_link">
+            <img src="img/common/sub-header-logo.png" alt="logo" class="header_logo sub">
+          </a>
+        </h1><!-- /.header_ttl -->
+        
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav_ham">
+          
+        </div><!-- ハンバーガーメニューここまで -->
+        
+        <!-- ナビ -->
+        <nav class="header_nav" id="nav">
+          <ul class="header_nav_list">
+            <li class="header_nav_item">
+              <a href="oheya.html" class="header_nav_link">お部屋</a>
+            </li>
+            <!-- /.nav_item -->
+            <li class="header_nav_item">
+              <a href="menu.html" class="header_nav_link">
+                お料理
+              </a>
+            </li>
+            <!-- /.nav_item -->
+            <li class="header_nav_item">
+              <a href="onsen.html" class="header_nav_link">
+                温泉
+              </a>
+            </li>
+            <!-- /.nav_item -->
+          </ul>
+        </nav>
+        <!-- /.nav -->
+      </div>
+      <!-- header_right -->
 
-      </div><!-- ハンバーガーメニューここまで -->
-
-
-      <!-- ナビ -->
-      <nav class="nav" id="nav">
-        <ul class="nav_list">
-          <li class="nav_item">
-            <a href="#" class="nav_link"></a>
-          </li>
-          <!-- /.nav_item -->
-          <li class="nav_item">
-            <a href="#" class="nav_link"></a>
-          </li>
-          <!-- /.nav_item -->
-          <li class="nav_item">
-            <a href="#" class="nav_link"></a>
-          </li>
-          <!-- /.nav_item -->
-          <li class="nav_item">
-            <a href="#" class="nav_link"></a>
-          </li>
-          <!-- /.nav_item -->
-          <li class="nav_item">
-            <a href="#" class="nav_link"></a>
-          </li>
-          <!-- /.nav_item -->
-        </ul>
-      </nav>
-      <!-- /.nav -->
+      <div class="reserve">
+          <div class="reserve_wap">
+          <p href="#" class="reserve_link">
+            <img src="img/common/calender.png" alt="カレンダー" class="reserve_img">
+            宿泊予約
+          </p>
+          </div>
+        </div>
     </header>
 
 
@@ -77,7 +85,16 @@
 
       <section class="section">
         <div class="section_inner">
-          <div class="common_pan">パンくずリスト</div>
+        <ul class="breadcrumbs_list ons_flex" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="pan_li"><a
+              itemprop="item" href="index.html"><span itemprop="name">トップ</span></a>
+            <meta itemprop="position" content="1">
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="pan_li"><a
+              itemprop="item" href="#"><span itemprop="name">お部屋</span></a>
+            <meta itemprop="position" content="2">
+          </li>
+        </ul>
           <p class="common_top_txt">創業より受け継がれてきた石井花壇の和の造り<br>温海の雄大な絶景を堪能していただけるように設計された客室<br>ゆるやかに流れ行く時間に身を委ねて
           </p>
         </div>

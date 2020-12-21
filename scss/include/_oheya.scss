@@ -1,5 +1,27 @@
 // サイトコンテンツスタイル用
-// menu.html用
+
+
+
+/****************************************:
+
+header下層ページデザイン修正
+
+*****************************************:*/
+
+
+.row {
+  height: 80px;
+  margin: 0;
+  color: $cBlack;
+  font-weight: bold;
+  background: $cWhite;
+  z-index: 999;
+  position: fixed;
+}
+
+.sub {
+  margin-left: 20px;
+}
 
 
 
@@ -23,7 +45,7 @@ fv
 
   &_fv {
     width: 1920px;
-    height: 500px;
+    height: 580px;
     margin-bottom: 37px;
     background: url(../../img/section-oheya/oheya-header.jpg) center / cover;
     position: relative;
