@@ -190,31 +190,76 @@ header
 fv
 
 *****************************************:*/
+.main_imgBox {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.main_img {
+  z-index: -999;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: anime 15s 0s infinite;
+}
+
+.main_img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+
+.main_img:nth-of-type(3) {
+  animation-delay: 10s;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+    transform: scale(1.05);
+    z-index: 7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .fv {
   width: 100%;
-  height: 1079px;
+  height: 100vh;
   font-size: 34px;
   /*IE9以前に対応する*/
   font-size: 2.125rem;
   color: #ffffff;
-  background: url("../img/top/mainbg01.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: flex-end;
-  z-index: -99;
+  position: relative;
 }
 
 .fv_ttl {
-  margin: 282px 51px 0 0;
-  line-height: 1em;
-  letter-spacing: 0;
   writing-mode: vertical-lr;
+  position: absolute;
+  top: 282px;
+  right: 508px;
+  z-index: 100;
 }
 
 .fv_ttl2 {
-  margin: 282px 508px 0 0;
-  line-height: 1em;
-  letter-spacing: 0;
   writing-mode: vertical-lr;
+  position: absolute;
+  top: 282px;
+  right: 608px;
+  z-index: 100;
 }
 
 .fv_under {
