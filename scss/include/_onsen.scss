@@ -164,6 +164,9 @@ modal
 
 *****************************************:*/
 
+body.modalin{
+  overflow: hidden;
+}
 
 .container{
   position: relative;
@@ -171,16 +174,49 @@ modal
 
 
 .modal{
-  width: 550px;
-  height: 600px;
-  padding: 29px 60px 90px;
-  font-weight: bold;
-  box-sizing: border-box;
-  background-color: $cWhite;
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 10;
   transform: translate(-50%,-50%);
+  display: none;
+
+  &.in{
+    display: block;
+  }
+  
+  &_inner{
+    width: 550px;
+    height: 600px;
+    padding: 29px 60px 90px;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: $cWhite;
+    position: relative;
+  }
+
+  &_eraseBox{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 35px;
+    right: 22px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  &_erase{
+    width: 30px;
+    height: 2px;
+    background-color: $cGray;
+    transform-origin: 100% 0%;
+    transform: translateX(-30%) rotate(-45deg);
+
+    &:nth-child(2){
+      transform-origin: 0% 0%;
+      transform: translateX(3%) rotate(45deg);
+    }
+  }
 
   &_ttl{
     margin: 0 auto 30px;
@@ -215,6 +251,20 @@ modal
     width: 198px;
     height: 42px;
     margin: 64px auto 0;
+    display: block;
+  }
+
+  &_bgc{
+    display: none;
+  }
+
+  &_bgc.in{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
     display: block;
   }
 }
