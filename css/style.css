@@ -234,6 +234,10 @@ header
   margin-right: 120px;
 }
 
+.header_logo-b {
+  display: none;
+}
+
 .header_nav_list {
   display: flex;
 }
@@ -241,6 +245,7 @@ header
 .header_nav_link {
   margin-right: 30px;
   padding: 10px;
+  color: #ffffff;
 }
 
 .header_nav_link:last-of-type {
@@ -272,6 +277,27 @@ header
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+.header.fix {
+  height: 80px;
+  margin: 0;
+  font-weight: bold;
+  background: #ffffff;
+  z-index: 999;
+  position: fixed;
+}
+
+.header_logo-w.fix {
+  display: none;
+}
+
+.header_logo-b.fix {
+  display: block;
+}
+
+.header_nav_link.fix {
+  color: #000000;
 }
 
 /****************************************:
