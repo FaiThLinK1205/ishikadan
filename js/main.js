@@ -32,10 +32,43 @@ $(() => {
   })
 
 
-
-
-
+  
+  
 });
+
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() > 80) {
+//     $('#header').addClass('row');
+//   } else {
+//     $('#header').removeClass('row');
+//   }
+// });
+
+// ======= header =========
+// スクロールしたらヘッダー固定
+let header = $('.header');
+let navLink = $('.header_nav_link');
+let logoW = $('.header_logo-w');
+let logoB = $('.header_logo-b');
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() > 80) {
+    header.addClass('fix');
+    navLink.addClass('fix');
+    logoW.addClass('fix');
+    logoB.addClass('fix');
+    } else {
+    header.removeClass('fix');
+    navLink.removeClass('fix');
+    logoW.removeClass('fix');
+    logoB.removeClass('fix');
+    }
+});
+
+
+
+
 
 AOS.init({
   // Global settings:
