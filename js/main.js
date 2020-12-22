@@ -36,7 +36,7 @@ $(() => {
 // ======= header =========
 // スクロールしたらヘッダー固定
 let header = $('.header');
-let headerA = $('.header_nav_link');
+let navLink = $('.header_nav_link');
 let logoW = $('.header_logo-w');
 let logoB = $('.header_logo-b');
 
@@ -44,17 +44,16 @@ $(window).scroll(function () {
 
     if ($(window).scrollTop() > 80) {
     header.addClass('fix');
-    headerA.addClass('fix');
+    navLink.addClass('fix');
     logoW.addClass('fix');
     logoB.addClass('fix');
     } else {
     header.removeClass('fix');
-    headerA.removeClass('fix');
+    navLink.removeClass('fix');
     logoW.removeClass('fix');
     logoB.removeClass('fix');
     }
 });
-
 
 
 
