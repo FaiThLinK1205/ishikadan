@@ -39,8 +39,12 @@ header
     margin-right: 120px;
   }
 
-}
+  &_logo-b {
+    display: none;
+  }
 
+}
+  
 .header_nav{
 
   &_list{
@@ -50,6 +54,7 @@ header
   &_link{
     margin-right: 30px;
     padding: 10px;
+    color: $cWhite;
   }
 
   &_link:last-of-type{
@@ -79,6 +84,31 @@ header
     width: 20px;
     height: 20px;
     margin-right: 10px;
+  }
+}
+
+// ヘッダー固定時
+.header{
+
+  &.fix {
+    height: 80px;
+    margin: 0;
+    font-weight: bold;
+    background: $cWhite;
+    z-index: 999;
+    position: fixed;
+  }
+  
+  &_logo-w.fix{
+    display: none;
+  }
+
+  &_logo-b.fix{
+    display: block;
+  }
+
+  &_nav_link.fix{
+    color: $cBlack;
   }
 }
 
