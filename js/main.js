@@ -31,7 +31,18 @@ $(() => {
     body.removeClass("modalin");
   })
 
+
+  
+  
 });
+
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() > 80) {
+//     $('#header').addClass('row');
+//   } else {
+//     $('#header').removeClass('row');
+//   }
+// });
 
 // ======= header =========
 // スクロールしたらヘッダー固定
@@ -54,6 +65,7 @@ $(window).scroll(function () {
     logoB.removeClass('fix');
     }
 });
+
 
 
 
