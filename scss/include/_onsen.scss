@@ -2,11 +2,6 @@
 // oheya.html用
 
 
-.alter_header{
-  width: 100%;
-  height: 80px;
-  background-color: #ccc;
-}
 
 @mixin flexCenterOns{
   display: flex;
@@ -16,6 +11,10 @@
 
 .ons_mb{
   margin-bottom: 200px !important;
+
+  @include tab{
+    margin-bottom: 70px !important;
+  }
 }
 
 .ons_flex{
@@ -40,6 +39,101 @@ fv
 
 *****************************************:*/
 
+.ons_body{
+  .header{
+  
+    &_ttl{
+
+      @include tab{
+        height: auto;
+        margin-right: 80px;
+      }
+    }
+  }
+
+  .row {
+    height: 80px;
+    margin: 0;
+    color: $cBlack;
+    font-weight: bold;
+    background: $cWhite;
+    z-index: 999;
+    position: fixed;
+
+    @include tab{
+      height: 60px;
+    }
+  }
+  
+  
+  
+  .header_nav{
+    
+    &_link{
+      
+      @include tab{
+        width: 53px;
+        padding: 0 !important;
+        margin-right: 30px;
+        display: block;
+      }
+    }
+  
+    &_link:last-of-type{
+      margin-right: 0;
+    }
+  }
+
+  .footer {
+  
+    &_nav {
+  
+      &_list {
+        margin-top: 24px;
+        margin-bottom: 30px;
+      }
+  
+      &_item {
+        @include rem(15);
+      }
+    }
+  
+    &_logo {
+      width: 32px;
+      height: 32px;
+    }
+  
+    &_ttl {
+      margin-bottom: 27px;
+      @include rem(23);
+    }
+
+  
+    &_box2 {
+      padding-bottom: 41px;
+    }
+  
+    &_copyright {
+  
+      &_txt {
+        padding-top: 23px;
+        padding-bottom: 20px;
+        @include rem(9);
+      }
+    }
+  }
+}
+
+
+.ons_main{  
+
+  .section_inner{
+    @include tab{
+      max-width: 677px;
+    }
+  }
+}
+
 
 .ons{
 
@@ -49,6 +143,11 @@ fv
     margin-bottom: 37px;
     background: url(../../img/section-onsen/onsen-header.jpg) center / cover;
     @include flexCenterOns;
+
+    @include tab{
+      width: 751px;
+      height: 432px;
+    }
   }
 
   &_ttl{
@@ -68,6 +167,10 @@ fv
     font-weight: bold;
     line-height: 2 ;
     text-align: center;
+
+    @include tab{
+      font-size: 14px;
+    }
   }
 
   &_imgTxt{
@@ -79,6 +182,11 @@ fv
     height: 300px;
     @include flexCenterOns;
     overflow: hidden;
+
+    @include tab{
+      width: 367px;
+      height: 245px;
+    }
   }
 
   &_txtBox{
@@ -89,17 +197,33 @@ fv
     font-weight: bold;
     background: transparent url(../../img/common/bg.jpg);
     box-sizing: border-box;
+
+    @include tab{
+      width: 439px;
+      height: 260px;
+      padding: 38px 20px 50px 143px;
+      margin: -200px 0 0 246px;
+    }
   }
 
   &_boxTtl{
     margin-bottom: 52px;
     font-size: 24px;
     line-height: 2;
+
+    @include tab{
+      margin-bottom: 30px;
+      font-size: 17px;
+    }
   }
 
   &_txt{
     font-size: 16px;
     line-height: 2;
+
+    @include tab{
+      font-size: 12px;
+    }
   }
 
   &_effect{
@@ -107,10 +231,20 @@ fv
     margin-bottom: 100px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+
+    @include tab{
+      padding: 40px 0;
+      margin-bottom: 40px;
+    }
     
     &_ttl{
       margin-bottom: 69px;
       font-size: 26px;
+
+      @include tab{
+      margin-bottom: 49px;
+      font-size: 22px;
+      }
     }
   }
 
@@ -119,10 +253,18 @@ fv
     margin: 0 auto;
     font-weight: bold;
 
+    @include tab{
+      width: 677px;
+    }
+
     &_tr{
       text-align: left;
       font-size: 15px;
       border-top: 1px solid #ccc;
+
+      @include tab{
+        font-size: 13px;
+      }
 
       &:nth-child(3){
         border-bottom: 1px solid #ccc;
@@ -132,11 +274,20 @@ fv
     &_th{
       width: 187px;
       padding: 17px 125px 17px 0;
+
+      @include tab{
+        width: 148px;
+        padding: 13px 0 13px 15px;
+      }
     }
 
     &_td{
       width: 660px;
       padding: 17px 0;
+
+      @include tab{
+        width: 650px;
+      }
     }
   }
 }
@@ -148,6 +299,13 @@ fv
 ._txtBoxUnder{
   padding: 60px 209px 165px 60px;
   margin: -242px auto 0 0;
+
+  @include tab{
+    width: 439px;
+    height: 265px;
+    padding: 40px 145px 39px 31px;
+    margin: -200px 0 0 0;
+  }
 }
 
 /****************************************:
