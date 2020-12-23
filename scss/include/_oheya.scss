@@ -45,15 +45,11 @@ fv
 .oheya {
 
   &_fv {
-    width: 1920px;
+    width: 100%;
     height: 580px;
     margin-bottom: 37px;
     background: url(../../img/section-oheya/oheya-header.jpg) center / cover;
     position: relative;
-
-    @include tab {
-      width: 768px;
-    }
   }
 
   &_common_txtBox_txt_note {
