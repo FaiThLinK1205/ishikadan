@@ -25,6 +25,7 @@ header下層ページデザイン修正
 
 
 
+
 /****************************************:
 
 fv
@@ -49,6 +50,10 @@ fv
     margin-bottom: 37px;
     background: url(../../img/section-oheya/oheya-header.jpg) center / cover;
     position: relative;
+
+    @include tab {
+      width: 768px;
+    }
   }
 
   &_common_txtBox_txt_note {
