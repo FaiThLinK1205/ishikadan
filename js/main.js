@@ -31,9 +31,6 @@ $(() => {
     body.removeClass("modalin");
   })
 
-
-  
-  
 });
 
 // $(window).scroll(function () {
