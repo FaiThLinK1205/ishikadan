@@ -52,15 +52,6 @@ $(function () {
   });
 
 
-});
-
-// $(window).scroll(function () {
-//   if ($(window).scrollTop() > 80) {
-//     $('#header').addClass('row');
-//   } else {
-//     $('#header').removeClass('row');
-//   }
-// });
 
 // ======= header =========
 // スクロールしたらヘッダー固定
