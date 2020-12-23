@@ -334,6 +334,17 @@ section
 section
 
 *****************************************:*/
+
+
+.area ul {
+  display: none;
+}
+
+.area ul.show {
+  display: block;
+}
+
+
 .notice {
   margin-top: 60px;
   margin-bottom: 75px;
