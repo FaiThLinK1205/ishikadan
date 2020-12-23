@@ -770,6 +770,12 @@ fv
   position: relative;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .oheya_fv {
+    width: 768px;
+  }
+}
+
 .oheya_common_txtBox_txt_note {
   margin-left: 238px;
 }
