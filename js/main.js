@@ -30,8 +30,28 @@ $(() => {
     modalBgc.removeClass("in");
     body.removeClass("modalin");
   })
-
 });
+
+$(function () {
+
+  // ①タブをクリックしたら発動
+  $('.tab li').click(function () {
+
+    // ②クリックされたタブの順番を変数に格納
+    var index = $('.tab li').index(this);
+
+    // ③クリック済みタブのデザインを設定したcssのクラスを一旦削除
+    $('.tab li').removeClass('active');
+
+    // ④クリックされたタブにクリック済みデザインを適用する
+    $(this).addClass('active');
+
+    // ⑤コンテンツを一旦非表示にし、クリックされた順番のコンテンツのみを表示
+    $('.area ul').removeClass('show').eq(index).addClass('show');
+
+  });
+
+
 
 // ======= header =========
 // スクロールしたらヘッダー固定
@@ -71,11 +91,11 @@ AOS.init({
   throttleDelay: 99, //ページのスクロール中に使用されるスロットルの遅延
 
   // Effect settings:
-  offset: 100, //元のトリガーポイントからのオフセット（ ピクセル単位）
-  delay: 0,  //アニメーションが始まるまでの遅延時間（0-3000の間で指定。50ms毎）
+  offset: 50, //元のトリガーポイントからのオフセット（ ピクセル単位）
+  delay: 200,  //アニメーションが始まるまでの遅延時間（0-3000の間で指定。50ms毎）
   duration: 1500, //アニメーション開始から終了までの時間（0-3000の間で指定。50ms毎）
   easing: 'ease-out', //AOSアニメーションのイージング
-  once: false, //スクロール中にアニメーションを１回だけ実行するか
+  once: true, //スクロール中にアニメーションを１回だけ実行するか
   mirror: false, //スクロール中にアニメーションするか
   anchorPlacement: 'center-bottom', //トリガーポイントの設定。要素のどの位置がウィンドウのどの位置にきたら実行させるか
   // （'要素位置-ウィンドウ位置'）位置は「 top」「 center」「 bottom」 でそれぞれ指定。

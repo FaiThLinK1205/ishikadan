@@ -594,7 +594,16 @@ section
 section
 
 *****************************************:*/
+.area ul {
+  display: none;
+}
+
+.area ul.show {
+  display: block;
+}
+
 .notice {
+  height: 697px;
   margin-top: 60px;
   margin-bottom: 75px;
 }
@@ -703,7 +712,7 @@ fv
 
 *****************************************:*/
 .common_fv {
-  width: 100%;
+  width: 1920px;
   height: 500px;
   margin-bottom: 37px;
   background: url(../img/section-menu/menu-header.jpg) center/cover;
@@ -741,6 +750,12 @@ fv
   width: 525px;
   height: 300px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .common_img {
+    width: 50%;
+  }
 }
 
 .common_txtBox {
@@ -808,7 +823,7 @@ fv
 }
 
 .oheya_fv {
-  width: 1920px;
+  width: 100%;
   height: 580px;
   margin-bottom: 37px;
   background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
@@ -824,14 +839,14 @@ fv
 section
 
 *****************************************:*/
-.alter_header {
-  width: 100%;
-  height: 80px;
-  background-color: #ccc;
-}
-
 .ons_mb {
   margin-bottom: 200px !important;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_mb {
+    margin-bottom: 70px !important;
+  }
 }
 
 .ons_flex {
@@ -857,6 +872,83 @@ section
 fv
 
 *****************************************:*/
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_body .header_ttl {
+    height: auto;
+    margin-right: 80px;
+  }
+}
+
+.ons_body .row {
+  height: 80px;
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  background: #ffffff;
+  z-index: 999;
+  position: fixed;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_body .row {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_body .header_nav_link {
+    width: 53px;
+    padding: 0 !important;
+    margin-right: 30px;
+    display: block;
+  }
+}
+
+.ons_body .header_nav_link:last-of-type {
+  margin-right: 0;
+}
+
+.ons_body .footer_nav_list {
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.ons_body .footer_nav_item {
+  font-size: 15px;
+  /*IE9以前に対応する*/
+  font-size: 0.9375rem;
+}
+
+.ons_body .footer_logo {
+  width: 32px;
+  height: 32px;
+}
+
+.ons_body .footer_ttl {
+  margin-bottom: 27px;
+  font-size: 23px;
+  /*IE9以前に対応する*/
+  font-size: 1.4375rem;
+}
+
+.ons_body .footer_box2 {
+  padding-bottom: 41px;
+}
+
+.ons_body .footer_copyright_txt {
+  padding-top: 23px;
+  padding-bottom: 20px;
+  font-size: 9px;
+  /*IE9以前に対応する*/
+  font-size: 0.5625rem;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_main .section_inner {
+    max-width: 677px;
+  }
+}
+
 .ons_fv {
   width: 1920px;
   height: 580px;
@@ -865,6 +957,13 @@ fv
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_fv {
+    width: 751px;
+    height: 432px;
+  }
 }
 
 .ons_ttl {
@@ -886,6 +985,12 @@ fv
   text-align: center;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_top_txt {
+    font-size: 14px;
+  }
+}
+
 .ons_imgTxt {
   margin-bottom: 84px;
 }
@@ -899,6 +1004,13 @@ fv
   overflow: hidden;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_imgBox {
+    width: 367px;
+    height: 245px;
+  }
+}
+
 .ons_txtBox {
   width: 813px;
   height: 381px;
@@ -909,15 +1021,37 @@ fv
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_txtBox {
+    width: 439px;
+    height: 260px;
+    padding: 38px 20px 50px 143px;
+    margin: -200px 0 0 246px;
+  }
+}
+
 .ons_boxTtl {
   margin-bottom: 52px;
   font-size: 24px;
   line-height: 2;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_boxTtl {
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+}
+
 .ons_txt {
   font-size: 16px;
   line-height: 2;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_txt {
+    font-size: 12px;
+  }
 }
 
 .ons_effect {
@@ -927,9 +1061,23 @@ fv
   border-bottom: 1px solid #ccc;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_effect {
+    padding: 40px 0;
+    margin-bottom: 40px;
+  }
+}
+
 .ons_effect_ttl {
   margin-bottom: 69px;
   font-size: 26px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_effect_ttl {
+    margin-bottom: 49px;
+    font-size: 22px;
+  }
 }
 
 .ons_table {
@@ -938,10 +1086,22 @@ fv
   font-weight: bold;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_table {
+    width: 677px;
+  }
+}
+
 .ons_table_tr {
   text-align: left;
   font-size: 15px;
   border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_table_tr {
+    font-size: 13px;
+  }
 }
 
 .ons_table_tr:nth-child(3) {
@@ -953,9 +1113,22 @@ fv
   padding: 17px 125px 17px 0;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_table_th {
+    width: 148px;
+    padding: 13px 0 13px 15px;
+  }
+}
+
 .ons_table_td {
   width: 660px;
   padding: 17px 0;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_table_td {
+    width: 650px;
+  }
 }
 
 ._imgBoxUnder {
@@ -965,6 +1138,15 @@ fv
 ._txtBoxUnder {
   padding: 60px 209px 165px 60px;
   margin: -242px auto 0 0;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  ._txtBoxUnder {
+    width: 439px;
+    height: 265px;
+    padding: 40px 145px 39px 31px;
+    margin: -200px 0 0 0;
+  }
 }
 
 /****************************************:

@@ -9,6 +9,7 @@
   <meta name="description" content="" />
   <!--PC：１２０文字以内 スマホ：70文字以内-->
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -20,7 +21,7 @@
 
 </head>
 
-<body>
+<body class="ons_body">
   <!-- モック -->
   <img src="" alt="" class="mock"/>
 
@@ -108,7 +109,7 @@
 
 
     <!-- メインコンテンツ -->
-    <main>
+    <main class="ons_main">
       <!--ここからセクション （セクションの数だけコピーして使う）-->
 
 
@@ -126,7 +127,7 @@
       </div>
 
 
-      <section class="section">
+      <section class="section" data-aos="fade-up">
         <div class="section_inner">
           <p class="ons_top_txt">心も身体も癒やす汐の温泉。<br> 湯あたりしにくく、赤ちゃんから年配の方までどなたでもゆっくりと安心して入っていただけます。<br> 柔らかく優しい湯にじっくりと漬かれば、心身共にリラックスできます。</p>
         </div>
@@ -136,7 +137,7 @@
       <section class="section">
         <div class="section_inner">
 
-          <div class="ons_imgTxt">
+          <div class="ons_imgTxt" data-aos="fade-up">
             <div class="ons_imgBox">
               <img src="img/section-onsen/onsen01.jpg" alt="">
             </div>
@@ -146,7 +147,7 @@
             </div>
           </div>
 
-          <div class="ons_imgTxt ons_mb">
+          <div class="ons_imgTxt ons_mb" data-aos="fade-up">
             <div class="ons_imgBox _imgBoxUnder">
               <img src="img/section-onsen/onsen02.jpg" alt="">
             </div>
@@ -159,7 +160,7 @@
         </div>
       </section>
 
-      <section class="section ">
+      <section class="section" data-aos="fade-up">
         <div class="section_inner ons_effect">
         <h2 class="section_ttl ons_effect_ttl">温泉の効能</h2>
           <table class="ons_table">
@@ -213,6 +214,7 @@
   </div><!-- /.container -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 
