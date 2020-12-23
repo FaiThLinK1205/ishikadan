@@ -536,6 +536,7 @@ section
 }
 
 .notice {
+  height: 697px;
   margin-top: 60px;
   margin-bottom: 75px;
 }
@@ -684,6 +685,12 @@ fv
   overflow: hidden;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .common_img {
+    width: 50%;
+  }
+}
+
 .common_txtBox {
   width: 813px;
   height: 381px;
@@ -763,17 +770,11 @@ fv
 }
 
 .oheya_fv {
-  width: 1920px;
+  width: 100%;
   height: 580px;
   margin-bottom: 37px;
   background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
   position: relative;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .oheya_fv {
-    width: 768px;
-  }
 }
 
 .oheya_common_txtBox_txt_note {

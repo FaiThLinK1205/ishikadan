@@ -51,6 +51,10 @@ fv
         width: 525px;
         height: 300px;
         overflow: hidden;
+
+        @include tab {
+            width: 50%;
+        }
     }
 
     &_txtBox {
