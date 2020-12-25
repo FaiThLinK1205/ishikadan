@@ -18,6 +18,7 @@
   position: fixed;
   display: flex;
   align-items: center;
+  transition: .3s;
 
   &_left {
     width: 50%;
