@@ -51,19 +51,6 @@ fv
     }
   }
 
-  .row {
-    height: 80px;
-    margin: 0;
-    color: $cBlack;
-    font-weight: bold;
-    background: $cWhite;
-    z-index: 999;
-    position: fixed;
-
-    @include tab{
-      height: 60px;
-    }
-  }
   
   
   

@@ -881,22 +881,6 @@ fv
   }
 }
 
-.ons_body .row {
-  height: 80px;
-  margin: 0;
-  color: #000000;
-  font-weight: bold;
-  background: #ffffff;
-  z-index: 999;
-  position: fixed;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .ons_body .row {
-    height: 60px;
-  }
-}
-
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .ons_body .header_nav_link {
     width: 53px;
