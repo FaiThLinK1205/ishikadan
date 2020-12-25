@@ -98,6 +98,7 @@ body {
   position: fixed;
   display: flex;
   align-items: center;
+  transition: .3s;
 }
 
 .header_row_left {
@@ -287,6 +288,7 @@ header
   display: flex;
   align-items: center;
   z-index: 99;
+  transition: .3s;
 }
 
 .header_left {

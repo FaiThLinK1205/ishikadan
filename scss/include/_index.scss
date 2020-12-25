@@ -26,6 +26,7 @@ header
   display: flex;
   align-items: center;
   z-index: 99;
+  transition: .3s;
 
   &_left{
     width: 50%;
