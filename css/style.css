@@ -98,6 +98,7 @@ body {
   position: fixed;
   display: flex;
   align-items: center;
+  transition: .3s;
 }
 
 .header_row_left {
