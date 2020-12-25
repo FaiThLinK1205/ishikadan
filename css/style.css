@@ -251,7 +251,6 @@ footer
 
 .footer_copyright_txt {
   padding-top: 23px;
-  padding-bottom: 25px;
   color: #ffffff;
   font-size: 12px;
   /*IE9以前に対応する*/
@@ -712,8 +711,8 @@ fv
 
 *****************************************:*/
 .common_fv {
-  width: 1920px;
-  height: 500px;
+  width: 100%;
+  height: 580px;
   margin-bottom: 37px;
   background: url(../img/section-menu/menu-header.jpg) center/cover;
   position: relative;
