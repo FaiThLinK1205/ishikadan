@@ -14,16 +14,22 @@ $(() => {
   // ---モーダル---
   // モーダル発火
   let body = $("body");
-  let modalTrigger = $(".reserve_link");
+  let modal = $(".modal");
+  let modalBgc = $(".modal_bgc");
+  let modalTrigger = $(".reserve_row_link");
+  let modalTriggerIndex = $(".reserve_link");
   modalTrigger.click(function(){
+    modal.addClass("in");
+    modalBgc.addClass("in");
+    body.addClass("modalin");
+  })
+  modalTriggerIndex.click(function(){
     modal.addClass("in");
     modalBgc.addClass("in");
     body.addClass("modalin");
   })
 
   // モーダル消す
-  let modal = $(".modal");
-  let modalBgc = $(".modal_bgc");
   let modalEraseBox = $(".modal_eraseBox");
   modalEraseBox.click(function(){
     modal.removeClass("in");
