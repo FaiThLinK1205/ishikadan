@@ -874,14 +874,35 @@ fv
 
 *****************************************:*/
 @media screen and (max-width: 769px) and (min-width: 480px) {
-  .ons_body .header_ttl {
-    height: auto;
-    margin-right: 80px;
+  .row_body .header_row {
+    height: 70px;
   }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
-  .ons_body .header_nav_link {
+  .row_body .header_row_ttl {
+    height: auto;
+    margin-right: 30px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .row_body .header_row_nav_item {
+    margin-right: 9px;
+  }
+}
+
+.row_body .header_row_nav_link {
+  transition: .3s;
+}
+
+.row_body .header_row_nav_link:hover {
+  color: #aaa;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .row_body .header_row_nav_link {
     width: 53px;
     padding: 0 !important;
     margin-right: 30px;
@@ -889,38 +910,57 @@ fv
   }
 }
 
-.ons_body .header_nav_link:last-of-type {
+.row_body .header_row_nav_link:last-of-type {
   margin-right: 0;
 }
 
-.ons_body .footer_nav_list {
+.row_body .reserve_row {
+  height: 70px;
+  padding-top: 5px;
+}
+
+.row_body .reserve_row_link {
+  transition: .3s;
+}
+
+.row_body .reserve_row_link:hover {
+  background-color: #a79F30;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .row_body .reserve_row_link {
+    margin-right: 9px;
+  }
+}
+
+.row_body .footer_nav_list {
   margin-top: 24px;
   margin-bottom: 30px;
 }
 
-.ons_body .footer_nav_item {
+.row_body .footer_nav_item {
   font-size: 15px;
   /*IE9以前に対応する*/
   font-size: 0.9375rem;
 }
 
-.ons_body .footer_logo {
+.row_body .footer_logo {
   width: 32px;
   height: 32px;
 }
 
-.ons_body .footer_ttl {
+.row_body .footer_ttl {
   margin-bottom: 27px;
   font-size: 23px;
   /*IE9以前に対応する*/
   font-size: 1.4375rem;
 }
 
-.ons_body .footer_box2 {
+.row_body .footer_box2 {
   padding-bottom: 41px;
 }
 
-.ons_body .footer_copyright_txt {
+.row_body .footer_copyright_txt {
   padding-top: 23px;
   padding-bottom: 20px;
   font-size: 9px;
@@ -935,7 +975,7 @@ fv
 }
 
 .ons_fv {
-  width: 1920px;
+  width: 100%;
   height: 580px;
   margin-bottom: 37px;
   background: url(../../img/section-onsen/onsen-header.jpg) center/cover;
