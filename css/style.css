@@ -720,6 +720,12 @@ fv
   position: relative;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .common_fv {
+    width: 100%;
+  }
+}
+
 .common_ttl {
   color: #ffffff;
   font-size: 34px;
@@ -741,6 +747,14 @@ fv
   /*IE9以前に対応する*/
   font-size: 1rem;
   text-align: center;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .common_top_txt {
+    font-size: 16px;
+    /*IE9以前に対応する*/
+    font-size: 1rem;
+  }
 }
 
 .common_box {
@@ -766,6 +780,14 @@ fv
   background: url(../img/common/bg.jpg);
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .common_txtBox {
+    width: 450px;
+    height: 270px;
+    margin: -160px 0 0 280px;
+  }
+}
+
 .common_txtBox_ttl {
   margin-left: 238px;
   margin-bottom: 52px;
@@ -776,6 +798,17 @@ fv
   line-height: 2;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .common_txtBox_ttl {
+    font-size: 20px;
+    /*IE9以前に対応する*/
+    font-size: 1.25rem;
+    margin-left: 140px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+}
+
 .common_txtBox_txt {
   margin-left: 238px;
   font-size: 16px;
@@ -784,8 +817,24 @@ fv
   line-height: 2;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .common_txtBox_txt {
+    margin-left: 140px;
+    font-size: 15px;
+    /*IE9以前に対応する*/
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+}
+
 ._img_wrapper {
   margin: 0 0 0 auto;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  ._img_wrapper {
+    margin: 0 0 0 380px;
+  }
 }
 
 ._txt_wrapper {
@@ -793,8 +842,21 @@ fv
   padding: 0 274px 165px 0;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  ._txt_wrapper {
+    margin: -160px auto 0 0;
+    padding: 0 150px 165px 0;
+  }
+}
+
 ._txtBox_wrap {
   margin-left: 60px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  ._txtBox_wrap {
+    margin-left: 30px;
+  }
 }
 
 /****************************************:
@@ -930,7 +992,7 @@ fv
 }
 
 .ons_fv {
-  width: 1920px;
+  width: 100%;
   height: 580px;
   margin-bottom: 37px;
   background: url(../../img/section-onsen/onsen-header.jpg) center/cover;

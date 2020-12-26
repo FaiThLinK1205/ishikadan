@@ -17,6 +17,9 @@ fv
         margin-bottom: 37px;
         background: url(../img/section-menu/menu-header.jpg) center / cover;
         position: relative;
+        @include tab {
+            width: 100%;
+        }
     }
 
 
@@ -39,6 +42,9 @@ fv
         margin-bottom: 78px;
         @include rem(16);
         text-align: center;
+        @include tab {
+            @include rem(16);
+        }
     }
 
     &_box {
@@ -62,6 +68,11 @@ fv
         height: 381px;
         margin: -243px 0 0 367px;
         background: url(../img/common/bg.jpg);
+        @include tab {
+            width: 450px;
+            height: 270px;
+            margin: -160px 0 0 280px;
+        }
     }
 
     &_txtBox_ttl {
@@ -70,26 +81,47 @@ fv
         padding-top: 60px;
         @include rem(24);
         line-height: 2;
+        @include tab {
+            @include rem(20);
+            margin-left: 140px;
+            margin-bottom: 20px;
+            padding-top: 30px;
+        }
     }
 
     &_txtBox_txt {
         margin-left: 238px;
         @include rem(16);
         line-height: 2;
+        @include tab {
+            margin-left: 140px;
+            @include rem(15);
+            line-height: 1.5;
+        }
     }
 }
 
 ._img_wrapper {
     margin: 0 0 0 auto;
+    @include tab {
+        margin: 0 0 0 380px;
+    }
 }
 
 ._txt_wrapper {
     margin: -242px auto 0 0;
     padding: 0 274px 165px 0;
+    @include tab {
+        margin: -160px auto 0 0;
+        padding: 0 150px 165px 0;
+    }
 }
 
 ._txtBox_wrap {
     margin-left: 60px;
+    @include tab {
+        margin-left: 30px;
+    }
 }
 
 
