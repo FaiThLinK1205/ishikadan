@@ -39,35 +39,66 @@ fv
 
 *****************************************:*/
 
-.ons_body{
-  .header{
+.row_body{
+  .header_row{
+    
+    @include tab{
+      height: 70px;
+    }
   
     &_ttl{
 
       @include tab{
         height: auto;
-        margin-right: 80px;
+        margin-right: 30px;
+        line-height: 20px;
+      }
+    }
+  
+    &_nav{
+
+      &_item{
+        @include tab{
+          margin-right: 9px;
+        }
+      }
+      
+      &_link{
+        transition: .3s;
+
+        &:hover{
+          color: #aaa;
+        }
+        
+        @include tab{
+          width: 53px;
+          padding: 0 !important;
+          margin-right: 30px;
+          display: block;
+        }
+      }
+    
+      &_link:last-of-type{
+        margin-right: 0;
       }
     }
   }
 
-  
-  
-  
-  .header_nav{
+  .reserve_row{
+    height: 70px;
+    padding-top: 5px;
+
     
     &_link{
-      
-      @include tab{
-        width: 53px;
-        padding: 0 !important;
-        margin-right: 30px;
-        display: block;
+      transition: .3s;
+
+      &:hover{
+        background-color: #a79F30;
       }
-    }
-  
-    &_link:last-of-type{
-      margin-right: 0;
+
+      @include tab{
+        margin-right: 9px;
+      }
     }
   }
 
