@@ -84,9 +84,77 @@ body {
 
 /****************************************:
 
-nav
+下層ページ用ヘッダー
 
 *****************************************:*/
+.header_row {
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  color: #000000;
+  font-weight: bold;
+  background: #ffffff;
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+}
+
+.header_row_left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.header_row_ttl {
+  width: 200px;
+  height: 40px;
+  margin-right: 120px;
+}
+
+.header_row_nav_list {
+  display: flex;
+}
+
+.header_row_nav_link {
+  margin-right: 30px;
+  padding: 10px;
+  color: #000000;
+}
+
+.header_row_nav_link:last-of-type {
+  margin-right: 0;
+}
+
+.reserve_row {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reserve_row_link {
+  width: 170px;
+  padding: 19px;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  line-height: 0;
+  letter-spacing: 0;
+  color: #ffffff;
+  background: #978F10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reserve_row_img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
 /****************************************:
 
 button
@@ -184,7 +252,6 @@ footer
 
 .footer_copyright_txt {
   padding-top: 23px;
-  padding-bottom: 25px;
   color: #ffffff;
   font-size: 12px;
   /*IE9以前に対応する*/
@@ -220,6 +287,7 @@ header
   display: flex;
   align-items: center;
   z-index: 99;
+  transition: .3s;
 }
 
 .header_left {
@@ -234,6 +302,10 @@ header
   margin-right: 120px;
 }
 
+.header_logo-b {
+  display: none;
+}
+
 .header_nav_list {
   display: flex;
 }
@@ -241,6 +313,7 @@ header
 .header_nav_link {
   margin-right: 30px;
   padding: 10px;
+  color: #ffffff;
 }
 
 .header_nav_link:last-of-type {
@@ -272,6 +345,27 @@ header
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+.header.fix {
+  height: 80px;
+  margin: 0;
+  font-weight: bold;
+  background: #ffffff;
+  z-index: 999;
+  position: fixed;
+}
+
+.header_logo-w.fix {
+  display: none;
+}
+
+.header_logo-b.fix {
+  display: block;
+}
+
+.header_nav_link.fix {
+  color: #000000;
 }
 
 /****************************************:
@@ -501,7 +595,16 @@ section
 section
 
 *****************************************:*/
+.area ul {
+  display: none;
+}
+
+.area ul.show {
+  display: block;
+}
+
 .notice {
+  height: 697px;
   margin-top: 60px;
   margin-bottom: 75px;
 }
@@ -610,8 +713,8 @@ fv
 
 *****************************************:*/
 .common_fv {
-  width: 1920px;
-  height: 500px;
+  width: 100%;
+  height: 580px;
   margin-bottom: 37px;
   background: url(../img/section-menu/menu-header.jpg) center/cover;
   position: relative;
@@ -666,9 +769,7 @@ fv
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .common_img {
-    width: 350px;
-    height: 200px;
-    margin-left: 50px;
+    width: 50%;
   }
 }
 
@@ -765,25 +866,6 @@ section
 *****************************************:*/
 /****************************************:
 
-header下層ページデザイン修正
-
-*****************************************:*/
-.row {
-  height: 80px;
-  margin: 0;
-  color: #000000;
-  font-weight: bold;
-  background: #ffffff;
-  z-index: 999;
-  position: fixed;
-}
-
-.sub {
-  margin-left: 20px;
-}
-
-/****************************************:
-
 fv
 
 *****************************************:*/
@@ -799,7 +881,7 @@ fv
 }
 
 .oheya_fv {
-  width: 1920px;
+  width: 100%;
   height: 580px;
   margin-bottom: 37px;
   background: url(../../img/section-oheya/oheya-header.jpg) center/cover;
@@ -815,14 +897,14 @@ fv
 section
 
 *****************************************:*/
-.alter_header {
-  width: 100%;
-  height: 80px;
-  background-color: #ccc;
-}
-
 .ons_mb {
   margin-bottom: 200px !important;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_mb {
+    margin-bottom: 70px !important;
+  }
 }
 
 .ons_flex {
@@ -848,14 +930,82 @@ section
 fv
 
 *****************************************:*/
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_body .header_ttl {
+    height: auto;
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_body .header_nav_link {
+    width: 53px;
+    padding: 0 !important;
+    margin-right: 30px;
+    display: block;
+  }
+}
+
+.ons_body .header_nav_link:last-of-type {
+  margin-right: 0;
+}
+
+.ons_body .footer_nav_list {
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.ons_body .footer_nav_item {
+  font-size: 15px;
+  /*IE9以前に対応する*/
+  font-size: 0.9375rem;
+}
+
+.ons_body .footer_logo {
+  width: 32px;
+  height: 32px;
+}
+
+.ons_body .footer_ttl {
+  margin-bottom: 27px;
+  font-size: 23px;
+  /*IE9以前に対応する*/
+  font-size: 1.4375rem;
+}
+
+.ons_body .footer_box2 {
+  padding-bottom: 41px;
+}
+
+.ons_body .footer_copyright_txt {
+  padding-top: 23px;
+  padding-bottom: 20px;
+  font-size: 9px;
+  /*IE9以前に対応する*/
+  font-size: 0.5625rem;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_main .section_inner {
+    max-width: 677px;
+  }
+}
+
 .ons_fv {
-  width: 1920px;
+  width: 100%;
   height: 580px;
   margin-bottom: 37px;
   background: url(../../img/section-onsen/onsen-header.jpg) center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_fv {
+    width: 751px;
+    height: 432px;
+  }
 }
 
 .ons_ttl {
@@ -877,6 +1027,12 @@ fv
   text-align: center;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_top_txt {
+    font-size: 14px;
+  }
+}
+
 .ons_imgTxt {
   margin-bottom: 84px;
 }
@@ -890,6 +1046,13 @@ fv
   overflow: hidden;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_imgBox {
+    width: 367px;
+    height: 245px;
+  }
+}
+
 .ons_txtBox {
   width: 813px;
   height: 381px;
@@ -900,15 +1063,37 @@ fv
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_txtBox {
+    width: 439px;
+    height: 260px;
+    padding: 38px 20px 50px 143px;
+    margin: -200px 0 0 246px;
+  }
+}
+
 .ons_boxTtl {
   margin-bottom: 52px;
   font-size: 24px;
   line-height: 2;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_boxTtl {
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+}
+
 .ons_txt {
   font-size: 16px;
   line-height: 2;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_txt {
+    font-size: 12px;
+  }
 }
 
 .ons_effect {
@@ -918,9 +1103,23 @@ fv
   border-bottom: 1px solid #ccc;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_effect {
+    padding: 40px 0;
+    margin-bottom: 40px;
+  }
+}
+
 .ons_effect_ttl {
   margin-bottom: 69px;
   font-size: 26px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_effect_ttl {
+    margin-bottom: 49px;
+    font-size: 22px;
+  }
 }
 
 .ons_table {
@@ -929,10 +1128,22 @@ fv
   font-weight: bold;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_table {
+    width: 677px;
+  }
+}
+
 .ons_table_tr {
   text-align: left;
   font-size: 15px;
   border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_table_tr {
+    font-size: 13px;
+  }
 }
 
 .ons_table_tr:nth-child(3) {
@@ -944,9 +1155,22 @@ fv
   padding: 17px 125px 17px 0;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_table_th {
+    width: 148px;
+    padding: 13px 0 13px 15px;
+  }
+}
+
 .ons_table_td {
   width: 660px;
   padding: 17px 0;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .ons_table_td {
+    width: 650px;
+  }
 }
 
 ._imgBoxUnder {
@@ -956,6 +1180,15 @@ fv
 ._txtBoxUnder {
   padding: 60px 209px 165px 60px;
   margin: -242px auto 0 0;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  ._txtBoxUnder {
+    width: 439px;
+    height: 265px;
+    padding: 40px 145px 39px 31px;
+    margin: -200px 0 0 0;
+  }
 }
 
 /****************************************:
