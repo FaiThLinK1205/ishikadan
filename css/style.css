@@ -1273,6 +1273,13 @@ body.modalin {
   position: relative;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .modal_inner {
+    height: 500px;
+    padding: 29px 60px 20px;
+  }
+}
+
 .modal_eraseBox {
   width: 25px;
   height: 25px;
@@ -1328,6 +1335,12 @@ body.modalin {
   height: 42px;
   margin: 64px auto 0;
   display: block;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .modal_btn {
+    margin: 34px auto 0;
+  }
 }
 
 .modal_bgc {
