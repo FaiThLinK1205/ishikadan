@@ -21,6 +21,13 @@
   @include flex(flex-start,nowrap);
 }
 
+.breadcrumbs_list{
+
+  @include sp{
+    margin-left: 27px;
+  }
+}
+
 .pan_li{
   margin: 0 20px 97px 0;
   position: relative;
@@ -107,36 +114,105 @@ fv
     &_nav {
   
       &_list {
-        margin-top: 24px;
-        margin-bottom: 30px;
+        margin-top: 64px;
+        margin-bottom: 96px;
+
+        @include tab{
+          margin-top: 24px;
+          margin-bottom: 30px;
+        }
+
+        @include sp{
+          margin-top: 19px;
+          margin-bottom: 25px;
+        }
       }
   
       &_item {
-        @include rem(15);
+        @include rem(18);
+
+        @include tab{
+          @include rem(15);
+        }
+
+        @include sp{
+          @include rem(14);
+        }
       }
     }
   
     &_logo {
-      width: 32px;
-      height: 32px;
+      width: 40px;
+      height: 40px;
+
+      @include tab{
+        width: 32px;
+        height: 32px;
+      }
+
+      @include sp{
+        width: 30px;
+        height: 30px;
+      }
     }
   
     &_ttl {
-      margin-bottom: 27px;
-      @include rem(23);
+      margin-bottom: 72px;
+      @include rem(32);
+
+      @include tab{
+        margin-bottom: 27px;
+        @include rem(23);
+      }
+
+      @include sp{
+        margin-bottom: 25px;
+        @include rem(21);
+      }
+    }
+
+    &_box{
+
+      @include sp{
+        @include rem(15);
+      }
     }
 
   
     &_box2 {
-      padding-bottom: 41px;
+      padding-bottom: 61px;
+
+      @include tab{
+        padding-bottom: 41px;
+      }
+
+      @include sp{
+        padding-bottom: 35px;
+        @include rem(15);
+      }
     }
   
     &_copyright {
+
+      @include sp{
+        height: 50px;
+      }
   
       &_txt {
         padding-top: 23px;
-        padding-bottom: 20px;
-        @include rem(9);
+        @include rem(12);
+
+        @include tab{
+          padding-top: 23px;
+          padding-bottom: 20px;
+          @include rem(9);
+        }
+
+        @include sp{
+          padding-top: 18px;
+          padding-bottom: 15px;
+          @include rem(9);
+        }
       }
     }
   }
@@ -163,8 +239,12 @@ fv
     @include flexCenterOns;
 
     @include tab{
-      width: 751px;
       height: 432px;
+    }
+
+    @include sp{
+      height: 370px;
+      margin-bottom: 27px;
     }
   }
 
@@ -189,10 +269,15 @@ fv
     @include tab{
       font-size: 14px;
     }
+
+    @include sp{
+      margin: 0 20px 60px;
+      font-size: 12px;
+    }
   }
 
   &_imgTxt{
-    margin-bottom: 84px;
+    margin-bottom: 84px !important;
   }
 
   &_imgBox{
@@ -204,6 +289,12 @@ fv
     @include tab{
       width: 367px;
       height: 245px;
+    }
+
+    @include sp{
+      width: 387px;
+      height: 245px;
+      margin: 0 20px;
     }
   }
 
@@ -222,6 +313,13 @@ fv
       padding: 38px 20px 50px 143px;
       margin: -200px 0 0 246px;
     }
+
+    @include sp{
+      width: 389px;
+      height: 230px;
+      padding: 39px 26px 26px 39px;
+      margin: -23px 0 0 39px;
+    }
   }
 
   &_boxTtl{
@@ -233,6 +331,11 @@ fv
       margin-bottom: 30px;
       font-size: 17px;
     }
+
+    @include sp{
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
   }
 
   &_txt{
@@ -241,6 +344,10 @@ fv
 
     @include tab{
       font-size: 12px;
+    }
+
+    @include sp{
+      font-size: 13px;
     }
   }
 
@@ -254,6 +361,11 @@ fv
       padding: 40px 0;
       margin-bottom: 40px;
     }
+
+    @include sp{
+      padding: 30px 0;
+      margin-bottom: 40px;
+    }
     
     &_ttl{
       margin-bottom: 69px;
@@ -262,6 +374,11 @@ fv
       @include tab{
       margin-bottom: 49px;
       font-size: 22px;
+      }
+
+      @include sp{
+        margin-bottom: 23px;
+        font-size: 18px;
       }
     }
   }
@@ -273,6 +390,10 @@ fv
 
     @include tab{
       width: 677px;
+    }
+
+    @include sp{
+      width: 418px;
     }
 
     &_tr{
@@ -297,6 +418,12 @@ fv
         width: 148px;
         padding: 13px 0 13px 15px;
       }
+
+      @include sp{
+        width: 148px;
+        padding: 13px 0 13px 15px;
+        font-size: 13px;
+      }
     }
 
     &_td{
@@ -306,12 +433,21 @@ fv
       @include tab{
         width: 650px;
       }
+
+      @include sp{
+        width: 500px;
+        font-size: 13px;
+      }
     }
   }
 }
 
 ._imgBoxUnder{
   margin: 0 0 0 auto;
+
+  @include sp{
+    margin-left: 57px;
+  }
 }
 
 ._txtBoxUnder{
@@ -323,6 +459,13 @@ fv
     height: 265px;
     padding: 40px 145px 39px 31px;
     margin: -200px 0 0 0;
+  }
+
+  @include sp{
+    width: 389px;
+    height: 240px;
+    padding: 30px 26px 23px 39px;
+    margin: -19px 0 0 13px;
   }
 }
 
