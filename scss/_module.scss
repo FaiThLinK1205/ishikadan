@@ -56,6 +56,10 @@
   display: flex;
   justify-content: flex-end;
 
+  @include pc_tab {
+    width: 14%;
+  }
+
   &_link {
     width: 170px;
     padding: 19px;

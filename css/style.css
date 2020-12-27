@@ -149,6 +149,12 @@ body {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .reserve_row {
+    width: 14%;
+  }
+}
+
 .reserve_row_link {
   width: 170px;
   padding: 19px;
