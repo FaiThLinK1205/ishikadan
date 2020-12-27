@@ -29,15 +29,23 @@ header
   transition: .3s;
 
   &_left{
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
+
+    @include tab{
+      justify-content: space-between;
+    }
   }
 
   &_ttl{
     width: 200px;
     height: 40px;
-    margin-right: 120px;
+    margin-right:120px;
+
+    @include tab{
+      margin-right: 0px;
+    }
   }
 
   &_logo-b {
@@ -56,6 +64,10 @@ header
     margin-right: 30px;
     padding: 10px;
     color: $cWhite;
+
+    @include tab {
+      font-size: 13px;
+    }
   }
 
   &_link:last-of-type{
@@ -177,6 +189,10 @@ fv
   top: 282px;
   right: 508px;
   z-index: 10;
+
+  @include tab{
+    right:180px;
+  }
 }
 
 &_ttl2{
@@ -185,6 +201,10 @@ fv
   top: 282px;
   right: 608px;
   z-index: 10;
+
+  @include tab{
+    right: 280px;
+  }
 }
 
 }
@@ -204,6 +224,11 @@ fv
     line-height: 1em;
     letter-spacing: 0;
     @include rem(28);
+
+    @include tab{
+      @include rem(20);
+      margin-left: 20px;
+    }
   }
   
   &_ttl2{
@@ -211,6 +236,10 @@ fv
     line-height: 1em;
     letter-spacing: 0;
     @include rem(28);
+
+    @include tab {
+      @include rem(20);
+    }
   }
 
   &_wrap{
@@ -224,6 +253,11 @@ fv
     line-height: 1.73em;
     letter-spacing: 0;
     @include rem(16);
+
+    @include tab {
+      @include rem(12);
+      margin-left: 50px;
+    }
   }
 
   &_txt4{
