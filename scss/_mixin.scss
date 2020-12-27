@@ -21,6 +21,11 @@
 // }
 
 
+@mixin pc_tab {
+    @media screen and (max-width: $widthPc_Tab) and (min-width:$widthTab) {
+        @content;
+    }
+}
 
 
 //タブレット（モバイルファースト）
