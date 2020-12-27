@@ -151,7 +151,7 @@ body {
 
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .reserve_row {
-    width: 14%;
+    width: 50%;
   }
 }
 
@@ -1032,6 +1032,12 @@ fv
   overflow: hidden;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .common_img {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .common_img {
     width: 50%;
@@ -1043,6 +1049,12 @@ fv
   height: 381px;
   margin: -243px 0 0 367px;
   background: url(../img/common/bg.jpg);
+}
+
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .common_txtBox {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1063,6 +1075,15 @@ fv
   line-height: 2;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .common_txtBox_ttl {
+    margin-left: 30px;
+    font-size: 20px;
+    /*IE9以前に対応する*/
+    font-size: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .common_txtBox_ttl {
     font-size: 20px;
@@ -1080,6 +1101,15 @@ fv
   /*IE9以前に対応する*/
   font-size: 1rem;
   line-height: 2;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .common_txtBox_txt {
+    margin-left: 30px;
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {

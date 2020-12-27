@@ -17,6 +17,7 @@ fv
         margin-bottom: 37px;
         background: url(../img/section-menu/menu-header.jpg) center / cover;
         position: relative;
+
         @include tab {
             width: 100%;
         }
@@ -42,6 +43,7 @@ fv
         margin-bottom: 78px;
         @include rem(16);
         text-align: center;
+
         @include tab {
             @include rem(16);
         }
@@ -49,6 +51,7 @@ fv
 
     &_box {
         margin-bottom: 84px;
+
     }
 
 
@@ -57,6 +60,11 @@ fv
         width: 525px;
         height: 300px;
         overflow: hidden;
+
+        @include pc_tab {
+            width: 50%;
+        }
+
 
         @include tab {
             width: 50%;
@@ -68,6 +76,11 @@ fv
         height: 381px;
         margin: -243px 0 0 367px;
         background: url(../img/common/bg.jpg);
+
+        @include pc_tab {
+            width: 50%;
+        }
+
         @include tab {
             width: 450px;
             height: 320px;
@@ -81,6 +94,12 @@ fv
         padding-top: 60px;
         @include rem(24);
         line-height: 2;
+
+        @include pc_tab {
+            margin-left: 30px;
+            @include rem(20)
+        }
+
         @include tab {
             @include rem(20);
             margin-left: 100px;
@@ -93,6 +112,12 @@ fv
         margin-left: 238px;
         @include rem(16);
         line-height: 2;
+
+        @include pc_tab {
+            margin-left: 30px;
+            @include rem(14);
+        }
+
         @include tab {
             width: 320px;
             margin-left: 100px;
@@ -104,6 +129,7 @@ fv
 
 ._img_wrapper {
     margin: 0 0 0 auto;
+
     @include tab {
         margin: 0 0 0 380px;
     }
@@ -112,6 +138,7 @@ fv
 ._txt_wrapper {
     margin: -242px auto 0 0;
     padding: 0 274px 165px 0;
+
     @include tab {
         margin: -160px auto 0 0;
         padding: 0 150px 165px 0;
@@ -120,6 +147,7 @@ fv
 
 ._txtBox_wrap {
     margin-left: 60px;
+
     @include tab {
         margin-left: 30px;
     }
@@ -132,10 +160,3 @@ fv
 section
 
 *****************************************:*/
-
-
-
-
-
-
-
