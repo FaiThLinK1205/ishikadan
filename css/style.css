@@ -730,6 +730,14 @@ section
   line-height: 2em;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .top_about_txt {
+    font-size: 15px;
+    /*IE9以前に対応する*/
+    font-size: 0.9375rem;
+  }
+}
+
 .top_about_link {
   padding: 20px 40px;
   display: inline-block;
@@ -803,6 +811,9 @@ section
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .plan_ttl {
     text-align: center;
+    font-size: 19px;
+    /*IE9以前に対応する*/
+    font-size: 1.1875rem;
   }
 }
 
@@ -813,9 +824,9 @@ section
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .plan_txt {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 16px;
     /*IE9以前に対応する*/
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -1049,7 +1060,7 @@ fv
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .common_txtBox {
     width: 450px;
-    height: 270px;
+    height: 320px;
     margin: -160px 0 0 317px;
   }
 }
@@ -1158,11 +1169,25 @@ fv
   margin-bottom: 52px;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .mb52 {
+    margin-bottom: 35px;
+  }
+}
+
 .note {
   font-size: 14px;
   /*IE9以前に対応する*/
   font-size: 0.875rem;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .note {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+  }
 }
 
 .oheya_fv {
@@ -1228,23 +1253,27 @@ section
 fv
 
 *****************************************:*/
+.row_body .header_row_left {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
-  .row_body .header_row {
-    height: 70px;
+  .row_body .header_row_left {
+    justify-content: space-between;
   }
+}
+
+.row_body .header_row_ttl {
+  width: 200px;
+  height: 40px;
+  margin-right: 120px;
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .row_body .header_row_ttl {
-    height: auto;
-    margin-right: 30px;
-    line-height: 20px;
-  }
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .row_body .header_row_nav_item {
-    margin-right: 9px;
+    margin-right: 0px;
   }
 }
 
@@ -1252,17 +1281,14 @@ fv
   transition: .3s;
 }
 
-.row_body .header_row_nav_link:hover {
-  color: #aaa;
-}
-
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .row_body .header_row_nav_link {
-    width: 53px;
-    padding: 0 !important;
-    margin-right: 30px;
-    display: block;
+    font-size: 13px;
   }
+}
+
+.row_body .header_row_nav_link:hover {
+  color: #aaa;
 }
 
 .row_body .header_row_nav_link:last-of-type {
@@ -1280,12 +1306,6 @@ fv
 
 .row_body .reserve_row_link:hover {
   background-color: #a79F30;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .row_body .reserve_row_link {
-    margin-right: 9px;
-  }
 }
 
 .row_body .footer_nav_list {
@@ -1516,9 +1536,9 @@ fv
 
 @media screen and (max-width: 480px) {
   .ons_imgBox {
-    width: 387px;
-    height: 245px;
-    margin: 0 20px;
+    width: 324px;
+    height: 216px;
+    margin: 0 auto;
   }
 }
 
@@ -1543,10 +1563,10 @@ fv
 
 @media screen and (max-width: 480px) {
   .ons_txtBox {
-    width: 389px;
-    height: 230px;
+    width: 324px;
+    height: 240px;
     padding: 39px 26px 26px 39px;
-    margin: -23px 0 0 39px;
+    margin: -23px 0 0 30px;
   }
 }
 
@@ -1641,7 +1661,7 @@ fv
 
 @media screen and (max-width: 480px) {
   .ons_table {
-    width: 418px;
+    width: 88%;
   }
 }
 
@@ -1694,7 +1714,7 @@ fv
 
 @media screen and (max-width: 480px) {
   .ons_table_td {
-    width: 500px;
+    width: 300px;
     font-size: 13px;
   }
 }
@@ -1705,7 +1725,7 @@ fv
 
 @media screen and (max-width: 480px) {
   ._imgBoxUnder {
-    margin-left: 57px;
+    margin: 0 auto;
   }
 }
 
@@ -1725,10 +1745,10 @@ fv
 
 @media screen and (max-width: 480px) {
   ._txtBoxUnder {
-    width: 389px;
+    width: 324px;
     height: 240px;
     padding: 30px 26px 23px 39px;
-    margin: -19px 0 0 13px;
+    margin: -19px 0 0 30px;
   }
 }
 

@@ -11,12 +11,19 @@ fv
 
 .mb52 {
   margin-bottom: 52px;
+
+  @include tab{
+    margin-bottom: 35px;
+  }
 }
 
 .note {
   @include rem(14);
   line-height: 1.5;
 
+  @include tab{
+    @include rem(12);
+  }
 }
 
 .oheya {

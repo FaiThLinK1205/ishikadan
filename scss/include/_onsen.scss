@@ -48,40 +48,38 @@ fv
 
 .row_body{
   .header_row{
-    
-    @include tab{
-      height: 70px;
-    }
-  
-    &_ttl{
 
-      @include tab{
-        height: auto;
-        margin-right: 30px;
-        line-height: 20px;
+    &_left {
+      width: 90%;
+      display: flex;
+      align-items: center;
+
+      @include tab {
+        justify-content: space-between;
+      }
+    }
+
+    &_ttl {
+      width: 200px;
+      height: 40px;
+      margin-right: 120px;
+
+      @include tab {
+        margin-right: 0px;
       }
     }
   
     &_nav{
-
-      &_item{
-        @include tab{
-          margin-right: 9px;
-        }
-      }
       
       &_link{
         transition: .3s;
 
+        @include tab {
+          font-size: 13px;
+        }
+
         &:hover{
           color: #aaa;
-        }
-        
-        @include tab{
-          width: 53px;
-          padding: 0 !important;
-          margin-right: 30px;
-          display: block;
         }
       }
     
@@ -101,10 +99,6 @@ fv
 
       &:hover{
         background-color: #a79F30;
-      }
-
-      @include tab{
-        margin-right: 9px;
       }
     }
   }
@@ -292,9 +286,9 @@ fv
     }
 
     @include sp{
-      width: 387px;
-      height: 245px;
-      margin: 0 20px;
+      width: 324px;
+      height: 216px;
+      margin: 0 auto;
     }
   }
 
@@ -315,10 +309,10 @@ fv
     }
 
     @include sp{
-      width: 389px;
-      height: 230px;
+      width: 324px;
+      height: 240px;
       padding: 39px 26px 26px 39px;
-      margin: -23px 0 0 39px;
+      margin: -23px 0 0 30px;
     }
   }
 
@@ -393,7 +387,7 @@ fv
     }
 
     @include sp{
-      width: 418px;
+      width: 88%;
     }
 
     &_tr{
@@ -435,7 +429,7 @@ fv
       }
 
       @include sp{
-        width: 500px;
+        width: 300px;
         font-size: 13px;
       }
     }
@@ -446,7 +440,7 @@ fv
   margin: 0 0 0 auto;
 
   @include sp{
-    margin-left: 57px;
+    margin: 0 auto;
   }
 }
 
@@ -462,10 +456,10 @@ fv
   }
 
   @include sp{
-    width: 389px;
+    width: 324px;
     height: 240px;
     padding: 30px 26px 23px 39px;
-    margin: -19px 0 0 13px;
+    margin: -19px 0 0 30px;
   }
 }
 
