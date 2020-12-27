@@ -29,9 +29,15 @@ fv
     position: relative;
   }
 
-  &_common_txtBox_txt_note {
-    margin-left: 238px;
+  &_ttl {
+    color: $cWhite;
+    @include rem(34);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
 }
 
 

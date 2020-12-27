@@ -68,3 +68,16 @@ body {
     margin: 0 auto;
 
 }
+
+
+.br_pc {
+    display: block;
+
+    @include tab {
+        display: none;
+    }
+
+    @include sp {
+        display: none;
+    }
+}
