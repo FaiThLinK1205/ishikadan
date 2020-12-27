@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/common/logo02.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -21,7 +22,7 @@
 
 </head>
 
-<body>
+<body class="row_body">
   <!-- モック -->
   <img src="" alt="" class="mock" />
 
@@ -49,7 +50,7 @@
         <p class="modal_txt">日時選択</p>
         <!-- <input type="email" placeholder="日時を選択してください" class="modal_input"> -->
         <input class="flatpickr modal_input" type="text" readonly="readonly" placeholder="日時を選択してください">
-  
+
         <input type="submit" value="送信する" class="modal_btn">
 
       </div>
@@ -68,6 +69,12 @@
 
         <!-- ハンバーガーメニュー部分 -->
         <div class="nav_ham">
+          <div class="nav_btn" id="nav_toggle">
+            <span class="nav_line __tg1"></span>
+            <span class="nav_line __tg2"></span>
+            <span class="nav_line __tg3"></span>
+          </div>
+
 
         </div><!-- ハンバーガーメニューここまで -->
 
@@ -113,22 +120,22 @@
 
 
       <section class="oheya_fv">
-        <h2 class="common_ttl">お部屋</h2>
+        <h2 class="oheya_ttl">お部屋</h2>
       </section>
 
 
       <section class="section">
         <div class="section_inner">
-        <ul class="breadcrumbs_list ons_flex" itemscope itemtype="http://schema.org/BreadcrumbList">
-          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="pan_li"><a
-              itemprop="item" href="index.html"><span itemprop="name">トップ</span></a>
-            <meta itemprop="position" content="1">
-          </li>
-          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="pan_li"><a
-              itemprop="item" href="#"><span itemprop="name">お部屋</span></a>
-            <meta itemprop="position" content="2">
-          </li>
-        </ul>
+          <ul class="breadcrumbs_list ons_flex" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="pan_li"><a
+                itemprop="item" href="index.html"><span itemprop="name">トップ</span></a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="pan_li"><a
+                itemprop="item" href="#"><span itemprop="name">お部屋</span></a>
+              <meta itemprop="position" content="2">
+            </li>
+          </ul>
           <p class="common_top_txt">創業より受け継がれてきた石井花壇の和の造り<br>温海の雄大な絶景を堪能していただけるように設計された客室<br>ゆるやかに流れ行く時間に身を委ねて
           </p>
         </div>
@@ -174,7 +181,7 @@
             </div>
             <div class="common_txtBox">
               <h3 class="common_txtBox_ttl" data-aos="fade-up">一般客室</h3>
-              <p class="common_txtBox_txt" data-aos="fade-up">最もベーシックな客室になります。伝統の中にモダンさを取り入れた
+              <p class="common_txtBox_txt mb52" data-aos="fade-up">最もベーシックな客室になります。伝統の中にモダンさを取り入れた
                 <br>内装となっており、
                 <br>とても過ごしやすくしていただけます。
               </p>
