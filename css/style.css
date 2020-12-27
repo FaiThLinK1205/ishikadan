@@ -291,15 +291,27 @@ header
 }
 
 .header_left {
-  width: 50%;
+  width: 90%;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .header_left {
+    justify-content: space-between;
+  }
 }
 
 .header_ttl {
   width: 200px;
   height: 40px;
   margin-right: 120px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .header_ttl {
+    margin-right: 0px;
+  }
 }
 
 .header_logo-b {
@@ -314,6 +326,12 @@ header
   margin-right: 30px;
   padding: 10px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .header_nav_link {
+    font-size: 13px;
+  }
 }
 
 .header_nav_link:last-of-type {
@@ -438,12 +456,24 @@ fv
   z-index: 10;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .fv_ttl {
+    right: 180px;
+  }
+}
+
 .fv_ttl2 {
   writing-mode: vertical-lr;
   position: absolute;
   top: 282px;
   right: 608px;
   z-index: 10;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .fv_ttl2 {
+    right: 280px;
+  }
 }
 
 .fv_under {
@@ -465,6 +495,15 @@ fv
   font-size: 1.75rem;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .fv_under_ttl {
+    font-size: 20px;
+    /*IE9以前に対応する*/
+    font-size: 1.25rem;
+    margin-left: 20px;
+  }
+}
+
 .fv_under_ttl2 {
   margin: 149px 0 0 0;
   line-height: 1em;
@@ -472,6 +511,14 @@ fv
   font-size: 28px;
   /*IE9以前に対応する*/
   font-size: 1.75rem;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .fv_under_ttl2 {
+    font-size: 20px;
+    /*IE9以前に対応する*/
+    font-size: 1.25rem;
+  }
 }
 
 .fv_under_wrap {
@@ -485,6 +532,15 @@ fv
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .fv_under_txt.fv_txt, .fv_under_txt2.fv_txt, .fv_under_txt3.fv_txt {
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
+    margin-left: 50px;
+  }
 }
 
 .fv_under_txt4 {
