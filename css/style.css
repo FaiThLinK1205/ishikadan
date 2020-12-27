@@ -1480,9 +1480,9 @@ fv
 
 @media screen and (max-width: 480px) {
   .ons_imgBox {
-    width: 387px;
-    height: 245px;
-    margin: 0 20px;
+    width: 324px;
+    height: 216px;
+    margin: 0 auto;
   }
 }
 
@@ -1507,10 +1507,10 @@ fv
 
 @media screen and (max-width: 480px) {
   .ons_txtBox {
-    width: 389px;
-    height: 230px;
+    width: 324px;
+    height: 240px;
     padding: 39px 26px 26px 39px;
-    margin: -23px 0 0 39px;
+    margin: -23px 0 0 30px;
   }
 }
 
@@ -1605,7 +1605,7 @@ fv
 
 @media screen and (max-width: 480px) {
   .ons_table {
-    width: 418px;
+    width: 88%;
   }
 }
 
@@ -1658,7 +1658,7 @@ fv
 
 @media screen and (max-width: 480px) {
   .ons_table_td {
-    width: 500px;
+    width: 300px;
     font-size: 13px;
   }
 }
@@ -1669,7 +1669,7 @@ fv
 
 @media screen and (max-width: 480px) {
   ._imgBoxUnder {
-    margin-left: 57px;
+    margin: 0 auto;
   }
 }
 
@@ -1689,10 +1689,10 @@ fv
 
 @media screen and (max-width: 480px) {
   ._txtBoxUnder {
-    width: 389px;
+    width: 324px;
     height: 240px;
     padding: 30px 26px 23px 39px;
-    margin: -19px 0 0 13px;
+    margin: -19px 0 0 30px;
   }
 }
 
