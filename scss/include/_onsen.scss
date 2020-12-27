@@ -48,40 +48,38 @@ fv
 
 .row_body{
   .header_row{
-    
-    @include tab{
-      height: 70px;
-    }
-  
-    &_ttl{
 
-      @include tab{
-        height: auto;
-        margin-right: 30px;
-        line-height: 20px;
+    &_left {
+      width: 90%;
+      display: flex;
+      align-items: center;
+
+      @include tab {
+        justify-content: space-between;
+      }
+    }
+
+    &_ttl {
+      width: 200px;
+      height: 40px;
+      margin-right: 120px;
+
+      @include tab {
+        margin-right: 0px;
       }
     }
   
     &_nav{
-
-      &_item{
-        @include tab{
-          margin-right: 9px;
-        }
-      }
       
       &_link{
         transition: .3s;
 
+        @include tab {
+          font-size: 13px;
+        }
+
         &:hover{
           color: #aaa;
-        }
-        
-        @include tab{
-          width: 53px;
-          padding: 0 !important;
-          margin-right: 30px;
-          display: block;
         }
       }
     
@@ -101,10 +99,6 @@ fv
 
       &:hover{
         background-color: #a79F30;
-      }
-
-      @include tab{
-        margin-right: 9px;
       }
     }
   }

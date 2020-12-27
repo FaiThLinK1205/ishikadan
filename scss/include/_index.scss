@@ -335,6 +335,10 @@ section
     margin-bottom: 75px;
     @include rem(16);
     line-height: 2em;
+
+    @include tab{
+      @include rem(15);
+    }
   }
 
   &_link {
@@ -406,6 +410,7 @@ section
 
     @include tab {
       text-align: center;
+      @include rem(19);
     }
   }
 
@@ -415,7 +420,7 @@ section
     @include tab {
 
       margin-bottom: 30px;
-      @include rem(18);
+      @include rem(16);
       text-align: center;
     }
   }
