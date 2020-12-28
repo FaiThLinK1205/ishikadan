@@ -1041,11 +1041,25 @@ section
   }
 }
 
+@media screen and (max-width: 480px) {
+  .plan {
+    height: 1780px;
+  }
+}
+
 .plan_logo {
   height: 40px;
   width: 40px;
   margin: 0 auto 60px;
   padding-top: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .plan .section_ttl {
+    font-size: 25px;
+    /*IE9以前に対応する*/
+    font-size: 1.5625rem;
+  }
 }
 
 .plan_box {
@@ -1060,10 +1074,24 @@ section
   }
 }
 
+@media screen and (max-width: 480px) {
+  .plan_box {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .plan_boxItem {
     width: 600px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plan_boxItem {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 }
 
