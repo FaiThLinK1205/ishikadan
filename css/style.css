@@ -732,6 +732,13 @@ fv
   }
 }
 
+@media screen and (max-width: 480px) {
+  .fv_ttl {
+    top: 250px;
+    right: 30%;
+  }
+}
+
 .fv_ttl2 {
   writing-mode: vertical-lr;
   position: absolute;
@@ -746,14 +753,34 @@ fv
   }
 }
 
+@media screen and (max-width: 480px) {
+  .fv_ttl2 {
+    top: 250px;
+    right: 50%;
+  }
+}
+
 .fv_under {
   margin: 0 0 106px auto;
   background: url("../img/common/bg.jpg") center/cover no-repeat;
 }
 
+@media screen and (max-width: 480px) {
+  .fv_under {
+    margin: 0;
+  }
+}
+
 .fv_under .section_inner {
   height: 681px;
   writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 480px) {
+  .fv_under .section_inner {
+    height: 630px;
+    writing-mode: horizontal-tb;
+  }
 }
 
 .fv_under_ttl {
@@ -774,6 +801,16 @@ fv
   }
 }
 
+@media screen and (max-width: 480px) {
+  .fv_under_ttl {
+    margin: 0;
+    padding: 64px 0 20px 1em;
+    font-size: 20px;
+    /*IE9以前に対応する*/
+    font-size: 1.25rem;
+  }
+}
+
 .fv_under_ttl2 {
   margin: 149px 0 0 0;
   line-height: 1em;
@@ -791,8 +828,24 @@ fv
   }
 }
 
+@media screen and (max-width: 480px) {
+  .fv_under_ttl2 {
+    margin: 0;
+    padding: 0 0 50px 3.5em;
+    font-size: 20px;
+    /*IE9以前に対応する*/
+    font-size: 1.25rem;
+  }
+}
+
 .fv_under_wrap {
   margin: 150px 100px 0 308px;
+}
+
+@media screen and (max-width: 480px) {
+  .fv_under_wrap {
+    margin: 0;
+  }
 }
 
 .fv_under_txt.fv_txt, .fv_under_txt2.fv_txt, .fv_under_txt3.fv_txt {
@@ -806,10 +859,19 @@ fv
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .fv_under_txt.fv_txt, .fv_under_txt2.fv_txt, .fv_under_txt3.fv_txt {
-    font-size: 12px;
+    font-size: 16px;
     /*IE9以前に対応する*/
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fv_under_txt.fv_txt, .fv_under_txt2.fv_txt, .fv_under_txt3.fv_txt {
+    margin: 0 2em 2em 2em;
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
   }
 }
 
@@ -818,8 +880,23 @@ fv
   text-align: right;
 }
 
+@media screen and (max-width: 480px) {
+  .fv_under_txt4 {
+    margin-right: 3em;
+    font-size: 14px;
+    /*IE9以前に対応する*/
+    font-size: 0.875rem;
+  }
+}
+
 .fv_under_list {
   list-style: none;
+}
+
+@media screen and (max-width: 480px) {
+  .br_sp {
+    display: none;
+  }
 }
 
 /****************************************:
@@ -829,6 +906,12 @@ section
 *****************************************:*/
 .top_about {
   margin-bottom: -44px;
+}
+
+@media screen and (max-width: 480px) {
+  .top_about {
+    margin-bottom: 80px;
+  }
 }
 
 .top_about_box {
@@ -843,8 +926,21 @@ section
   }
 }
 
+@media screen and (max-width: 480px) {
+  .top_about_box {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
 .top_about_box:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 480px) {
+  .top_about_box:nth-child(even) {
+    flex-direction: row;
+  }
 }
 
 .top_about_left {
@@ -855,6 +951,13 @@ section
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .top_about_left {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top_about_left {
+    width: 100%;
+    height: 250px;
   }
 }
 
@@ -871,12 +974,33 @@ section
   }
 }
 
+@media screen and (max-width: 480px) {
+  .top_about_right {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 .top_about_ttl {
   margin-bottom: 50px;
   font-size: 36px;
   /*IE9以前に対応する*/
   font-size: 2.25rem;
   line-height: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+  .top_about_ttl .db {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top_about_ttl {
+    font-size: 22px;
+    /*IE9以前に対応する*/
+    font-size: 1.375rem;
+  }
 }
 
 .top_about_txt {
