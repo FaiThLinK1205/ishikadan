@@ -98,6 +98,12 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .br_sp {
+    display: none;
+  }
+}
+
 /****************************************:
 
 下層ページ用ヘッダー
@@ -891,12 +897,6 @@ fv
 
 .fv_under_list {
   list-style: none;
-}
-
-@media screen and (max-width: 480px) {
-  .br_sp {
-    display: none;
-  }
 }
 
 /****************************************:
