@@ -452,11 +452,21 @@ section
     height: 2100px;
   }
 
+  @include sp{
+    height: 1780px;
+  }
+
   &_logo {
     height: 40px;
     width: 40px;
     margin: 0 auto 60px;
     padding-top: 60px;
+  }
+
+  & .section_ttl{
+    @include sp{
+      @include rem(25);
+    }
   }
 
   &_box {
@@ -467,14 +477,22 @@ section
     @include tab {
       display: block;
     }
+
+    @include sp{
+      display: block;
+    }
   }
   
   &_boxItem {
     @include tab {
       width: 600px;
       margin: 0 auto;
+    }
 
-
+    @include sp{
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 50px;
     }
   }
 
