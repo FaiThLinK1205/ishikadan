@@ -21,6 +21,11 @@ fv
         @include tab {
             width: 100%;
         }
+
+        @include sp {
+            width: 100%;
+        }
+        
     }
 
 
@@ -47,11 +52,19 @@ fv
         @include tab {
             @include rem(16);
         }
+
+        @include sp {
+            margin-bottom: 100px;
+            @include rem(11);
+        }
     }
 
     &_box {
         margin-bottom: 84px;
 
+        @include sp {
+            margin-bottom: 0;
+        }
     }
 
 
@@ -69,6 +82,11 @@ fv
         @include tab {
             width: 50%;
         }
+
+        @include sp {
+            width: 100%;
+            height: 250px;
+        }
     }
 
     &_txtBox {
@@ -85,6 +103,12 @@ fv
             width: 450px;
             height: 320px;
             margin: -160px 0 0 317px;
+        }
+
+        @include sp {
+            width: 100%;
+            height: 340px;
+            margin: -220px 0 0 0;
         }
     }
 
@@ -104,7 +128,15 @@ fv
             @include rem(20);
             margin-left: 100px;
             margin-bottom: 20px;
-            padding-top: 30px;
+            padding-top: 20px;
+        }
+
+        @include sp {
+            @include rem(24);
+            margin-top: 200px;
+            margin-left: 5%;
+            margin-bottom: 5px;
+            padding-top: 10%;
         }
     }
 
@@ -124,8 +156,18 @@ fv
             @include rem(15);
             line-height: 1.5;
         }
+
+        @include sp {
+            width: 90%;
+            margin-left: 5%;
+            padding-top: 10px;
+            @include rem(16);
+            line-height: 2;
+        }
     }
 }
+
+
 
 ._img_wrapper {
     margin: 0 0 0 auto;
@@ -133,6 +175,7 @@ fv
     @include tab {
         margin: 0 0 0 380px;
     }
+
 }
 
 ._txt_wrapper {
@@ -143,13 +186,39 @@ fv
         margin: -160px auto 0 0;
         padding: 0 150px 165px 0;
     }
+
+    @include sp {
+        margin: -250px auto 0 0;
+        padding: 0 15px 165px 0;
+    }
 }
 
-._txtBox_wrap {
+._txtBox_ttl_wrap {
     margin-left: 60px;
 
     @include tab {
         margin-left: 30px;
+    }
+
+    @include sp {
+        margin-left: 5%;
+        padding-top: 20%;
+    }
+}
+
+
+
+
+
+._txtBox_txt_wrap {
+    margin-left: 60px;
+
+    @include tab {
+        margin-left: 30px;
+    }
+
+    @include sp {
+        margin-left: 5%;
     }
 }
 
