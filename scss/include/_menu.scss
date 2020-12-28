@@ -17,9 +17,15 @@ fv
         margin-bottom: 37px;
         background: url(../img/section-menu/menu-header.jpg) center / cover;
         position: relative;
+
         @include tab {
             width: 100%;
         }
+
+        @include sp {
+            width: 100%;
+        }
+        
     }
 
 
@@ -42,13 +48,23 @@ fv
         margin-bottom: 78px;
         @include rem(16);
         text-align: center;
+
         @include tab {
             @include rem(16);
+        }
+
+        @include sp {
+            margin-bottom: 100px;
+            @include rem(11);
         }
     }
 
     &_box {
         margin-bottom: 84px;
+
+        @include sp {
+            margin-bottom: 0;
+        }
     }
 
 
@@ -58,8 +74,18 @@ fv
         height: 300px;
         overflow: hidden;
 
+        @include pc_tab {
+            width: 50%;
+        }
+
+
         @include tab {
             width: 50%;
+        }
+
+        @include sp {
+            width: 100%;
+            height: 250px;
         }
     }
 
@@ -68,10 +94,21 @@ fv
         height: 381px;
         margin: -243px 0 0 367px;
         background: url(../img/common/bg.jpg);
+
+        @include pc_tab {
+            width: 50%;
+        }
+
         @include tab {
             width: 450px;
             height: 320px;
             margin: -160px 0 0 317px;
+        }
+
+        @include sp {
+            width: 100%;
+            height: 340px;
+            margin: -220px 0 0 0;
         }
     }
 
@@ -81,11 +118,25 @@ fv
         padding-top: 60px;
         @include rem(24);
         line-height: 2;
+
+        @include pc_tab {
+            margin-left: 30px;
+            @include rem(20)
+        }
+
         @include tab {
             @include rem(20);
             margin-left: 100px;
             margin-bottom: 20px;
-            padding-top: 30px;
+            padding-top: 20px;
+        }
+
+        @include sp {
+            @include rem(24);
+            margin-top: 200px;
+            margin-left: 5%;
+            margin-bottom: 5px;
+            padding-top: 10%;
         }
     }
 
@@ -93,35 +144,81 @@ fv
         margin-left: 238px;
         @include rem(16);
         line-height: 2;
+
+        @include pc_tab {
+            margin-left: 30px;
+            @include rem(14);
+        }
+
         @include tab {
             width: 320px;
             margin-left: 100px;
             @include rem(15);
             line-height: 1.5;
         }
+
+        @include sp {
+            width: 90%;
+            margin-left: 5%;
+            padding-top: 10px;
+            @include rem(16);
+            line-height: 2;
+        }
     }
 }
 
+
+
 ._img_wrapper {
     margin: 0 0 0 auto;
+
     @include tab {
         margin: 0 0 0 380px;
     }
+
 }
 
 ._txt_wrapper {
     margin: -242px auto 0 0;
     padding: 0 274px 165px 0;
+
     @include tab {
         margin: -160px auto 0 0;
         padding: 0 150px 165px 0;
     }
+
+    @include sp {
+        margin: -250px auto 0 0;
+        padding: 0 15px 165px 0;
+    }
 }
 
-._txtBox_wrap {
+._txtBox_ttl_wrap {
     margin-left: 60px;
+
     @include tab {
         margin-left: 30px;
+    }
+
+    @include sp {
+        margin-left: 5%;
+        padding-top: 20%;
+    }
+}
+
+
+
+
+
+._txtBox_txt_wrap {
+    margin-left: 60px;
+
+    @include tab {
+        margin-left: 30px;
+    }
+
+    @include sp {
+        margin-left: 5%;
     }
 }
 
@@ -132,10 +229,3 @@ fv
 section
 
 *****************************************:*/
-
-
-
-
-
-
-
