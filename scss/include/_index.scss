@@ -332,12 +332,6 @@ fv
   }
 }
 
-// .br_sp{
-//   @include sp{
-//     display: none;
-//   }
-// }
-
 /****************************************:
 
 section
@@ -559,11 +553,19 @@ section
     height: 1100px;
   }
 
+  @include sp{
+    height: 1300px;
+  }
+
   &_logo {
     height: 40px;
     width: 40px;
     margin: 0 auto 20px;
 
+  }
+
+  & .section_ttl{
+    @include rem(25);
   }
 
   &_sales {
