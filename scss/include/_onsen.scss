@@ -105,65 +105,8 @@ fv
 
   .footer {
   
-    &_nav {
   
-      &_list {
-        margin-top: 64px;
-        margin-bottom: 96px;
-
-        @include tab{
-          margin-top: 24px;
-          margin-bottom: 30px;
-        }
-
-        @include sp{
-          margin-top: 19px;
-          margin-bottom: 25px;
-        }
-      }
   
-      &_item {
-        @include rem(18);
-
-        @include tab{
-          @include rem(15);
-        }
-
-        @include sp{
-          @include rem(14);
-        }
-      }
-    }
-  
-    &_logo {
-      width: 40px;
-      height: 40px;
-
-      @include tab{
-        width: 32px;
-        height: 32px;
-      }
-
-      @include sp{
-        width: 30px;
-        height: 30px;
-      }
-    }
-  
-    &_ttl {
-      margin-bottom: 72px;
-      @include rem(32);
-
-      @include tab{
-        margin-bottom: 27px;
-        @include rem(23);
-      }
-
-      @include sp{
-        margin-bottom: 25px;
-        @include rem(21);
-      }
-    }
 
     &_box{
 
