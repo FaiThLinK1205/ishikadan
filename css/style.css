@@ -117,12 +117,6 @@ body {
   transition: .3s;
 }
 
-@media screen and (max-width: 480px) {
-  .row_body .header_row {
-    padding: 0 0 0 0;
-  }
-}
-
 .row_body .header_row_left {
   width: 90%;
   display: flex;
@@ -312,11 +306,6 @@ hamburger
 
 /****************************************:
 
-button
-
-*****************************************:*/
-/****************************************:
-
 モーダル
 
 *****************************************:*/
@@ -449,6 +438,14 @@ body.modalin {
 .modal_bgc.in {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+}
+
+@media screen and (max-width: 480px) {
+  option {
+    font-size: 10px;
+    /*IE9以前に対応する*/
+    font-size: 0.625rem;
+  }
 }
 
 /****************************************:
