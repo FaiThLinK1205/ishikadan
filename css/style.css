@@ -1080,6 +1080,12 @@ section
   background: url(../../img/common/bg.jpg) center/cover;
 }
 
+@media screen and (max-width: 480px) {
+  .access {
+    margin-top: 700px;
+  }
+}
+
 .access_logo {
   height: 40px;
   width: 40px;
@@ -1089,6 +1095,12 @@ section
 .access_box {
   margin-top: 66px;
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .access_box {
+    display: block;
+  }
 }
 
 .access_imgbox {
@@ -1102,10 +1114,27 @@ section
   }
 }
 
+@media screen and (max-width: 480px) {
+  .access_imgbox {
+    height: 200px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 .access_textbox {
   margin-top: 20px;
   margin-left: 83px;
   text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .access_textbox {
+    width: 60%;
+    margin-top: 30%;
+    margin-left: 20%;
+    text-align: center;
+  }
 }
 
 .access_txt {
@@ -1121,6 +1150,13 @@ section
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .access_map {
     width: 700px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .access_map {
+    width: 100%;
+    height: 400px;
   }
 }
 
