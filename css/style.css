@@ -991,6 +991,12 @@ fv
   }
 }
 
+@media screen and (max-width: 480px) {
+  .common_fv {
+    width: 100%;
+  }
+}
+
 .common_ttl {
   color: #ffffff;
   font-size: 34px;
@@ -1022,8 +1028,23 @@ fv
   }
 }
 
+@media screen and (max-width: 480px) {
+  .common_top_txt {
+    margin-bottom: 100px;
+    font-size: 11px;
+    /*IE9以前に対応する*/
+    font-size: 0.6875rem;
+  }
+}
+
 .common_box {
   margin-bottom: 84px;
+}
+
+@media screen and (max-width: 480px) {
+  .common_box {
+    margin-bottom: 0;
+  }
 }
 
 .common_img {
@@ -1041,6 +1062,13 @@ fv
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .common_img {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .common_img {
+    width: 100%;
+    height: 250px;
   }
 }
 
@@ -1062,6 +1090,14 @@ fv
     width: 450px;
     height: 320px;
     margin: -160px 0 0 317px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .common_txtBox {
+    width: 100%;
+    height: 340px;
+    margin: -220px 0 0 0;
   }
 }
 
@@ -1091,7 +1127,19 @@ fv
     font-size: 1.25rem;
     margin-left: 100px;
     margin-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .common_txtBox_ttl {
+    font-size: 24px;
+    /*IE9以前に対応する*/
+    font-size: 1.5rem;
+    margin-top: 200px;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    padding-top: 10%;
   }
 }
 
@@ -1123,6 +1171,18 @@ fv
   }
 }
 
+@media screen and (max-width: 480px) {
+  .common_txtBox_txt {
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 10px;
+    font-size: 16px;
+    /*IE9以前に対応する*/
+    font-size: 1rem;
+    line-height: 2;
+  }
+}
+
 ._img_wrapper {
   margin: 0 0 0 auto;
 }
@@ -1145,13 +1205,43 @@ fv
   }
 }
 
-._txtBox_wrap {
+@media screen and (max-width: 480px) {
+  ._txt_wrapper {
+    margin: -250px auto 0 0;
+    padding: 0 15px 165px 0;
+  }
+}
+
+._txtBox_ttl_wrap {
   margin-left: 60px;
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
-  ._txtBox_wrap {
+  ._txtBox_ttl_wrap {
     margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ._txtBox_ttl_wrap {
+    margin-left: 5%;
+    padding-top: 20%;
+  }
+}
+
+._txtBox_txt_wrap {
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  ._txtBox_txt_wrap {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ._txtBox_txt_wrap {
+    margin-left: 5%;
   }
 }
 
