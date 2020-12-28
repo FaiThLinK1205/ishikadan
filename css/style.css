@@ -177,6 +177,61 @@ body {
   margin-right: 10px;
 }
 
+.row_body .header_row_left {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .row_body .header_row_left {
+    justify-content: space-between;
+  }
+}
+
+.row_body .header_row_ttl {
+  width: 200px;
+  height: 40px;
+  margin-right: 120px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .row_body .header_row_ttl {
+    margin-right: 0px;
+  }
+}
+
+.row_body .header_row_nav_link {
+  transition: .3s;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .row_body .header_row_nav_link {
+    font-size: 13px;
+  }
+}
+
+.row_body .header_row_nav_link:hover {
+  color: #aaa;
+}
+
+.row_body .header_row_nav_link:last-of-type {
+  margin-right: 0;
+}
+
+.row_body .reserve_row {
+  height: 70px;
+  padding-top: 5px;
+}
+
+.row_body .reserve_row_link {
+  transition: .3s;
+}
+
+.row_body .reserve_row_link:hover {
+  background-color: #a79F30;
+}
+
 /****************************************:
 
 hamburger
@@ -414,6 +469,21 @@ footer
   padding-bottom: 61px;
 }
 
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .footer_box2 {
+    padding-bottom: 41px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer_box2 {
+    padding-bottom: 35px;
+    font-size: 15px;
+    /*IE9以前に対応する*/
+    font-size: 0.9375rem;
+  }
+}
+
 .footer_box2_tel {
   margin-right: 20px;
 }
@@ -424,6 +494,12 @@ footer
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .footer_copyright {
+    height: 50px;
+  }
+}
+
 .footer_copyright_txt {
   padding-top: 23px;
   color: #ffffff;
@@ -431,6 +507,26 @@ footer
   /*IE9以前に対応する*/
   font-size: 0.75rem;
   display: block;
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .footer_copyright_txt {
+    padding-top: 23px;
+    padding-bottom: 20px;
+    font-size: 9px;
+    /*IE9以前に対応する*/
+    font-size: 0.5625rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer_copyright_txt {
+    padding-top: 18px;
+    padding-bottom: 15px;
+    font-size: 9px;
+    /*IE9以前に対応する*/
+    font-size: 0.5625rem;
+  }
 }
 
 /****************************************:
@@ -1404,121 +1500,6 @@ section
 fv
 
 *****************************************:*/
-.row_body .header_row_left {
-  width: 90%;
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .row_body .header_row_left {
-    justify-content: space-between;
-  }
-}
-
-.row_body .header_row_ttl {
-  width: 200px;
-  height: 40px;
-  margin-right: 120px;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .row_body .header_row_ttl {
-    margin-right: 0px;
-  }
-}
-
-.row_body .header_row_nav_link {
-  transition: .3s;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .row_body .header_row_nav_link {
-    font-size: 13px;
-  }
-}
-
-.row_body .header_row_nav_link:hover {
-  color: #aaa;
-}
-
-.row_body .header_row_nav_link:last-of-type {
-  margin-right: 0;
-}
-
-.row_body .reserve_row {
-  height: 70px;
-  padding-top: 5px;
-}
-
-.row_body .reserve_row_link {
-  transition: .3s;
-}
-
-.row_body .reserve_row_link:hover {
-  background-color: #a79F30;
-}
-
-@media screen and (max-width: 480px) {
-  .row_body .footer_box {
-    font-size: 15px;
-    /*IE9以前に対応する*/
-    font-size: 0.9375rem;
-  }
-}
-
-.row_body .footer_box2 {
-  padding-bottom: 61px;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .row_body .footer_box2 {
-    padding-bottom: 41px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .row_body .footer_box2 {
-    padding-bottom: 35px;
-    font-size: 15px;
-    /*IE9以前に対応する*/
-    font-size: 0.9375rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .row_body .footer_copyright {
-    height: 50px;
-  }
-}
-
-.row_body .footer_copyright_txt {
-  padding-top: 23px;
-  font-size: 12px;
-  /*IE9以前に対応する*/
-  font-size: 0.75rem;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .row_body .footer_copyright_txt {
-    padding-top: 23px;
-    padding-bottom: 20px;
-    font-size: 9px;
-    /*IE9以前に対応する*/
-    font-size: 0.5625rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .row_body .footer_copyright_txt {
-    padding-top: 18px;
-    padding-bottom: 15px;
-    font-size: 9px;
-    /*IE9以前に対応する*/
-    font-size: 0.5625rem;
-  }
-}
-
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .ons_main .section_inner {
     max-width: 677px;

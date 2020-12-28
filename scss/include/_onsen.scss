@@ -3,36 +3,36 @@
 
 
 
-@mixin flexCenterOns{
+@mixin flexCenterOns {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.ons_mb{
+.ons_mb {
   margin-bottom: 200px !important;
 
-  @include tab{
+  @include tab {
     margin-bottom: 70px !important;
   }
 }
 
-.ons_flex{
-  @include flex(flex-start,nowrap);
+.ons_flex {
+  @include flex(flex-start, nowrap);
 }
 
-.breadcrumbs_list{
+.breadcrumbs_list {
 
-  @include sp{
+  @include sp {
     margin-left: 27px;
   }
 }
 
-.pan_li{
+.pan_li {
   margin: 0 20px 97px 0;
   position: relative;
 
-  &:nth-child(1)::after{
+  &:nth-child(1)::after {
     content: ">";
     position: absolute;
     top: 0;
@@ -46,196 +46,88 @@ fv
 
 *****************************************:*/
 
-.row_body{
-  .header_row{
-
-    &_left {
-      width: 90%;
-      display: flex;
-      align-items: center;
-
-      @include tab {
-        justify-content: space-between;
-      }
-    }
-
-    &_ttl {
-      width: 200px;
-      height: 40px;
-      margin-right: 120px;
-
-      @include tab {
-        margin-right: 0px;
-      }
-    }
-  
-    &_nav{
-      
-      &_link{
-        transition: .3s;
-
-        @include tab {
-          font-size: 13px;
-        }
-
-        &:hover{
-          color: #aaa;
-        }
-      }
-    
-      &_link:last-of-type{
-        margin-right: 0;
-      }
-    }
-  }
-
-  .reserve_row{
-    height: 70px;
-    padding-top: 5px;
-
-    
-    &_link{
-      transition: .3s;
-
-      &:hover{
-        background-color: #a79F30;
-      }
-    }
-  }
-
-  .footer {
-  
-  
-  
-
-    &_box{
-
-      @include sp{
-        @include rem(15);
-      }
-    }
-
-  
-    &_box2 {
-      padding-bottom: 61px;
-
-      @include tab{
-        padding-bottom: 41px;
-      }
-
-      @include sp{
-        padding-bottom: 35px;
-        @include rem(15);
-      }
-    }
-  
-    &_copyright {
-
-      @include sp{
-        height: 50px;
-      }
-  
-      &_txt {
-        padding-top: 23px;
-        @include rem(12);
-
-        @include tab{
-          padding-top: 23px;
-          padding-bottom: 20px;
-          @include rem(9);
-        }
-
-        @include sp{
-          padding-top: 18px;
-          padding-bottom: 15px;
-          @include rem(9);
-        }
-      }
-    }
-  }
-}
 
 
-.ons_main{  
+.ons_main {
 
-  .section_inner{
-    @include tab{
+  .section_inner {
+    @include tab {
       max-width: 677px;
     }
   }
 }
 
 
-.ons{
+.ons {
 
-  &_fv{
+  &_fv {
     width: 100%;
     height: 580px;
     margin-bottom: 37px;
     background: url(../../img/section-onsen/onsen-header.jpg) center / cover;
     @include flexCenterOns;
 
-    @include tab{
+    @include tab {
       height: 432px;
     }
 
-    @include sp{
+    @include sp {
       height: 370px;
       margin-bottom: 27px;
     }
   }
 
-  &_ttl{
+  &_ttl {
     color: $cWhite;
     font-size: 34px;
   }
-  
-  &_pan{
+
+  &_pan {
     margin-bottom: 97px;
     font-size: 16px;
     font-weight: bold;
   }
 
-  &_top_txt{
+  &_top_txt {
     margin-bottom: 78px;
     font-size: 16px;
     font-weight: bold;
-    line-height: 2 ;
+    line-height: 2;
     text-align: center;
 
-    @include tab{
+    @include tab {
       font-size: 14px;
     }
 
-    @include sp{
+    @include sp {
       margin: 0 20px 60px;
       font-size: 12px;
     }
   }
 
-  &_imgTxt{
+  &_imgTxt {
     margin-bottom: 84px !important;
   }
 
-  &_imgBox{
+  &_imgBox {
     width: 525px;
     height: 300px;
     @include flexCenterOns;
     overflow: hidden;
 
-    @include tab{
+    @include tab {
       width: 367px;
       height: 245px;
     }
 
-    @include sp{
+    @include sp {
       width: 324px;
       height: 216px;
       margin: 0 auto;
     }
   }
 
-  &_txtBox{
+  &_txtBox {
     width: 813px;
     height: 381px;
     padding: 60px 127px 165px 238px;
@@ -244,14 +136,14 @@ fv
     background: transparent url(../../img/common/bg.jpg);
     box-sizing: border-box;
 
-    @include tab{
+    @include tab {
       width: 439px;
       height: 260px;
       padding: 38px 20px 50px 143px;
       margin: -200px 0 0 246px;
     }
 
-    @include sp{
+    @include sp {
       width: 324px;
       height: 240px;
       padding: 39px 26px 26px 39px;
@@ -259,119 +151,119 @@ fv
     }
   }
 
-  &_boxTtl{
+  &_boxTtl {
     margin-bottom: 52px;
     font-size: 24px;
     line-height: 2;
 
-    @include tab{
+    @include tab {
       margin-bottom: 30px;
       font-size: 17px;
     }
 
-    @include sp{
+    @include sp {
       margin-bottom: 20px;
       font-size: 17px;
     }
   }
 
-  &_txt{
+  &_txt {
     font-size: 16px;
     line-height: 2;
 
-    @include tab{
+    @include tab {
       font-size: 12px;
     }
 
-    @include sp{
+    @include sp {
       font-size: 13px;
     }
   }
 
-  &_effect{
+  &_effect {
     padding: 100px 0;
     margin-bottom: 100px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 
-    @include tab{
+    @include tab {
       padding: 40px 0;
       margin-bottom: 40px;
     }
 
-    @include sp{
+    @include sp {
       padding: 30px 0;
       margin-bottom: 40px;
     }
-    
-    &_ttl{
+
+    &_ttl {
       margin-bottom: 69px;
       font-size: 26px;
 
-      @include tab{
-      margin-bottom: 49px;
-      font-size: 22px;
+      @include tab {
+        margin-bottom: 49px;
+        font-size: 22px;
       }
 
-      @include sp{
+      @include sp {
         margin-bottom: 23px;
         font-size: 18px;
       }
     }
   }
 
-  &_table{
+  &_table {
     width: 880px;
     margin: 0 auto;
     font-weight: bold;
 
-    @include tab{
+    @include tab {
       width: 677px;
     }
 
-    @include sp{
+    @include sp {
       width: 88%;
     }
 
-    &_tr{
+    &_tr {
       text-align: left;
       font-size: 15px;
       border-top: 1px solid #ccc;
 
-      @include tab{
+      @include tab {
         font-size: 13px;
       }
 
-      &:nth-child(3){
+      &:nth-child(3) {
         border-bottom: 1px solid #ccc;
       }
     }
 
-    &_th{
+    &_th {
       width: 187px;
       padding: 17px 125px 17px 0;
 
-      @include tab{
+      @include tab {
         width: 148px;
         padding: 13px 0 13px 15px;
       }
 
-      @include sp{
+      @include sp {
         width: 148px;
         padding: 13px 0 13px 15px;
         font-size: 13px;
       }
     }
 
-    &_td{
+    &_td {
       width: 660px;
       padding: 17px 0;
 
-      @include tab{
+      @include tab {
         width: 650px;
       }
 
-      @include sp{
+      @include sp {
         width: 300px;
         font-size: 13px;
       }
@@ -379,26 +271,26 @@ fv
   }
 }
 
-._imgBoxUnder{
+._imgBoxUnder {
   margin: 0 0 0 auto;
 
-  @include sp{
+  @include sp {
     margin: 0 auto;
   }
 }
 
-._txtBoxUnder{
+._txtBoxUnder {
   padding: 60px 209px 165px 60px;
   margin: -242px auto 0 0;
 
-  @include tab{
+  @include tab {
     width: 439px;
     height: 265px;
     padding: 40px 145px 39px 31px;
     margin: -200px 0 0 0;
   }
 
-  @include sp{
+  @include sp {
     width: 324px;
     height: 240px;
     padding: 30px 26px 23px 39px;
@@ -420,28 +312,28 @@ modal
 
 *****************************************:*/
 
-body.modalin{
+body.modalin {
   overflow: hidden;
 }
 
-.container{
+.container {
   position: relative;
 }
 
 
-.modal{
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 1001;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   display: none;
 
-  &.in{
+  &.in {
     display: block;
   }
-  
-  &_inner{
+
+  &_inner {
     width: 550px;
     height: 600px;
     padding: 29px 60px 90px;
@@ -450,13 +342,13 @@ body.modalin{
     background-color: $cWhite;
     position: relative;
 
-    @include tab{
+    @include tab {
       height: 500px;
       padding: 29px 60px 20px;
     }
   }
 
-  &_eraseBox{
+  &_eraseBox {
     width: 25px;
     height: 25px;
     position: absolute;
@@ -466,36 +358,36 @@ body.modalin{
     cursor: pointer;
   }
 
-  &_erase{
+  &_erase {
     width: 30px;
     height: 2px;
     background-color: $cGray;
     transform-origin: 100% 0%;
     transform: translateX(-30%) rotate(-45deg);
 
-    &:nth-child(2){
+    &:nth-child(2) {
       transform-origin: 0% 0%;
       transform: translateX(3%) rotate(45deg);
     }
   }
 
-  &_ttl{
+  &_ttl {
     margin: 0 auto 30px;
     font-size: 20px;
     display: table;
   }
-  
-  &_txt{
+
+  &_txt {
     margin-bottom: 5px;
     font-size: 16px;
-    
-    &:nth-child(2){
+
+    &:nth-child(2) {
       padding-top: 30px;
       border-top: 1px solid #ccc;
     }
   }
 
-  &_input{
+  &_input {
     width: 429px;
     padding: 8px 0;
     margin-bottom: 5px;
@@ -503,23 +395,23 @@ body.modalin{
     -moz-appearance: none;
     appearance: none;
 
-    &::-ms-expand{
+    &::-ms-expand {
       display: none;
     }
   }
 
-  &_btn{
+  &_btn {
     width: 198px;
     height: 42px;
     margin: 64px auto 0;
     display: block;
 
-    @include tab{
+    @include tab {
       margin: 34px auto 0;
     }
   }
 
-  &_bgc{
+  &_bgc {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0);
@@ -530,7 +422,7 @@ body.modalin{
     transition: .3s;
   }
 
-  &_bgc.in{
+  &_bgc.in {
     background-color: rgba(0, 0, 0, .5);
     z-index: 1000;
   }

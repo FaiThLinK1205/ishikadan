@@ -82,6 +82,69 @@
 }
 
 
+.row_body {
+  .header_row {
+
+    &_left {
+      width: 90%;
+      display: flex;
+      align-items: center;
+
+      @include tab {
+        justify-content: space-between;
+      }
+    }
+
+    &_ttl {
+      width: 200px;
+      height: 40px;
+      margin-right: 120px;
+
+      @include tab {
+        margin-right: 0px;
+      }
+    }
+
+    &_nav {
+
+      &_link {
+        transition: .3s;
+
+        @include tab {
+          font-size: 13px;
+        }
+
+        &:hover {
+          color: #aaa;
+        }
+      }
+
+      &_link:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .reserve_row {
+    height: 70px;
+    padding-top: 5px;
+
+
+    &_link {
+      transition: .3s;
+
+      &:hover {
+        background-color: #a79F30;
+      }
+    }
+  }
+
+}
+
+
+
+
+
 /****************************************:
 
 hamburger
@@ -340,6 +403,16 @@ footer
     text-align: center;
     padding-bottom: 61px;
 
+    @include tab {
+      padding-bottom: 41px;
+    }
+
+    @include sp {
+      padding-bottom: 35px;
+      @include rem(15);
+    }
+
+
     &_tel {
       margin-right: 20px;
     }
@@ -351,11 +424,29 @@ footer
     background: $cBlack;
     text-align: center;
 
+    @include sp {
+      height: 50px;
+    }
+
+
     &_txt {
       padding-top: 23px;
       color: $cWhite;
       @include rem(12);
       display: block;
+
+      @include tab {
+        padding-top: 23px;
+        padding-bottom: 20px;
+        @include rem(9);
+      }
+
+      @include sp {
+        padding-top: 18px;
+        padding-bottom: 15px;
+        @include rem(9);
+      }
+
     }
   }
 
