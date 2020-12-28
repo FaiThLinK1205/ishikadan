@@ -48,10 +48,6 @@ fv
     background: url(../../img/section-onsen/onsen-header.jpg) center / cover;
     @include flexCenterOns;
 
-    @include tab {
-      height: 432px;
-    }
-
     @include sp {
       height: 370px;
       margin-bottom: 27px;

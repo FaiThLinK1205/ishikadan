@@ -1792,12 +1792,6 @@ fv
   justify-content: center;
 }
 
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .ons_fv {
-    height: 432px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .ons_fv {
     height: 370px;
