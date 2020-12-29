@@ -59,10 +59,23 @@
         display: flex;
       }
 
+      &_item {
+
+        @include pc_tab {
+          width: 75px;
+          margin-left: -10px;
+        }
+      }
+
       &_link {
         margin-right: 30px;
         padding: 10px;
         transition: .3s;
+        @include pc_tab {
+          display: block;
+          width: 200px;
+
+        }
 
         @include tab {
           font-size: 13px;
@@ -160,14 +173,11 @@ hamburger
       width: 30px;
       height: 2px;
       left: 6px;
-      background: $cWhite;
+      background: #555;
       -webkit-transition: 0.5s ease-in-out;
       -moz-transition: 0.5s ease-in-out;
       transition: 0.5s ease-in-out;
 
-      &.fix {
-        background-color: #555;
-      }
 
       &:nth-child(1) {
         top: 10px;
@@ -183,6 +193,19 @@ hamburger
 
     }
   }
+
+
+  .color {
+    & span.fix {
+      background-color: #555;
+    }
+
+    & span {
+      background: $cWhite;
+    }
+  }
+
+
 
 
 

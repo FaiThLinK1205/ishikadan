@@ -29,19 +29,6 @@ fv
 
 
 
-.ons_main {
-
-  .section_inner {
-
-    @include pc_tab {
-      max-width: 715px;
-    }
-
-    @include tab {
-      max-width: 677px;
-    }
-  }
-}
 
 
 .ons {
