@@ -160,10 +160,14 @@ hamburger
       width: 30px;
       height: 2px;
       left: 6px;
-      background: #555;
+      background: $cWhite;
       -webkit-transition: 0.5s ease-in-out;
       -moz-transition: 0.5s ease-in-out;
       transition: 0.5s ease-in-out;
+
+      &.fix {
+        background-color: #555;
+      }
 
       &:nth-child(1) {
         top: 10px;

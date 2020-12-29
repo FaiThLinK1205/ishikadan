@@ -68,12 +68,12 @@ $('.hamburger').click(function () {
 
   if ($(this).hasClass('active')) {
     $('.header_row_nav').addClass('active');
+    $(this).find('span').addClass('fix');
   } else {
     $('.header_row_nav').removeClass('active');
-
+    $(this).find('span').removeClass('fix');
   }
 });
-
 
 
 // ①タブをクリックしたら発動

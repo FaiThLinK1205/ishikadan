@@ -109,11 +109,12 @@
 .header_row {
 
   &.color {
+    color: $cWhite;
     background: transparent;
 
-    @include tab {
-      color: $cWhite;
-    }
+    // @include tab {
+    //   color: $cWhite;
+    // }
     @include sp {
       color:$cBlack;
     }

@@ -258,8 +258,11 @@ hamburger
     width: 30px;
     height: 2px;
     left: 6px;
-    background: #555;
+    background: #ffffff;
     transition: 0.5s ease-in-out;
+  }
+  .hamburger span.fix {
+    background-color: #555;
   }
   .hamburger span:nth-child(1) {
     top: 10px;
@@ -692,13 +695,8 @@ footer
 }
 
 .header_row.color {
+  color: #ffffff;
   background: transparent;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .header_row.color {
-    color: #ffffff;
-  }
 }
 
 @media screen and (max-width: 480px) {
