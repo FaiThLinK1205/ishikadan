@@ -1427,6 +1427,10 @@ section
   margin-bottom: 64px;
 }
 
+.notice_sales_txt.active {
+  text-decoration: underline;
+}
+
 .notice_sales_txt:last-child {
   margin-right: 0;
 }
@@ -1916,6 +1920,7 @@ fv
 }
 
 .note {
+  width: 458px;
   font-size: 14px;
   /*IE9以前に対応する*/
   font-size: 0.875rem;

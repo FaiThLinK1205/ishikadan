@@ -131,13 +131,13 @@ fv
     right: 508px;
     z-index: 10;
 
-  @include pc_tab{
-    right: 150px;
-  }
+    @include pc_tab {
+      right: 150px;
+    }
 
-  @include tab{
-    right:180px;
-  }
+    @include tab {
+      right: 180px;
+    }
 
     @include sp {
       top: 250px;
@@ -153,13 +153,13 @@ fv
     right: 608px;
     z-index: 10;
 
-  @include pc_tab{
-    right: 250px;
-  }
+    @include pc_tab {
+      right: 250px;
+    }
 
-  @include tab{
-    right: 280px;
-  }
+    @include tab {
+      right: 280px;
+    }
 
     @include sp {
       top: 250px;
@@ -174,11 +174,11 @@ fv
   margin: 0 0 106px auto;
   background: url("../img/common/bg.jpg")center / cover no-repeat;
 
-  @include pc_tab{
+  @include pc_tab {
     position: relative;
   }
-  
-  
+
+
   & .section_inner {
     height: 681px;
     writing-mode: vertical-rl;
@@ -238,7 +238,7 @@ fv
   &_wrap {
     margin: 150px 100px 0 308px;
 
-    @include pc_tab{
+    @include pc_tab {
       margin: 0;
       padding-right: 170px;
       position: absolute;
@@ -247,7 +247,7 @@ fv
       transform: translateX(-50%);
     }
 
-    @include sp{
+    @include sp {
       margin: 0;
     }
   }
@@ -451,7 +451,7 @@ section
     display: flex;
     justify-content: space-between;
 
-    @include pc_tab{
+    @include pc_tab {
       display: block;
     }
 
@@ -596,6 +596,11 @@ section
       margin-top: 46px;
       margin-right: 53px;
       margin-bottom: 64px;
+      
+      &.active {
+        text-decoration: underline;
+      }
+
 
       &:last-child {
         margin-right: 0;
@@ -722,7 +727,7 @@ section
     display: block;
     margin: 69px auto 110px;
 
-    @include pc_tab{
+    @include pc_tab {
       width: 100%;
       padding: 0 10px;
 
