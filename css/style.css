@@ -877,6 +877,12 @@ fv
   z-index: 10;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .fv_ttl {
+    right: 150px;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .fv_ttl {
     right: 180px;
@@ -898,6 +904,12 @@ fv
   z-index: 10;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .fv_ttl2 {
+    right: 250px;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .fv_ttl2 {
     right: 280px;
@@ -916,9 +928,9 @@ fv
   background: url("../img/common/bg.jpg") center/cover no-repeat;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1150px) and (min-width: 769px) {
   .fv_under {
-    margin: 0;
+    position: relative;
   }
 }
 
@@ -993,6 +1005,17 @@ fv
   margin: 150px 100px 0 308px;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .fv_under_wrap {
+    margin: 0;
+    padding-right: 170px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .fv_under_wrap {
     margin: 0;
@@ -1006,6 +1029,12 @@ fv
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .fv_under_txt.fv_txt, .fv_under_txt2.fv_txt, .fv_under_txt3.fv_txt {
+    margin-left: 50px;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1213,6 +1242,12 @@ section
   margin-top: 66px;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .plan_box {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
@@ -1479,6 +1514,13 @@ section
 .access_map {
   display: block;
   margin: 69px auto 110px;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .access_map {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
