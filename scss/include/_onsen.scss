@@ -32,6 +32,11 @@ fv
 .ons_main {
 
   .section_inner {
+
+    @include pc_tab {
+      max-width: 715px;
+    }
+
     @include tab {
       max-width: 677px;
     }
@@ -76,6 +81,10 @@ fv
     line-height: 2;
     text-align: center;
 
+    @include pc_tab {
+      font-size: 14px;
+    }
+
     @include tab {
       font-size: 14px;
     }
@@ -84,6 +93,7 @@ fv
       margin: 0 20px 60px;
       font-size: 12px;
     }
+
   }
 
   &_imgTxt {
@@ -95,6 +105,11 @@ fv
     height: 300px;
     @include flexCenterOns;
     overflow: hidden;
+
+    @include pc_tab {
+      width: 380px;
+      height: 280px;
+    }
 
     @include tab {
       width: 367px;
@@ -117,6 +132,13 @@ fv
     background: transparent url(../../img/common/bg.jpg);
     box-sizing: border-box;
 
+    @include pc_tab {
+      width: 439px;
+      height: 260px;
+      padding: 25px 20px 32px 129px;
+      margin: -200px 0 0 276px;
+    }
+
     @include tab {
       width: 439px;
       height: 260px;
@@ -137,6 +159,11 @@ fv
     font-size: 24px;
     line-height: 2;
 
+    @include pc_tab {
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+
     @include tab {
       margin-bottom: 30px;
       font-size: 17px;
@@ -151,6 +178,10 @@ fv
   &_txt {
     font-size: 16px;
     line-height: 2;
+
+    @include pc_tab {
+      font-size: 14px;
+    }
 
     @include tab {
       font-size: 12px;
@@ -198,6 +229,10 @@ fv
     margin: 0 auto;
     font-weight: bold;
 
+    @include pc_tab {
+      width: 715px;
+    }
+
     @include tab {
       width: 677px;
     }
@@ -223,6 +258,10 @@ fv
     &_th {
       width: 187px;
       padding: 17px 125px 17px 0;
+
+      @include pc_tab {
+        padding: 17px 93px 17px 15px;
+      }
 
       @include tab {
         width: 148px;
@@ -263,6 +302,13 @@ fv
 ._txtBoxUnder {
   padding: 60px 209px 165px 60px;
   margin: -242px auto 0 0;
+
+  @include pc_tab {
+    width: 439px;
+    height: 265px;
+    padding: 25px 145px 39px 31px;
+    margin: -200px 0 0 0;
+  }
 
   @include tab {
     width: 439px;

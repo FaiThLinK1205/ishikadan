@@ -62,6 +62,11 @@ fv
     &_box {
         margin-bottom: 84px;
 
+        @include pc_tab {
+            width: 715px;
+            margin: 0 auto 100px;
+        }
+
         @include sp {
             margin-bottom: 0;
         }
@@ -75,7 +80,8 @@ fv
         overflow: hidden;
 
         @include pc_tab {
-            width: 50%;
+            width: 380px;
+            height: 280px;
         }
 
 
@@ -96,7 +102,10 @@ fv
         background: url(../img/common/bg.jpg);
 
         @include pc_tab {
-            width: 50%;
+            width: 439px;
+            height: 300px;
+            padding: 17px 18px 26px 123px;
+            margin: -200px 0 0 276px;
         }
 
         @include tab {
@@ -120,8 +129,10 @@ fv
         line-height: 2;
 
         @include pc_tab {
-            margin-left: 30px;
-            @include rem(20)
+            padding: 0;
+            margin-left: 0px;
+            margin-bottom: 20px;
+            @include rem(21)
         }
 
         @include tab {
@@ -146,8 +157,9 @@ fv
         line-height: 2;
 
         @include pc_tab {
-            margin-left: 30px;
-            @include rem(14);
+            padding: 0;
+            margin-left: 0px;
+            @include rem(15)
         }
 
         @include tab {
@@ -182,6 +194,11 @@ fv
     margin: -242px auto 0 0;
     padding: 0 274px 165px 0;
 
+    @include pc_tab {
+        margin: -210px auto 0 0;
+        padding: 28px 124px 37px 30px;
+    }
+
     @include tab {
         margin: -160px auto 0 0;
         padding: 0 150px 165px 0;
@@ -195,6 +212,10 @@ fv
 
 ._txtBox_ttl_wrap {
     margin-left: 60px;
+
+    @include pc_tab {
+        margin-left: 0;
+    }
 
     @include tab {
         margin-left: 30px;
@@ -212,6 +233,10 @@ fv
 
 ._txtBox_txt_wrap {
     margin-left: 60px;
+
+    @include pc_tab {
+        margin-left: 0;
+    }
 
     @include tab {
         margin-left: 30px;
