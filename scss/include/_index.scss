@@ -561,16 +561,15 @@ section
   @include tab {
     height: 1100px;
   }
-
+  
   @include sp{
-    height: 1300px;
+    height: 450px;
   }
 
   &_logo {
     height: 40px;
     width: 40px;
     margin: 0 auto 20px;
-
   }
 
   & .section_ttl{
@@ -597,7 +596,6 @@ section
   }
 
   &_box {
-
     display: flex;
     flex-wrap: wrap;
   }
@@ -613,6 +611,11 @@ section
       margin-bottom: 20px;
     }
 
+    @include sp{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
     &_img {
       height: 100px;
       width: 103px;
@@ -622,8 +625,15 @@ section
   &_textbox {
     margin-left: 30px;
 
+    @include sp{
+      width: 100%;
+      margin-right: 10px;
+    }
+
+    
+
     &_date {
-      margin-bottom: 10px;
+      margin-bottom: 10px；
     }
   }
 

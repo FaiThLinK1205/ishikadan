@@ -1323,7 +1323,7 @@ section
 
 @media screen and (max-width: 480px) {
   .notice {
-    height: 1300px;
+    height: 450px;
   }
 }
 
@@ -1377,6 +1377,13 @@ section
   }
 }
 
+@media screen and (max-width: 480px) {
+  .notice_item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .notice_item_img {
   height: 100px;
   width: 103px;
@@ -1386,8 +1393,15 @@ section
   margin-left: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .notice_textbox {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+
 .notice_textbox_date {
-  margin-bottom: 10px;
+  margin-bottom: 10px；;
 }
 
 /****************************************:
