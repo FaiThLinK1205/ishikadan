@@ -12,6 +12,10 @@ fv
 .mb52 {
   margin-bottom: 52px;
 
+  @include pc_tab {
+    margin-bottom: 22px;
+}
+
   @include tab{
     margin-bottom: 35px;
   }
