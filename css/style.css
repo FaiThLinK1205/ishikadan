@@ -1987,13 +1987,13 @@ fv
 
 *****************************************:*/
 @media screen and (max-width: 1150px) and (min-width: 769px) {
-  .ons .section_inner {
+  .ons_main .section_inner {
     max-width: 715px;
   }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
-  .ons .section_inner {
+  .ons_main .section_inner {
     max-width: 677px;
   }
 }
