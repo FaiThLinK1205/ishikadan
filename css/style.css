@@ -833,7 +833,7 @@ fv
 
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .fv_ttl {
-    right: 180px;
+    right: 150px;
   }
 }
 
@@ -860,7 +860,7 @@ fv
 
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .fv_ttl2 {
-    right: 280px;
+    right: 250px;
   }
 }
 
@@ -882,9 +882,9 @@ fv
   background: url("../img/common/bg.jpg") center/cover no-repeat;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1150px) and (min-width: 769px) {
   .fv_under {
-    margin: 0;
+    position: relative;
   }
 }
 
@@ -974,6 +974,17 @@ fv
 
 .fv_under_wrap {
   margin: 150px 100px 0 308px;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .fv_under_wrap {
+    margin: 0;
+    padding-right: 170px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1549,7 +1560,8 @@ section
 
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .access_map {
-    width: 700px;
+    width: 100%;
+    padding: 0 10px;
   }
 }
 
