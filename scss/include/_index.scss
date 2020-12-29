@@ -11,114 +11,132 @@
   border: 1px solid $cBlack;
 }
 
-/****************************************:
+// /****************************************:
 
-header
+// header
 
-*****************************************:*/
+// *****************************************:*/
 
-.header {
-  width: 100%;
-  padding: 20px;
-  color: $cWhite;
-  position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-  z-index: 99;
-  transition: .3s;
+// .header {
+//   width: 100%;
+//   padding: 20px;
+//   color: $cWhite;
+//   position: absolute;
+//   top: 0;
+//   display: flex;
+//   align-items: center;
+//   z-index: 99;
+//   transition: .3s;
 
-  &_left{
-    width: 90%;
-    display: flex;
-    align-items: center;
+//   &_left {
+//     width: 90%;
+//     display: flex;
+//     align-items: center;
 
-    @include tab{
-      justify-content: space-between;
+//     @include tab {
+//       justify-content: space-between;
+//     }
+
+//     @include sp {
+//       width: 50%;
+//     }
+
+//   }
+
+//   &_ttl {
+//     width: 200px;
+//     height: 40px;
+//     margin-right: 120px;
+
+//     @include tab {
+//       margin-right: 0px;
+//     }
+//   }
+
+//   &row_logo {
+//     display: none;
+//   }
+
+// }
+
+// .header_nav {
+
+//   &_list {
+//     display: flex;
+//   }
+
+//   &_link {
+//     margin-right: 30px;
+//     padding: 10px;
+//     color: $cWhite;
+
+//     @include tab {
+//       font-size: 13px;
+//     }
+//   }
+
+//   &_link:last-of-type {
+//     margin-right: 0;
+//   }
+// }
+
+// .reserve {
+//   width: 50%;
+//   display: flex;
+//   justify-content: flex-end;
+
+//   &_link {
+//     width: 170px;
+//     padding: 19px;
+//     @include rem(16);
+//     line-height: 0;
+//     letter-spacing: 0;
+//     background: $cOcher;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     cursor: pointer;
+//   }
+
+//   &_img {
+//     width: 20px;
+//     height: 20px;
+//     margin-right: 10px;
+//   }
+// }
+
+
+.header_row {
+
+  &.color {
+    background: transparent;
+
+    @include tab {
+      color: $cWhite;
+    }
+    @include sp {
+      color:$cBlack;
     }
   }
 
-  &_ttl {
-    width: 200px;
-    height: 40px;
-    margin-right:120px;
-
-    @include tab{
-      margin-right: 0px;
-    }
-  }
-
-  &_logo-b {
+  &_logo_b {
     display: none;
   }
 
-}
-
-.header_nav {
-
-  &_list {
-    display: flex;
+  &_logo_b.fix {
+    display: block;
   }
 
-  &_link {
-    margin-right: 30px;
-    padding: 10px;
-    color: $cWhite;
-
-    @include tab {
-      font-size: 13px;
-    }
-  }
-
-  &_link:last-of-type {
-    margin-right: 0;
-  }
-}
-
-.reserve {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-
-  &_link {
-    width: 170px;
-    padding: 19px;
-    @include rem(16);
-    line-height: 0;
-    letter-spacing: 0;
-    background: $cOcher;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  &_img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+  &_logo_w.fix {
+    display: none;
   }
 }
 
 // ヘッダー固定時
-.header {
+.header_row {
 
-  &.fix {
-    height: 80px;
-    margin: 0;
-    font-weight: bold;
-    background: $cWhite;
-    z-index: 999;
-    position: fixed;
-  }
 
-  &_logo-w.fix {
-    display: none;
-  }
 
-  &_logo-b.fix {
-    display: block;
-  }
 
   &_nav_link.fix {
     color: $cBlack;
@@ -195,40 +213,40 @@ fv
   color: $cWhite;
   position: relative;
 
-&_ttl{
-  writing-mode: vertical-lr;
-  position: absolute;
-  top: 282px;
-  right: 508px;
-  z-index: 10;
+  &_ttl {
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 282px;
+    right: 508px;
+    z-index: 10;
 
-  @include tab{
-    right:180px;
+    @include tab {
+      right: 180px;
+    }
+
+    @include sp {
+      top: 250px;
+      right: 30%;
+    }
+
   }
 
-  @include sp{
-    top: 250px;
-    right: 30%;
+  &_ttl2 {
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 282px;
+    right: 608px;
+    z-index: 10;
+
+    @include tab {
+      right: 280px;
+    }
+
+    @include sp {
+      top: 250px;
+      right: 50%;
+    }
   }
-
-}
-
-&_ttl2{
-  writing-mode: vertical-lr;
-  position: absolute;
-  top: 282px;
-  right: 608px;
-  z-index: 10;
-
-  @include tab{
-    right: 280px;
-  }
-
-  @include sp {
-    top: 250px;
-    right: 50%;
-  }
-}
 
 }
 
@@ -237,7 +255,7 @@ fv
   margin: 0 0 106px auto;
   background: url("../img/common/bg.jpg")center / cover no-repeat;
 
-  @include sp{
+  @include sp {
     margin: 0;
   }
 
@@ -246,7 +264,7 @@ fv
     height: 681px;
     writing-mode: vertical-rl;
 
-    @include sp{
+    @include sp {
       height: 630px;
       writing-mode: horizontal-tb;
     }
@@ -259,12 +277,12 @@ fv
     letter-spacing: 0;
     @include rem(28);
 
-    @include tab{
+    @include tab {
       @include rem(20);
       margin-left: 20px;
     }
 
-    @include sp{
+    @include sp {
       margin: 0;
       padding: 64px 0 20px 1em;
       @include rem(20);
@@ -291,7 +309,7 @@ fv
   &_wrap {
     margin: 150px 100px 0 308px;
 
-    @include sp{
+    @include sp {
       margin: 0;
     }
   }
@@ -310,7 +328,7 @@ fv
       margin-left: 50px;
     }
 
-    @include sp{
+    @include sp {
       margin: 0 2em 2em 2em;
       @include rem(14);
 
@@ -321,7 +339,7 @@ fv
     margin-bottom: 120px;
     text-align: right;
 
-    @include sp{
+    @include sp {
       margin-right: 3em;
       @include rem(14);
     }
@@ -332,8 +350,8 @@ fv
   }
 }
 
-.br_sp{
-  @include sp{
+.br_sp {
+  @include sp {
     display: none;
   }
 }
@@ -347,7 +365,7 @@ section
 .top_about {
   margin-bottom: -44px;
 
-  @include sp{
+  @include sp {
     margin-bottom: 80px;
   }
 
@@ -360,7 +378,7 @@ section
       display: block;
     }
 
-    @include sp{
+    @include sp {
       display: block;
       margin-bottom: 50px;
     }
@@ -369,7 +387,7 @@ section
   &_box:nth-child(even) {
     flex-direction: row-reverse;
 
-    @include sp{
+    @include sp {
       flex-direction: row;
     }
   }
@@ -382,7 +400,7 @@ section
       width: 100%;
     }
 
-    @include sp{
+    @include sp {
       width: 100%;
       height: 250px;
     }
@@ -398,7 +416,7 @@ section
       margin: 0 auto;
     }
 
-    @include sp{
+    @include sp {
       width: 90%;
       margin: 0 auto;
     }
@@ -409,13 +427,13 @@ section
     @include rem(36);
     line-height: 1.5em;
 
-    & .db{
-      @include sp{
+    & .db {
+      @include sp {
         display: block;
       }
     }
 
-    @include sp{
+    @include sp {
       @include rem(22);
     }
   }
@@ -425,7 +443,7 @@ section
     @include rem(16);
     line-height: 2em;
 
-    @include tab{
+    @include tab {
       @include rem(15);
     }
   }
@@ -434,8 +452,8 @@ section
     padding: 20px 40px;
     display: inline-block;
     line-height: 20px;
-}
   }
+}
 
 
 /****************************************:
@@ -452,7 +470,7 @@ section
     height: 2100px;
   }
 
-  @include sp{
+  @include sp {
     height: 1780px;
   }
 
@@ -463,8 +481,8 @@ section
     padding-top: 60px;
   }
 
-  & .section_ttl{
-    @include sp{
+  & .section_ttl {
+    @include sp {
       @include rem(25);
     }
   }
@@ -478,18 +496,18 @@ section
       display: block;
     }
 
-    @include sp{
+    @include sp {
       display: block;
     }
   }
-  
+
   &_boxItem {
     @include tab {
       width: 600px;
       margin: 0 auto;
     }
 
-    @include sp{
+    @include sp {
       width: 90%;
       margin: 0 auto;
       margin-bottom: 50px;
@@ -645,7 +663,7 @@ section
     display: flex;
 
     @include sp {
-    display: block;
+      display: block;
     }
   }
 

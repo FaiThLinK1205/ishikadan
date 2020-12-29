@@ -42,23 +42,23 @@ $(() => {
 
 // ======= header =========
 // スクロールしたらヘッダー固定
-let header = $('.header');
+let header = $('#header');
 let navLink = $('.header_nav_link');
-let logoW = $('.header_logo-w');
-let logoB = $('.header_logo-b');
+let logoW = $('.header_row_logo_w');
+let logoB = $('.header_row_logo_b');
 
 $(window).scroll(function () {
 
-  if ($(window).scrollTop() > 80) {
-    header.addClass('fix');
+  if ($(window).scrollTop() < 80) {
+    header.addClass('color');
     navLink.addClass('fix');
-    logoW.addClass('fix');
-    logoB.addClass('fix');
-  } else {
-    header.removeClass('fix');
-    navLink.removeClass('fix');
     logoW.removeClass('fix');
     logoB.removeClass('fix');
+  } else {
+    header.removeClass('color');
+    navLink.removeClass('fix');
+    logoW.addClass('fix');
+    logoB.addClass('fix');
   }
 });
 
@@ -70,6 +70,7 @@ $('.hamburger').click(function () {
     $('.header_row_nav').addClass('active');
   } else {
     $('.header_row_nav').removeClass('active');
+
   }
 });
 

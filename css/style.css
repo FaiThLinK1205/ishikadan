@@ -288,7 +288,7 @@ hamburger
     display: block;
   }
   .header_row_nav_list {
-    height: 500px;
+    height: 800px;
     width: 100%;
     margin-top: 100px;
     flex-direction: column;
@@ -685,116 +685,35 @@ footer
   border: 1px solid #000000;
 }
 
-/****************************************:
-
-header
-
-*****************************************:*/
-.header {
-  width: 100%;
-  padding: 20px;
-  color: #ffffff;
-  position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-  z-index: 99;
-  transition: .3s;
-}
-
-.header_left {
-  width: 90%;
-  display: flex;
-  align-items: center;
+.header_row.color {
+  background: transparent;
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
-  .header_left {
-    justify-content: space-between;
+  .header_row.color {
+    color: #ffffff;
   }
 }
 
-.header_ttl {
-  width: 200px;
-  height: 40px;
-  margin-right: 120px;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .header_ttl {
-    margin-right: 0px;
+@media screen and (max-width: 480px) {
+  .header_row.color {
+    color: #000000;
   }
 }
 
-.header_logo-b {
+.header_row_logo_b {
   display: none;
 }
 
-.header_nav_list {
-  display: flex;
-}
-
-.header_nav_link {
-  margin-right: 30px;
-  padding: 10px;
-  color: #ffffff;
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .header_nav_link {
-    font-size: 13px;
-  }
-}
-
-.header_nav_link:last-of-type {
-  margin-right: 0;
-}
-
-.reserve {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.reserve_link {
-  width: 170px;
-  padding: 19px;
-  font-size: 16px;
-  /*IE9以前に対応する*/
-  font-size: 1rem;
-  line-height: 0;
-  letter-spacing: 0;
-  background: #978F10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.reserve_img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.header.fix {
-  height: 80px;
-  margin: 0;
-  font-weight: bold;
-  background: #ffffff;
-  z-index: 999;
-  position: fixed;
-}
-
-.header_logo-w.fix {
-  display: none;
-}
-
-.header_logo-b.fix {
+.header_row_logo_b.fix {
   display: block;
 }
 
-.header_nav_link.fix {
+.header_row_logo_w.fix {
+  display: none;
+}
+
+.header_row_nav_link.fix {
   color: #000000;
 }
 
