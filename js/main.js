@@ -54,18 +54,22 @@ $(window).scroll(function () {
     navLink.addClass('fix');
     logoW.removeClass('fix');
     logoB.removeClass('fix');
+    header.find('span').removeClass('fix');
+    
   } else {
     header.removeClass('color');
     navLink.removeClass('fix');
     logoW.addClass('fix');
     logoB.addClass('fix');
+    header.find('span').addClass('fix');
+
   }
 });
 
 // ======= header hamburger =========
 $('.hamburger').click(function () {
   $(this).toggleClass('active');
-
+  
   if ($(this).hasClass('active')) {
     $('.header_row_nav').addClass('active');
     $(this).find('span').addClass('fix');
@@ -109,7 +113,7 @@ AOS.init({
   throttleDelay: 99, //ページのスクロール中に使用されるスロットルの遅延
 
   // Effect settings:
-  offset: 50, //元のトリガーポイントからのオフセット（ ピクセル単位）
+  offset: 100, //元のトリガーポイントからのオフセット（ ピクセル単位）
   delay: 200, //アニメーションが始まるまでの遅延時間（0-3000の間で指定。50ms毎）
   duration: 1500, //アニメーション開始から終了までの時間（0-3000の間で指定。50ms毎）
   easing: 'ease-out', //AOSアニメーションのイージング

@@ -11,99 +11,11 @@
   border: 1px solid $cBlack;
 }
 
-// /****************************************:
+/****************************************:
 
-// header
+header
 
-// *****************************************:*/
-
-// .header {
-//   width: 100%;
-//   padding: 20px;
-//   color: $cWhite;
-//   position: absolute;
-//   top: 0;
-//   display: flex;
-//   align-items: center;
-//   z-index: 99;
-//   transition: .3s;
-
-//   &_left {
-//     width: 90%;
-//     display: flex;
-//     align-items: center;
-
-//     @include tab {
-//       justify-content: space-between;
-//     }
-
-//     @include sp {
-//       width: 50%;
-//     }
-
-//   }
-
-//   &_ttl {
-//     width: 200px;
-//     height: 40px;
-//     margin-right: 120px;
-
-//     @include tab {
-//       margin-right: 0px;
-//     }
-//   }
-
-//   &row_logo {
-//     display: none;
-//   }
-
-// }
-
-// .header_nav {
-
-//   &_list {
-//     display: flex;
-//   }
-
-//   &_link {
-//     margin-right: 30px;
-//     padding: 10px;
-//     color: $cWhite;
-
-//     @include tab {
-//       font-size: 13px;
-//     }
-//   }
-
-//   &_link:last-of-type {
-//     margin-right: 0;
-//   }
-// }
-
-// .reserve {
-//   width: 50%;
-//   display: flex;
-//   justify-content: flex-end;
-
-//   &_link {
-//     width: 170px;
-//     padding: 19px;
-//     @include rem(16);
-//     line-height: 0;
-//     letter-spacing: 0;
-//     background: $cOcher;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     cursor: pointer;
-//   }
-
-//   &_img {
-//     width: 20px;
-//     height: 20px;
-//     margin-right: 10px;
-//   }
-// }
+*****************************************:*/
 
 
 .header_row {
@@ -112,11 +24,8 @@
     color: $cWhite;
     background: transparent;
 
-    // @include tab {
-    //   color: $cWhite;
-    // }
     @include sp {
-      color:$cBlack;
+      color: $cBlack;
     }
   }
 
@@ -214,12 +123,17 @@ fv
   color: $cWhite;
   position: relative;
 
+
   &_ttl {
     writing-mode: vertical-lr;
     position: absolute;
     top: 282px;
     right: 508px;
     z-index: 10;
+
+    @include pc_tab {
+      right: 180px;
+    }
 
     @include tab {
       right: 180px;
@@ -238,6 +152,10 @@ fv
     top: 282px;
     right: 608px;
     z-index: 10;
+
+    @include pc_tab {
+      right: 280px;
+    }
 
     @include tab {
       right: 280px;
@@ -278,6 +196,12 @@ fv
     letter-spacing: 0;
     @include rem(28);
 
+    @include pc_tab {
+      @include rem(20);
+      margin-left: 20px;
+
+    }
+
     @include tab {
       @include rem(20);
       margin-left: 20px;
@@ -295,6 +219,10 @@ fv
     line-height: 1em;
     letter-spacing: 0;
     @include rem(28);
+
+    @include pc_tab {
+      @include rem(20);
+    }
 
     @include tab {
       @include rem(20);
@@ -323,6 +251,12 @@ fv
     line-height: 1.73em;
     letter-spacing: 0;
     @include rem(16);
+
+    @include pc_tab {
+      @include rem(16);
+      margin-left: 50px;
+
+    }
 
     @include tab {
       @include rem(16);
@@ -369,6 +303,10 @@ section
     justify-content: flex-start;
     margin-bottom: 122px;
 
+    @include pc_tab {
+      display: block;
+    }
+
     @include tab {
       display: block;
     }
@@ -391,6 +329,13 @@ section
     width: 55%;
     height: 545px;
 
+    @include pc_tab {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 3%;
+    }
+
     @include tab {
       width: 100%;
     }
@@ -406,6 +351,12 @@ section
     width: 30%;
     margin: 32px 0 0 137px;
     letter-spacing: 0;
+
+    @include pc_tab {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
 
     @include tab {
       width: 80%;
@@ -462,11 +413,15 @@ section
   height: 775px;
   background: url(../../img/common/bg02.jpg) center / cover;
 
+  @include pc_tab {
+    height: 2100px;
+  }
+
   @include tab {
     height: 2100px;
   }
 
-  @include sp{
+  @include sp {
     height: 100%;
     padding: 50px 0;
   }
@@ -489,6 +444,10 @@ section
     display: flex;
     justify-content: space-between;
 
+    @include pc_tab {
+      display: block;
+    }
+
     @include tab {
       display: block;
     }
@@ -499,6 +458,12 @@ section
   }
 
   &_boxItem {
+
+    @include pc_tab {
+      width: 750px;
+      margin: 0 auto;
+    }
+
     @include tab {
       width: 600px;
       margin: 0 auto;
@@ -517,12 +482,17 @@ section
     margin-bottom: 32px;
     overflow: hidden;
 
+    @include pc_tab {
+      width: 100%;
+      height: 350px;
+    }
+
     @include tab {
       width: 100%;
       height: 350px;
     }
 
-    @include sp{
+    @include sp {
       width: 100%;
       height: 100%;
       margin: 0 auto;
@@ -535,6 +505,12 @@ section
     @include rem(20);
     line-height: 1.6;
 
+    @include pc_tab {
+      text-align: center;
+      @include rem(19);
+    }
+
+
     @include tab {
       text-align: center;
       @include rem(19);
@@ -543,6 +519,12 @@ section
 
   &_txt {
     line-height: 2;
+
+    @include pc_tab {
+      margin-bottom: 30px;
+      @include rem(16);
+      text-align: center;
+    }
 
     @include tab {
 
@@ -577,11 +559,15 @@ section
   margin-top: 60px;
   margin-bottom: 75px;
 
+  @include pc_tab {
+    height: 1300px;
+  }
+
   @include tab {
     height: 1100px;
   }
-  
-  @include sp{
+
+  @include sp {
     height: 450px;
   }
 
@@ -591,7 +577,7 @@ section
     margin: 0 auto 20px;
   }
 
-  & .section_ttl{
+  & .section_ttl {
     @include rem(25);
   }
 
@@ -630,7 +616,7 @@ section
       margin-bottom: 20px;
     }
 
-    @include sp{
+    @include sp {
       width: 100%;
       margin-bottom: 20px;
     }
@@ -644,12 +630,12 @@ section
   &_textbox {
     margin-left: 30px;
 
-    @include sp{
+    @include sp {
       width: 100%;
       margin-right: 10px;
     }
 
-    
+
 
     &_date {
       margin-bottom: 10px；
@@ -728,6 +714,10 @@ section
   &_map {
     display: block;
     margin: 69px auto 110px;
+
+    @include pc_tab {
+      width: 700px;
+    }
 
     @include tab {
       width: 700px;
