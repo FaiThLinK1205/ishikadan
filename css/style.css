@@ -82,18 +82,6 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1150px) and (min-width: 769px) {
-  .section_inner {
-    max-width: 715px;
-  }
-}
-
-@media screen and (max-width: 769px) and (min-width: 480px) {
-  .section_inner {
-    max-width: 677px;
-  }
-}
-
 .br_pc {
   display: block;
 }
@@ -1623,10 +1611,6 @@ fv
   transform: translate(-50%, -50%);
 }
 
-.common_pan {
-  margin-bottom: 97px;
-}
-
 .common_top_txt {
   margin-bottom: 78px;
   font-size: 16px;
@@ -1793,9 +1777,9 @@ fv
   .common_txtBox_txt {
     width: 320px;
     margin-left: 100px;
-    font-size: 15px;
+    font-size: 14px;
     /*IE9以前に対応する*/
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.5;
   }
 }
@@ -1805,9 +1789,9 @@ fv
     width: 90%;
     margin-left: 5%;
     padding-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     /*IE9以前に対応する*/
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 2;
   }
 }
@@ -1819,6 +1803,12 @@ fv
 @media screen and (max-width: 769px) and (min-width: 480px) {
   ._img_wrapper {
     margin: 0 0 0 380px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ._img_wrapper {
+    margin: 0;
   }
 }
 
@@ -1927,11 +1917,27 @@ fv
   line-height: 1.5;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .note {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .note {
+    width: 300px;
     font-size: 12px;
     /*IE9以前に対応する*/
     font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .note {
+    width: 300px;
+    font-size: 10px;
+    /*IE9以前に対応する*/
+    font-size: 0.625rem;
   }
 }
 
