@@ -1611,10 +1611,6 @@ fv
   transform: translate(-50%, -50%);
 }
 
-.common_pan {
-  margin-bottom: 97px;
-}
-
 .common_top_txt {
   margin-bottom: 78px;
   font-size: 16px;
@@ -1921,9 +1917,15 @@ fv
   line-height: 1.5;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .note {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .note {
-    width: 350px;
+    width: 300px;
     font-size: 12px;
     /*IE9以前に対応する*/
     font-size: 0.75rem;

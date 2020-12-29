@@ -40,10 +40,6 @@ fv
         transform: translate(-50%, -50%);
     }
 
-    &_pan {
-        margin-bottom: 97px;
-    }
-
     &_top_txt {
         margin-bottom: 78px;
         @include rem(16);
@@ -188,7 +184,7 @@ fv
         margin: 0 0 0 380px;
     }
     @include sp {
-        margin: 0;
+        margin:0;
     }
 
 }

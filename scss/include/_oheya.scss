@@ -26,8 +26,12 @@ fv
   @include rem(14);
   line-height: 1.5;
 
+  @include pc_tab {
+    width: 300px;
+  }
+
   @include tab{
-    width: 350px;
+    width: 300px;
     @include rem(12);
   }
 
