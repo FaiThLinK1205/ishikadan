@@ -27,7 +27,13 @@ fv
   line-height: 1.5;
 
   @include tab{
+    width: 350px;
     @include rem(12);
+  }
+
+  @include sp {
+    width: 300px;
+    @include rem(10);
   }
 }
 

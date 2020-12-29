@@ -165,7 +165,7 @@ fv
         @include tab {
             width: 320px;
             margin-left: 100px;
-            @include rem(15);
+            @include rem(14);
             line-height: 1.5;
         }
 
@@ -173,7 +173,7 @@ fv
             width: 90%;
             margin-left: 5%;
             padding-top: 10px;
-            @include rem(16);
+            @include rem(14);
             line-height: 2;
         }
     }
@@ -186,6 +186,9 @@ fv
 
     @include tab {
         margin: 0 0 0 380px;
+    }
+    @include sp {
+        margin: 0;
     }
 
 }
