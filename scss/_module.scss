@@ -7,7 +7,6 @@
 
 *****************************************:*/
 
-
 .row_body {
   .header_row {
 
@@ -22,10 +21,6 @@
     display: flex;
     align-items: center;
     transition: .3s;
-
-    @include sp {
-      padding: 0 0 0 0;
-    }
 
 
     &_left {
@@ -213,7 +208,7 @@ hamburger
     display: block;
 
     &_list {
-      height: 500px;
+      height: 800px;
       width: 100%;
       margin-top: 100px;
       flex-direction: column;
@@ -232,20 +227,6 @@ hamburger
     transform: translateX(0%);
   }
 }
-
-/****************************************:
-
-button
-
-*****************************************:*/
-
-
-
-
-
-
-
-
 
 /****************************************:
 
@@ -376,6 +357,11 @@ body.modalin {
   }
 }
 
+@include sp {
+  option {
+    @include rem(10);
+  }
+}
 
 
 
