@@ -135,6 +135,12 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .row_body .header_row_left {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .row_body .header_row_left {
     justify-content: space-between;
@@ -211,6 +217,12 @@ body {
   padding-top: 5px;
   display: flex;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .row_body .reserve_row {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -868,17 +880,18 @@ fv
 .fv_under {
   margin: 0 0 106px auto;
   background: url("../img/common/bg.jpg") center/cover no-repeat;
+  writing-mode: vertical-rl;
 }
 
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .fv_under {
     position: relative;
+    margin: 0;
   }
 }
 
 .fv_under .section_inner {
   height: 681px;
-  writing-mode: vertical-rl;
 }
 
 @media screen and (max-width: 480px) {
@@ -967,7 +980,6 @@ fv
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .fv_under_wrap {
     margin: 0;
-    padding-right: 170px;
     position: absolute;
     top: 150px;
     left: 50%;
@@ -1695,6 +1707,7 @@ fv
   width: 813px;
   height: 381px;
   margin: -243px 0 0 367px;
+  padding-top: 60px;
   background: url(../img/common/bg.jpg);
 }
 
@@ -1726,7 +1739,6 @@ fv
 .common_txtBox_ttl {
   margin-left: 238px;
   margin-bottom: 52px;
-  padding-top: 60px;
   font-size: 24px;
   /*IE9以前に対応する*/
   font-size: 1.5rem;
@@ -1768,6 +1780,7 @@ fv
 }
 
 .common_txtBox_txt {
+  width: 576px;
   margin-left: 238px;
   font-size: 16px;
   /*IE9以前に対応する*/
@@ -1826,7 +1839,7 @@ fv
 
 ._txt_wrapper {
   margin: -242px auto 0 0;
-  padding: 0 274px 165px 0;
+  padding: 30px 274px 165px 0;
 }
 
 @media screen and (max-width: 1150px) and (min-width: 769px) {
@@ -1921,8 +1934,16 @@ fv
   }
 }
 
+.ml60 {
+  margin-left: 60px;
+}
+
+.pr19 {
+  padding-right: 19px;
+}
+
 .note {
-  width: 458px;
+  width: 515px;
   font-size: 14px;
   /*IE9以前に対応する*/
   font-size: 0.875rem;
