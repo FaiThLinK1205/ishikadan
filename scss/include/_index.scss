@@ -173,15 +173,16 @@ fv
 .fv_under {
   margin: 0 0 106px auto;
   background: url("../img/common/bg.jpg")center / cover no-repeat;
+  writing-mode: vertical-rl;
 
   @include pc_tab {
     position: relative;
+    margin: 0;
   }
 
 
   & .section_inner {
     height: 681px;
-    writing-mode: vertical-rl;
 
     @include sp {
       height: 630px;
@@ -240,7 +241,7 @@ fv
 
     @include pc_tab {
       margin: 0;
-      padding-right: 170px;
+      // padding-right: 170px;
       position: absolute;
       top: 150px;
       left: 50%;

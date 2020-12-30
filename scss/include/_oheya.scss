@@ -21,8 +21,16 @@ fv
   }
 }
 
+.ml60{
+  margin-left: 60px;
+}
+
+.pr19{
+  padding-right: 19px;
+}
+
 .note {
-  width: 458px;
+  width: 515px;
   @include rem(14);
   line-height: 1.5;
 

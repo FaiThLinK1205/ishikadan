@@ -106,6 +106,7 @@ fv
         width: 813px;
         height: 381px;
         margin: -243px 0 0 367px;
+        padding-top: 60px;
         background: url(../img/common/bg.jpg);
 
         @include pc_tab {
@@ -131,7 +132,6 @@ fv
     &_txtBox_ttl {
         margin-left: 238px;
         margin-bottom: 52px;
-        padding-top: 60px;
         @include rem(24);
         line-height: 2;
 
@@ -159,6 +159,7 @@ fv
     }
 
     &_txtBox_txt {
+        width: 576px;
         margin-left: 238px;
         @include rem(16);
         line-height: 2;
@@ -203,7 +204,7 @@ fv
 
 ._txt_wrapper {
     margin: -242px auto 0 0;
-    padding: 0 274px 165px 0;
+    padding: 30px 274px 165px 0;
 
     @include pc_tab {
         margin: -210px auto 0 0;
