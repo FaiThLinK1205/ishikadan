@@ -1770,9 +1770,9 @@ fv
 
 @media screen and (max-width: 480px) {
   .common_txtBox_ttl {
-    font-size: 24px;
+    font-size: 18px;
     /*IE9以前に対応する*/
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     margin: 0;
   }
 }
@@ -1812,9 +1812,9 @@ fv
   .common_txtBox_txt {
     width: 90%;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 10px;
     /*IE9以前に対応する*/
-    font-size: 0.875rem;
+    font-size: 0.625rem;
     line-height: 2;
   }
 }
@@ -1902,7 +1902,7 @@ fv
 
 @media screen and (max-width: 480px) {
   ._txtBox_txt_wrap {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -1929,6 +1929,12 @@ fv
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .mb52 {
     margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mb52 {
+    margin-bottom: 20px;
   }
 }
 
@@ -1984,6 +1990,8 @@ fv
     font-size: 10px;
     /*IE9以前に対応する*/
     font-size: 0.625rem;
+    text-align: left;
+    margin-top: 20px;
   }
 }
 
