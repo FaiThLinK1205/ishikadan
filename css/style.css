@@ -1580,6 +1580,18 @@ footer
 fv
 
 *****************************************:*/
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .common .section_inner {
+    max-width: 715px;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 480px) {
+  .common .section_inner {
+    max-width: 677px;
+  }
+}
+
 .common_fv {
   width: 100%;
   height: 580px;
