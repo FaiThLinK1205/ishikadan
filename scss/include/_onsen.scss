@@ -111,8 +111,8 @@ fv
     }
 
     @include sp {
-      width: 324px;
-      height: 216px;
+      width: 350px;
+      height: 230px;
       margin: 0 auto;
     }
   }
@@ -141,10 +141,10 @@ fv
     }
 
     @include sp {
-      width: 324px;
+      width: 350px;
       height: 240px;
       padding: 39px 26px 26px 39px;
-      margin: -23px 0 0 30px;
+      margin: -23px auto;
     }
   }
 
@@ -312,10 +312,10 @@ fv
   }
 
   @include sp {
-    width: 324px;
+    width: 350px;
     height: 240px;
     padding: 30px 26px 23px 39px;
-    margin: -19px 0 0 30px;
+    margin: -19px auto;
   }
 }
 
