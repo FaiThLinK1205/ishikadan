@@ -245,6 +245,9 @@ body {
     width: 120px;
     padding: 10px;
     margin-top: 10px;
+    font-size: 10px;
+    /*IE9以前に対応する*/
+    font-size: 0.625rem;
   }
 }
 
@@ -410,6 +413,8 @@ body.modalin {
 .modal_ttl {
   margin: 0 auto 30px;
   font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
   display: table;
 }
 
@@ -877,10 +882,22 @@ fv
   writing-mode: vertical-rl;
 }
 
+@media screen and (max-width: 480px) {
+  .fv_under .section_inner {
+    writing-mode: horizontal-tb;
+  }
+}
+
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .fv_under {
     position: relative;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fv_under {
+    padding: 0 0 50px 0;
   }
 }
 
