@@ -13,7 +13,7 @@ fv
   margin-bottom: 52px;
 
   @include pc_tab {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
 }
 
   @include tab{
@@ -23,6 +23,10 @@ fv
 
 .ml60{
   margin-left: 60px;
+
+  @include pc_tab{
+    margin-left: 0;
+  }
 }
 
 .pr19{
@@ -36,6 +40,7 @@ fv
 
   @include pc_tab {
     width: 300px;
+    @include rem(12);
   }
 
   @include tab{

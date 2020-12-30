@@ -117,9 +117,9 @@ fv
         }
 
         @include tab {
-            width: 450px;
+            width: 400px;
             height: 320px;
-            margin: -160px 0 0 317px;
+            margin: -160px 0 0 280px;
         }
 
         @include sp {
@@ -165,13 +165,14 @@ fv
         line-height: 2;
 
         @include pc_tab {
+            width: 300px;
             padding: 0;
             margin-left: 0px;
-            @include rem(15)
+            @include rem(12);
         }
 
         @include tab {
-            width: 320px;
+            width: 250px;
             margin-left: 100px;
             @include rem(14);
             line-height: 1.5;

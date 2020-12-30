@@ -171,28 +171,25 @@ fv
 
 
 .fv_under {
-  margin: 0 0 106px auto;
+  width: 100%;
+  padding: 106px;
+  margin-bottom: 106px;
   background: url("../img/common/bg.jpg")center / cover no-repeat;
-  writing-mode: vertical-rl;
+  
+  & .section_inner{
+    width: 100%;
+    max-width: 1180px;
+    writing-mode: vertical-rl;
+
+  }
 
   @include pc_tab {
     position: relative;
     margin: 0;
   }
 
-
-  & .section_inner {
-    height: 681px;
-
-    @include sp {
-      height: 630px;
-      writing-mode: horizontal-tb;
-    }
-
-  }
-
   &_ttl {
-    margin: 64px 101px 0 33px;
+    margin: 64px 0px 0 33px;
     line-height: 1em;
     letter-spacing: 0;
     @include rem(28);
@@ -279,7 +276,6 @@ fv
   }
 
   &_txt4 {
-    margin-bottom: 120px;
     text-align: right;
 
     @include sp {
