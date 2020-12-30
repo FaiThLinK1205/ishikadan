@@ -135,12 +135,6 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 1150px) and (min-width: 769px) {
-  .row_body .header_row_left {
-    width: 50%;
-  }
-}
-
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .row_body .header_row_left {
     justify-content: space-between;
@@ -217,12 +211,6 @@ body {
   padding-top: 5px;
   display: flex;
   justify-content: flex-end;
-}
-
-@media screen and (max-width: 1150px) and (min-width: 769px) {
-  .row_body .reserve_row {
-    width: 35%;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -386,7 +374,6 @@ body.modalin {
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .modal_inner {
-    height: 500px;
     padding: 29px 60px 20px;
   }
 }
@@ -878,8 +865,15 @@ fv
 }
 
 .fv_under {
-  margin: 0 0 106px auto;
+  width: 100%;
+  padding: 106px;
+  margin-bottom: 106px;
   background: url("../img/common/bg.jpg") center/cover no-repeat;
+}
+
+.fv_under .section_inner {
+  width: 100%;
+  max-width: 1180px;
   writing-mode: vertical-rl;
 }
 
@@ -890,19 +884,8 @@ fv
   }
 }
 
-.fv_under .section_inner {
-  height: 681px;
-}
-
-@media screen and (max-width: 480px) {
-  .fv_under .section_inner {
-    height: 630px;
-    writing-mode: horizontal-tb;
-  }
-}
-
 .fv_under_ttl {
-  margin: 64px 101px 0 33px;
+  margin: 64px 0px 0 33px;
   line-height: 1em;
   letter-spacing: 0;
   font-size: 28px;
@@ -1030,7 +1013,6 @@ fv
 }
 
 .fv_under_txt4 {
-  margin-bottom: 120px;
   text-align: right;
 }
 
@@ -1722,9 +1704,9 @@ fv
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .common_txtBox {
-    width: 450px;
+    width: 400px;
     height: 320px;
-    margin: -160px 0 0 317px;
+    margin: -160px 0 0 280px;
   }
 }
 
@@ -1790,17 +1772,18 @@ fv
 
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .common_txtBox_txt {
+    width: 300px;
     padding: 0;
     margin-left: 0px;
-    font-size: 15px;
+    font-size: 12px;
     /*IE9以前に対応する*/
-    font-size: 0.9375rem;
+    font-size: 0.75rem;
   }
 }
 
 @media screen and (max-width: 769px) and (min-width: 480px) {
   .common_txtBox_txt {
-    width: 320px;
+    width: 250px;
     margin-left: 100px;
     font-size: 14px;
     /*IE9以前に対応する*/
@@ -1924,7 +1907,7 @@ fv
 
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .mb52 {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1936,6 +1919,12 @@ fv
 
 .ml60 {
   margin-left: 60px;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 769px) {
+  .ml60 {
+    margin-left: 0;
+  }
 }
 
 .pr19 {
@@ -1953,6 +1942,9 @@ fv
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .note {
     width: 300px;
+    font-size: 12px;
+    /*IE9以前に対応する*/
+    font-size: 0.75rem;
   }
 }
 
