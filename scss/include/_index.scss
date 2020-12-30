@@ -181,11 +181,18 @@ fv
     max-width: 1180px;
     writing-mode: vertical-rl;
 
+    @include sp {
+      writing-mode: horizontal-tb;
+    }
   }
 
   @include pc_tab {
     position: relative;
     margin: 0;
+  }
+
+  @include sp{
+    padding: 0 0 50px 0;
   }
 
   &_ttl {

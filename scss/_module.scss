@@ -130,6 +130,7 @@
         width: 120px;
         padding: 10px;
         margin-top: 10px;
+        @include rem(10);
       }
     }
 
@@ -328,7 +329,7 @@ body.modalin {
 
   &_ttl {
     margin: 0 auto 30px;
-    font-size: 20px;
+    @include rem(20);
     display: table;
   }
 
