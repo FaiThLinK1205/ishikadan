@@ -14,22 +14,27 @@ fv
 
   @include pc_tab {
     margin-bottom: 30px;
-}
+  }
 
-  @include tab{
+  @include tab {
     margin-bottom: 35px;
   }
 }
 
-.ml60{
+.ml60 {
   margin-left: 60px;
 
-  @include pc_tab{
+  @include pc_tab {
     margin-left: 0;
+
+  }
+
+  @include sp {
+    margin: 0 auto;
   }
 }
 
-.pr19{
+.pr19 {
   padding-right: 19px;
 }
 
@@ -43,7 +48,7 @@ fv
     @include rem(12);
   }
 
-  @include tab{
+  @include tab {
     width: 300px;
     @include rem(12);
   }

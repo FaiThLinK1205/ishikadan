@@ -1655,6 +1655,7 @@ fv
 
 @media screen and (max-width: 480px) {
   .common_box {
+    text-align: center;
     margin-bottom: 0;
   }
 }
@@ -1713,8 +1714,9 @@ fv
 @media screen and (max-width: 480px) {
   .common_txtBox {
     width: 100%;
-    height: 340px;
-    margin: -220px 0 0 0;
+    height: 250px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -1754,10 +1756,7 @@ fv
     font-size: 24px;
     /*IE9以前に対応する*/
     font-size: 1.5rem;
-    margin-top: 200px;
-    margin-left: 5%;
-    margin-bottom: 5px;
-    padding-top: 10%;
+    margin: 0;
   }
 }
 
@@ -1795,8 +1794,7 @@ fv
 @media screen and (max-width: 480px) {
   .common_txtBox_txt {
     width: 90%;
-    margin-left: 5%;
-    padding-top: 10px;
+    margin: 0 auto;
     font-size: 14px;
     /*IE9以前に対応する*/
     font-size: 0.875rem;
@@ -1816,6 +1814,7 @@ fv
 
 @media screen and (max-width: 480px) {
   ._img_wrapper {
+    height: 240px;
     margin: 0;
   }
 }
@@ -1841,7 +1840,7 @@ fv
 
 @media screen and (max-width: 480px) {
   ._txt_wrapper {
-    margin: -250px auto 0 0;
+    margin: 0;
     padding: 0 15px 165px 0;
   }
 }
@@ -1864,8 +1863,7 @@ fv
 
 @media screen and (max-width: 480px) {
   ._txtBox_ttl_wrap {
-    margin-left: 5%;
-    padding-top: 20%;
+    margin: 0;
   }
 }
 
@@ -1887,7 +1885,7 @@ fv
 
 @media screen and (max-width: 480px) {
   ._txtBox_txt_wrap {
-    margin-left: 5%;
+    margin: 0;
   }
 }
 
@@ -1924,6 +1922,12 @@ fv
 @media screen and (max-width: 1150px) and (min-width: 769px) {
   .ml60 {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ml60 {
+    margin: 0 auto;
   }
 }
 
